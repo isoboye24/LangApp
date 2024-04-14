@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="LangDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="COLOR">
+          <Key>
+            <PropertyRef Name="colorID" />
+          </Key>
+          <Property Name="colorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="colorName" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LANGUAGE">
+          <Key>
+            <PropertyRef Name="languageID" />
+          </Key>
+          <Property Name="languageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="languageListID" Type="int" Nullable="false" />
+          <Property Name="userID" Type="int" Nullable="false" />
+          <Property Name="isDeleted" Type="bit" Nullable="false" />
+          <Property Name="deletedDate" Type="date" />
+        </EntityType>
+        <EntityType Name="LANGUAGE_LIST">
+          <Key>
+            <PropertyRef Name="languageListID" />
+          </Key>
+          <Property Name="languageListID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="languageName" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MONTH">
+          <Key>
+            <PropertyRef Name="monthID" />
+          </Key>
+          <Property Name="monthID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="monthName" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="REGISTER">
+          <Key>
+            <PropertyRef Name="userID" />
+          </Key>
+          <Property Name="userID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="username" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="surname" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="100" />
+          <Property Name="imagePath" Type="varchar(max)" />
+          <Property Name="day" Type="int" Nullable="false" />
+          <Property Name="monthID" Type="int" Nullable="false" />
+          <Property Name="year" Type="int" Nullable="false" />
+          <Property Name="isDeleted" Type="bit" Nullable="false" />
+          <Property Name="deletedDate" Type="date" />
+        </EntityType>
+        <EntityType Name="TOPIC">
+          <Key>
+            <PropertyRef Name="topicID" />
+          </Key>
+          <Property Name="topicID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="topic" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="languageID" Type="int" Nullable="false" />
+          <Property Name="userID" Type="int" Nullable="false" />
+          <Property Name="isDeleted" Type="bit" Nullable="false" />
+          <Property Name="deletedDate" Type="date" />
+        </EntityType>
+        <EntityType Name="WORD">
+          <Key>
+            <PropertyRef Name="wordID" />
+          </Key>
+          <Property Name="wordID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="userID" Type="int" Nullable="false" />
+          <Property Name="languageID" Type="int" Nullable="false" />
+          <Property Name="topicID" Type="int" Nullable="false" />
+          <Property Name="monthID" Type="int" Nullable="false" />
+          <Property Name="word" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="day" Type="int" Nullable="false" />
+          <Property Name="year" Type="int" Nullable="false" />
+          <Property Name="explanation" Type="text" />
+          <Property Name="isDeleted" Type="bit" Nullable="false" />
+          <Property Name="deletedDate" Type="date" />
+        </EntityType>
+        <EntityContainer Name="LangDBModelStoreContainer">
+          <EntitySet Name="COLOR" EntityType="Self.COLOR" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LANGUAGE" EntityType="Self.LANGUAGE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LANGUAGE_LIST" EntityType="Self.LANGUAGE_LIST" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MONTH" EntityType="Self.MONTH" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="REGISTER" EntityType="Self.REGISTER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TOPIC" EntityType="Self.TOPIC" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WORD" EntityType="Self.WORD" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LangDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="COLOR">
+          <Key>
+            <PropertyRef Name="colorID" />
+          </Key>
+          <Property Name="colorID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="colorName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LANGUAGE">
+          <Key>
+            <PropertyRef Name="languageID" />
+          </Key>
+          <Property Name="languageID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="languageListID" Type="Int32" Nullable="false" />
+          <Property Name="userID" Type="Int32" Nullable="false" />
+          <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="deletedDate" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="LANGUAGE_LIST">
+          <Key>
+            <PropertyRef Name="languageListID" />
+          </Key>
+          <Property Name="languageListID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="languageName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MONTH">
+          <Key>
+            <PropertyRef Name="monthID" />
+          </Key>
+          <Property Name="monthID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="monthName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="REGISTER">
+          <Key>
+            <PropertyRef Name="userID" />
+          </Key>
+          <Property Name="userID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="surname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="imagePath" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="day" Type="Int32" Nullable="false" />
+          <Property Name="monthID" Type="Int32" Nullable="false" />
+          <Property Name="year" Type="Int32" Nullable="false" />
+          <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="deletedDate" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="TOPIC">
+          <Key>
+            <PropertyRef Name="topicID" />
+          </Key>
+          <Property Name="topicID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="topic1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="languageID" Type="Int32" Nullable="false" />
+          <Property Name="userID" Type="Int32" Nullable="false" />
+          <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="deletedDate" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="WORD">
+          <Key>
+            <PropertyRef Name="wordID" />
+          </Key>
+          <Property Name="wordID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="userID" Type="Int32" Nullable="false" />
+          <Property Name="languageID" Type="Int32" Nullable="false" />
+          <Property Name="topicID" Type="Int32" Nullable="false" />
+          <Property Name="monthID" Type="Int32" Nullable="false" />
+          <Property Name="word1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="day" Type="Int32" Nullable="false" />
+          <Property Name="year" Type="Int32" Nullable="false" />
+          <Property Name="explanation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="deletedDate" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityContainer Name="LangDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="COLORs" EntityType="Self.COLOR" />
+          <EntitySet Name="LANGUAGEs" EntityType="Self.LANGUAGE" />
+          <EntitySet Name="LANGUAGE_LIST" EntityType="Self.LANGUAGE_LIST" />
+          <EntitySet Name="MONTHs" EntityType="Self.MONTH" />
+          <EntitySet Name="REGISTERs" EntityType="Self.REGISTER" />
+          <EntitySet Name="TOPICs" EntityType="Self.TOPIC" />
+          <EntitySet Name="WORDs" EntityType="Self.WORD" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LangDBModelStoreContainer" CdmEntityContainer="LangDBEntities">
+          <EntitySetMapping Name="COLORs">
+            <EntityTypeMapping TypeName="LangDBModel.COLOR">
+              <MappingFragment StoreEntitySet="COLOR">
+                <ScalarProperty Name="colorID" ColumnName="colorID" />
+                <ScalarProperty Name="colorName" ColumnName="colorName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LANGUAGEs">
+            <EntityTypeMapping TypeName="LangDBModel.LANGUAGE">
+              <MappingFragment StoreEntitySet="LANGUAGE">
+                <ScalarProperty Name="languageID" ColumnName="languageID" />
+                <ScalarProperty Name="languageListID" ColumnName="languageListID" />
+                <ScalarProperty Name="userID" ColumnName="userID" />
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+                <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LANGUAGE_LIST">
+            <EntityTypeMapping TypeName="LangDBModel.LANGUAGE_LIST">
+              <MappingFragment StoreEntitySet="LANGUAGE_LIST">
+                <ScalarProperty Name="languageListID" ColumnName="languageListID" />
+                <ScalarProperty Name="languageName" ColumnName="languageName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MONTHs">
+            <EntityTypeMapping TypeName="LangDBModel.MONTH">
+              <MappingFragment StoreEntitySet="MONTH">
+                <ScalarProperty Name="monthID" ColumnName="monthID" />
+                <ScalarProperty Name="monthName" ColumnName="monthName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REGISTERs">
+            <EntityTypeMapping TypeName="LangDBModel.REGISTER">
+              <MappingFragment StoreEntitySet="REGISTER">
+                <ScalarProperty Name="userID" ColumnName="userID" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="surname" ColumnName="surname" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="imagePath" ColumnName="imagePath" />
+                <ScalarProperty Name="day" ColumnName="day" />
+                <ScalarProperty Name="monthID" ColumnName="monthID" />
+                <ScalarProperty Name="year" ColumnName="year" />
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+                <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TOPICs">
+            <EntityTypeMapping TypeName="LangDBModel.TOPIC">
+              <MappingFragment StoreEntitySet="TOPIC">
+                <ScalarProperty Name="topicID" ColumnName="topicID" />
+                <ScalarProperty Name="topic1" ColumnName="topic" />
+                <ScalarProperty Name="languageID" ColumnName="languageID" />
+                <ScalarProperty Name="userID" ColumnName="userID" />
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+                <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WORDs">
+            <EntityTypeMapping TypeName="LangDBModel.WORD">
+              <MappingFragment StoreEntitySet="WORD">
+                <ScalarProperty Name="wordID" ColumnName="wordID" />
+                <ScalarProperty Name="userID" ColumnName="userID" />
+                <ScalarProperty Name="languageID" ColumnName="languageID" />
+                <ScalarProperty Name="topicID" ColumnName="topicID" />
+                <ScalarProperty Name="monthID" ColumnName="monthID" />
+                <ScalarProperty Name="word1" ColumnName="word" />
+                <ScalarProperty Name="day" ColumnName="day" />
+                <ScalarProperty Name="year" ColumnName="year" />
+                <ScalarProperty Name="explanation" ColumnName="explanation" />
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+                <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
