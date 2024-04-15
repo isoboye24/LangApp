@@ -42,5 +42,36 @@ namespace LangApp.DAL.DAO
         {
             throw new NotImplementedException();
         }
+
+        internal List<LanguageDetailDTO> SelectUserLanguages(int ID)
+        {
+            try
+            {
+                List<LanguageDetailDTO> languages = new List<LanguageDetailDTO>();
+                var list = (from l in db.LANGUAGEs.Where(x => x.isDeleted == false && x.userID == ID)
+                            join ll in db.LANGUAGE_LIST on l.languageListID equals ll.languageListID
+                            select new
+                            {
+                                languageID = l.languageID,
+                                languageListID = l.languageListID,
+                                UserID = l.userID,
+                                LanguageName = ll.languageName,
+                            }).OrderBy(x => x.LanguageName).ToList();
+                foreach (var item in list)
+                {
+                    LanguageDetailDTO dto = new LanguageDetailDTO();
+                    dto.LanguageListID = item.languageListID;
+                    dto.LanguageID = item.languageID;
+                    dto.LanguageName = item.LanguageName;
+                    dto.UserID = item.UserID;
+                    languages.Add(dto);
+                }
+                return languages;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

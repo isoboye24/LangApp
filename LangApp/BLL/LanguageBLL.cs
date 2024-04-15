@@ -36,6 +36,13 @@ namespace LangApp.BLL
             throw new NotImplementedException();
         }
 
+        public LanguageDTO SelectUserLanguages(int ID)
+        {
+            LanguageDTO dto = new LanguageDTO();
+            dto.LanguagesFromList = dao.SelectUserLanguages(ID);
+            return dto;
+        }
+
         public bool Update(LanguageDetailDTO entity)
         {
             throw new NotImplementedException();
