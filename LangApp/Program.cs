@@ -17,7 +17,7 @@ namespace LangApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLanguageList());
+            Application.Run(new FormLogin());
         }
     }
 }

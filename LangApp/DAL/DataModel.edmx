@@ -11,6 +11,7 @@
           </Key>
           <Property Name="colorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="colorName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="userID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="LANGUAGE">
           <Key>
@@ -59,10 +60,6 @@
           </Key>
           <Property Name="topicID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="topic" Type="varchar" MaxLength="100" Nullable="false" />
-          <Property Name="languageID" Type="int" Nullable="false" />
-          <Property Name="userID" Type="int" Nullable="false" />
-          <Property Name="isDeleted" Type="bit" Nullable="false" />
-          <Property Name="deletedDate" Type="date" />
         </EntityType>
         <EntityType Name="WORD">
           <Key>
@@ -100,6 +97,7 @@
           </Key>
           <Property Name="colorID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="colorName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="userID" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="LANGUAGE">
           <Key>
@@ -148,10 +146,6 @@
           </Key>
           <Property Name="topicID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="topic1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="languageID" Type="Int32" Nullable="false" />
-          <Property Name="userID" Type="Int32" Nullable="false" />
-          <Property Name="isDeleted" Type="Boolean" Nullable="false" />
-          <Property Name="deletedDate" Type="DateTime" Precision="0" />
         </EntityType>
         <EntityType Name="WORD">
           <Key>
@@ -189,6 +183,7 @@
               <MappingFragment StoreEntitySet="COLOR">
                 <ScalarProperty Name="colorID" ColumnName="colorID" />
                 <ScalarProperty Name="colorName" ColumnName="colorName" />
+                <ScalarProperty Name="userID" ColumnName="userID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -242,10 +237,6 @@
               <MappingFragment StoreEntitySet="TOPIC">
                 <ScalarProperty Name="topicID" ColumnName="topicID" />
                 <ScalarProperty Name="topic1" ColumnName="topic" />
-                <ScalarProperty Name="languageID" ColumnName="languageID" />
-                <ScalarProperty Name="userID" ColumnName="userID" />
-                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
-                <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -16,5 +16,6 @@ namespace LangApp.DAL
     {
         public int colorID { get; set; }
         public string colorName { get; set; }
+        public int userID { get; set; }
     }
 }

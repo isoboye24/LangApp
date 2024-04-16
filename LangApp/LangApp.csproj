@@ -32,6 +32,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>langIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -62,14 +68,74 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllForms\FormAdjectives.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\FormAdjectives.Designer.cs">
+      <DependentUpon>FormAdjectives.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\FormMonthlyReportList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\FormMonthlyReportList.Designer.cs">
+      <DependentUpon>FormMonthlyReportList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\FormNouns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\FormNouns.Designer.cs">
+      <DependentUpon>FormNouns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\FormPhrases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\FormPhrases.Designer.cs">
+      <DependentUpon>FormPhrases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\FormTotalReportList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\FormTotalReportList.Designer.cs">
+      <DependentUpon>FormTotalReportList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\FormVerbs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\FormVerbs.Designer.cs">
+      <DependentUpon>FormVerbs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\FormWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\FormWord.Designer.cs">
+      <DependentUpon>FormWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\FormWordsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\FormWordsList.Designer.cs">
+      <DependentUpon>FormWordsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\FormYearlyReportList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\FormYearlyReportList.Designer.cs">
+      <DependentUpon>FormYearlyReportList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\CategoryBLL.cs" />
     <Compile Include="BLL\IBLL.cs" />
     <Compile Include="BLL\LanguageBLL.cs" />
     <Compile Include="BLL\LanguagesBLL.cs" />
+    <Compile Include="BLL\MonthsBLL.cs" />
+    <Compile Include="BLL\UserBLL.cs" />
     <Compile Include="DAL\COLOR.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="DAL\DAO\CategoryDAO.cs" />
     <Compile Include="DAL\DAO\LanguageDAO.cs" />
     <Compile Include="DAL\DAO\LanguagesDAO.cs" />
+    <Compile Include="DAL\DAO\MonthDAO.cs" />
+    <Compile Include="DAL\DAO\UserDAO.cs" />
     <Compile Include="DAL\DataModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -85,10 +151,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="DAL\DTO\CategoryDetailDTO.cs" />
+    <Compile Include="DAL\DTO\CategoryDTO.cs" />
     <Compile Include="DAL\DTO\LanguageDetailDTO.cs" />
     <Compile Include="DAL\DTO\LanguageDTO.cs" />
     <Compile Include="DAL\DTO\LanguagesDetailDTO.cs" />
     <Compile Include="DAL\DTO\LanguagesDTO.cs" />
+    <Compile Include="AllForms\FormLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\FormLanguage.Designer.cs">
+      <DependentUpon>FormLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DTO\MonthDetailDTO.cs" />
+    <Compile Include="DAL\DTO\MonthDTO.cs" />
+    <Compile Include="DAL\DTO\UserDetailDTO.cs" />
+    <Compile Include="DAL\DTO\UserDTO.cs" />
+    <Compile Include="DAL\DTO\WordDetailDTO.cs" />
     <Compile Include="DAL\LANGUAGE.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
@@ -107,12 +186,6 @@
     <Compile Include="DAL\WORD.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormLanguage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormLanguage.Designer.cs">
-      <DependentUpon>FormLanguage.cs</DependentUpon>
-    </Compile>
     <Compile Include="General Classes\ColorList.cs" />
     <Compile Include="DAL\DAO\IDAO.cs" />
     <Compile Include="DAL\DAO\LangContext.cs" />
@@ -122,41 +195,48 @@
     <Compile Include="FormDashboard.Designer.cs">
       <DependentUpon>FormDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormLanguageList.cs">
+    <Compile Include="AllForms\FormLanguageList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormLanguageList.Designer.cs">
+    <Compile Include="AllForms\FormLanguageList.Designer.cs">
       <DependentUpon>FormLanguageList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormLogin.cs">
+    <Compile Include="AllForms\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormLogin.Designer.cs">
+    <Compile Include="AllForms\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormRegister.cs">
+    <Compile Include="AllForms\FormRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormRegister.Designer.cs">
+    <Compile Include="AllForms\FormRegister.Designer.cs">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </Compile>
     <Compile Include="General Classes\ColorProperty.cs" />
     <Compile Include="General Classes\General.cs" />
+    <Compile Include="General Classes\StaticUser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AllForms\FormWord.resx">
+      <DependentUpon>FormWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\FormWordsList.resx">
+      <DependentUpon>FormWordsList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDashboard.resx">
       <DependentUpon>FormDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormLanguage.resx">
+    <EmbeddedResource Include="AllForms\FormLanguage.resx">
       <DependentUpon>FormLanguage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormLanguageList.resx">
+    <EmbeddedResource Include="AllForms\FormLanguageList.resx">
       <DependentUpon>FormLanguageList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormLogin.resx">
+    <EmbeddedResource Include="AllForms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormRegister.resx">
+    <EmbeddedResource Include="AllForms\FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -200,6 +280,7 @@
       <DependentUpon>DataModel.edmx</DependentUpon>
       <LastGenOutput>DataModel.cs</LastGenOutput>
     </Content>
+    <Content Include="langIcon.ico" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

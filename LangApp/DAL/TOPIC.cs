@@ -16,9 +16,5 @@ namespace LangApp.DAL
     {
         public int topicID { get; set; }
         public string topic1 { get; set; }
-        public int languageID { get; set; }
-        public int userID { get; set; }
-        public bool isDeleted { get; set; }
-        public Nullable<System.DateTime> deletedDate { get; set; }
     }
 }

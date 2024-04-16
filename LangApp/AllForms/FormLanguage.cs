@@ -1,5 +1,6 @@
 ﻿using LangApp.BLL;
 using LangApp.DAL.DTO;
+using LangApp.General_Classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -53,7 +54,7 @@ namespace LangApp.Forms
             {
                 LanguageDetailDTO langChosen = new LanguageDetailDTO();
                 langChosen.LanguageListID = Convert.ToInt32(cmbLanguages.SelectedValue);
-                langChosen.UserID = 1;
+                langChosen.UserID = StaticUser.UserID;
                 if (chosenLangBLL.Insert(langChosen))
                 {
                     MessageBox.Show("Language was added");

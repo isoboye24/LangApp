@@ -1,4 +1,7 @@
-﻿using LangApp.Forms;
+﻿using LangApp.BLL;
+using LangApp.DAL;
+using LangApp.Forms;
+using LangApp.General_Classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,18 +49,54 @@ namespace LangApp
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
+        UserBLL bll = new UserBLL();
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            FormLanguageList open = new FormLanguageList();
-            this.Hide();
-            open.ShowDialog();
-            this.Visible = true;
+            if (txtPassword.Text.Trim() == "" || txtUsername.Text.Trim() == "")
+            {
+                MessageBox.Show("Enter password and username");
+            }
+            else
+            {
+                List<REGISTER> userList = bll.CheckUser(txtPassword.Text, txtUsername.Text);
+                if (userList.Count == 0)
+                {
+                    MessageBox.Show("Invalid user!");
+                }
+                else
+                {
+                    REGISTER user = new REGISTER();
+                    user = userList.First();
+                    StaticUser.UserID = user.userID;
+                    StaticUser.Username = user.username;
+                    StaticUser.Password = user.password;
+
+                    FormLanguageList open = new FormLanguageList();
+                    txtPassword.Clear();
+                    txtUsername.Clear();
+                    this.Hide();
+                    open.ShowDialog();
+                    this.Visible = true;
+                }                
+            }            
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void linkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FormRegister open = new FormRegister();
+            this.Hide();
+            open.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void iconClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

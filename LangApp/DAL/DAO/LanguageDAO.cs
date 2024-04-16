@@ -1,4 +1,5 @@
 ﻿using LangApp.DAL.DTO;
+using LangApp.General_Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,6 +42,38 @@ namespace LangApp.DAL.DAO
         public bool Update(LANGUAGE entity)
         {
             throw new NotImplementedException();
+        }
+
+        public List<LanguageDetailDTO> CheckLanguage(int ID, string language)        {
+            
+            try
+            {
+                List<LanguageDetailDTO> languages = new List<LanguageDetailDTO>();
+                var list = (from l in db.LANGUAGEs
+                            join ll in db.LANGUAGE_LIST
+                            on l.languageListID equals ll.languageListID
+                            where l.isDeleted == false && l.userID == ID && ll.languageName == language
+                            select new
+                            {                               
+                                l.languageID,
+                                l.languageListID,
+                                ll.languageName                                
+                            }).ToList();
+                foreach (var item in list)
+                {
+                    LanguageDetailDTO dto = new LanguageDetailDTO();
+                    dto.LanguageID = item.languageID;
+                    dto.LanguageListID = item.languageListID;
+                    StaticUser.LanguageID = item.languageID;
+                    dto.LanguageName = item.languageName;
+                    languages.Add(dto);
+                }
+                return languages;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         internal List<LanguageDetailDTO> SelectUserLanguages(int ID)

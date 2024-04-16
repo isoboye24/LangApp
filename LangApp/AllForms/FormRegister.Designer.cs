@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,13 +49,16 @@
             this.txtImagePath = new System.Windows.Forms.TextBox();
             this.btnClose = new FontAwesome.Sharp.IconButton();
             this.btnSave = new FontAwesome.Sharp.IconButton();
+            this.iconClose = new FontAwesome.Sharp.IconPictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picProfile)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconClose)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkGreen;
+            this.panel1.Controls.Add(this.iconClose);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -63,6 +66,17 @@
             this.panel1.Size = new System.Drawing.Size(613, 62);
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(188, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(172, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Registration Form";
             // 
             // panel2
             // 
@@ -90,17 +104,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(5, 490);
             this.panel4.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(209, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Registration Form";
             // 
             // label2
             // 
@@ -219,6 +222,7 @@
             this.btnBrowse.TabIndex = 0;
             this.btnBrowse.Text = "Browse";
             this.btnBrowse.UseVisualStyleBackColor = true;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // label8
             // 
@@ -271,6 +275,21 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // iconClose
+            // 
+            this.iconClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconClose.BackColor = System.Drawing.Color.Transparent;
+            this.iconClose.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconClose.IconChar = FontAwesome.Sharp.IconChar.Xmark;
+            this.iconClose.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconClose.Location = new System.Drawing.Point(553, 14);
+            this.iconClose.Name = "iconClose";
+            this.iconClose.Size = new System.Drawing.Size(32, 32);
+            this.iconClose.TabIndex = 19;
+            this.iconClose.TabStop = false;
+            this.iconClose.Click += new System.EventHandler(this.iconClose_Click);
+            // 
             // FormRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,6 +324,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picProfile)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -333,5 +353,6 @@
         private System.Windows.Forms.TextBox txtImagePath;
         private FontAwesome.Sharp.IconButton btnClose;
         private FontAwesome.Sharp.IconButton btnSave;
+        private FontAwesome.Sharp.IconPictureBox iconClose;
     }
 }

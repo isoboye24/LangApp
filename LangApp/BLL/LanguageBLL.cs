@@ -47,5 +47,10 @@ namespace LangApp.BLL
         {
             throw new NotImplementedException();
         }
+
+        internal List<LanguageDetailDTO> CheckLanguage(int ID, string language)
+        {
+            return dao.CheckLanguage(ID, language);
+        }
     }
 }

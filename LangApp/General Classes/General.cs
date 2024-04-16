@@ -81,5 +81,117 @@ namespace LangApp
                 return "Unknown month";
             }
         }
+
+        public static string ConventIntToMonthGerman(int month)
+        {
+            if (month == 1)
+            {
+                return "Januar";
+            }
+            else if (month == 2)
+            {
+                return "Februar";
+            }
+            else if (month == 3)
+            {
+                return "März";
+            }
+            else if (month == 4)
+            {
+                return "April";
+            }
+            else if (month == 5)
+            {
+                return "Mai";
+            }
+            else if (month == 6)
+            {
+                return "Juni";
+            }
+            else if (month == 7)
+            {
+                return "Juli";
+            }
+            else if (month == 8)
+            {
+                return "August";
+            }
+            else if (month == 9)
+            {
+                return "September";
+            }
+            else if (month == 10)
+            {
+                return "Oktober";
+            }
+            else if (month == 11)
+            {
+                return "November";
+            }
+            else if (month == 12)
+            {
+                return "Dezember";
+            }
+            else
+            {
+                return "Unbekannter Monat";
+            }
+        }
+
+        public static string ConventIntToMonthRussian(int month)
+        {
+            if (month == 1)
+            {
+                return "Январь";
+            }
+            else if (month == 2)
+            {
+                return "Фeвраль";
+            }
+            else if (month == 3)
+            {
+                return "Марта";
+            }
+            else if (month == 4)
+            {
+                return "Апрель";
+            }
+            else if (month == 5)
+            {
+                return "Maй";
+            }
+            else if (month == 6)
+            {
+                return "Июнь";
+            }
+            else if (month == 7)
+            {
+                return "Июль";
+            }
+            else if (month == 8)
+            {
+                return "Август";
+            }
+            else if (month == 9)
+            {
+                return "Сентябрь";
+            }
+            else if (month == 10)
+            {
+                return "Октябрь";
+            }
+            else if (month == 11)
+            {
+                return "Ноябрь";
+            }
+            else if (month == 12)
+            {
+                return "Декабрь";
+            }
+            else
+            {
+                return "Такова месяца нету";
+            }
+        }
     }
 }
