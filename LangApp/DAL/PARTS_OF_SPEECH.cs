@@ -12,9 +12,9 @@ namespace LangApp.DAL
     using System;
     using System.Collections.Generic;
     
-    public partial class TOPIC
+    public partial class PARTS_OF_SPEECH
     {
-        public int topicID { get; set; }
-        public string topic1 { get; set; }
+        public int partOfSpeechID { get; set; }
+        public string partsOfSpeechName { get; set; }
     }
 }

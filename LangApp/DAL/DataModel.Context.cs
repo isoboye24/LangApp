@@ -29,8 +29,10 @@ namespace LangApp.DAL
         public virtual DbSet<LANGUAGE> LANGUAGEs { get; set; }
         public virtual DbSet<LANGUAGE_LIST> LANGUAGE_LIST { get; set; }
         public virtual DbSet<MONTH> MONTHs { get; set; }
+        public virtual DbSet<PARTS_OF_SPEECH> PARTS_OF_SPEECH { get; set; }
         public virtual DbSet<REGISTER> REGISTERs { get; set; }
-        public virtual DbSet<TOPIC> TOPICs { get; set; }
         public virtual DbSet<WORD> WORDs { get; set; }
+        public virtual DbSet<WORD_CASES> WORD_CASES { get; set; }
+        public virtual DbSet<WORD_GROUP> WORD_GROUP { get; set; }
     }
 }

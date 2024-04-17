@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace LangApp.DAL.DTO
 {
-    public class CategoryDTO
+    public class PartOfSpeechDetailDTO
     {
-        public List<CategoryDetailDTO> Categories { get; set; }
+        public int PartOfSpeechID { get; set; }
+        public string PartOfSpeechName { get; set; }
     }
 }

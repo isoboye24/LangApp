@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -107,7 +108,7 @@ namespace LangApp
         {
             DisableButton();
             leftBorderBtn.Visible = false;
-            labelTitleChildForm.Text = "Routine App";
+            labelTitleChildForm.Text = "Vocabulary App";
         }
         private void OpenChildForm(Form childForm)
         {
@@ -127,7 +128,6 @@ namespace LangApp
         }
         private void FormDashboard_Load(object sender, EventArgs e)
         {
-            label17.Text = StaticUser.LanguageID.ToString();
             labelLogo.Text = dashboard;
             labelTitleChildForm.Text = title;
             btnWords.Text = "         " + words;
@@ -157,7 +157,21 @@ namespace LangApp
             label18.Text = phrasesCard;
 
             RefreshCards();
+            picProfile.SizeMode = PictureBoxSizeMode.Zoom;
+            picProfile.BorderStyle = BorderStyle.None;
+            picProfile.BackColor = Color.Green;
+            picProfile.Width = picProfile.Height = 30;
+            picProfile.Paint += new PaintEventHandler(picProfile_Paint);
         }
+
+        private void picProfile_Paint(object sender, PaintEventArgs e)
+        {
+            GraphicsPath gp = new GraphicsPath();
+            gp.AddEllipse(0, 0, picProfile.Width - 1, picProfile.Height - 1);
+            Region rg = new Region(gp);
+            picProfile.Region = rg;
+        }
+
         private void RefreshCards()
         {
             //labelTimeOnExercise.Text = bll.SelectTimeInMonth(DateTime.Today.Month, "Exercise").ToString();
@@ -275,6 +289,12 @@ namespace LangApp
             {
                 WindowState = FormWindowState.Normal;
             }
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            buttonWasClicked = true;
+            OpenChildForm(new FormSettings());
         }
     }
 }

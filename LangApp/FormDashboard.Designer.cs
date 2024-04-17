@@ -30,11 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDashboard));
             this.panelSidebar = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btnDeletedData = new FontAwesome.Sharp.IconButton();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnTotalReports = new FontAwesome.Sharp.IconButton();
             this.btnYearlyReports = new FontAwesome.Sharp.IconButton();
             this.btnMonthlyReports = new FontAwesome.Sharp.IconButton();
+            this.btnPhrases = new FontAwesome.Sharp.IconButton();
+            this.btnAdjectives = new FontAwesome.Sharp.IconButton();
+            this.btnVerbs = new FontAwesome.Sharp.IconButton();
             this.btnNoun = new FontAwesome.Sharp.IconButton();
             this.btnWords = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
@@ -53,48 +57,46 @@
             this.panelRegMem = new System.Windows.Forms.TableLayoutPanel();
             this.labelNoOfNouns = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.labelNoOfVerbs = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.labelNoOfLastMonthAdjectives = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.labelYearlyAdjectives = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.labelYearlyVerbs = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.labelYearlyNouns = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.labelNoOfAdjectives = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.labelNoOfLastMonthNouns = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.labelNoOfLastMonthVerbs = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnVerbs = new FontAwesome.Sharp.IconButton();
-            this.btnAdjectives = new FontAwesome.Sharp.IconButton();
-            this.btnPhrases = new FontAwesome.Sharp.IconButton();
-            this.label12 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.labelNoOfPhrases = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.labelNoOfLastMonthPhrases = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.labelYearlyPhrases = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnSettings = new FontAwesome.Sharp.IconButton();
+            this.picProfile = new System.Windows.Forms.PictureBox();
             this.panelSidebar.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconMinimize)).BeginInit();
@@ -112,10 +114,10 @@
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
             this.tableLayoutPanel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picProfile)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSidebar
@@ -138,16 +140,14 @@
             this.panelSidebar.Size = new System.Drawing.Size(210, 600);
             this.panelSidebar.TabIndex = 24;
             // 
-            // label3
+            // panel1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkGray;
-            this.label3.Location = new System.Drawing.Point(3, 338);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 17);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "-------Reports-----";
+            this.panel1.Controls.Add(this.btnDeletedData);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 542);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(210, 58);
+            this.panel1.TabIndex = 16;
             // 
             // btnDeletedData
             // 
@@ -168,6 +168,17 @@
             this.btnDeletedData.Text = "        Deleted Data";
             this.btnDeletedData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDeletedData.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkGray;
+            this.label3.Location = new System.Drawing.Point(3, 338);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(115, 17);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "-------Reports-----";
             // 
             // btnTotalReports
             // 
@@ -228,6 +239,66 @@
             this.btnMonthlyReports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMonthlyReports.UseVisualStyleBackColor = true;
             this.btnMonthlyReports.Click += new System.EventHandler(this.btnMonthlyReports_Click);
+            // 
+            // btnPhrases
+            // 
+            this.btnPhrases.FlatAppearance.BorderSize = 0;
+            this.btnPhrases.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPhrases.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPhrases.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnPhrases.IconChar = FontAwesome.Sharp.IconChar.LayerGroup;
+            this.btnPhrases.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnPhrases.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPhrases.IconSize = 24;
+            this.btnPhrases.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPhrases.Location = new System.Drawing.Point(0, 274);
+            this.btnPhrases.Name = "btnPhrases";
+            this.btnPhrases.Size = new System.Drawing.Size(210, 44);
+            this.btnPhrases.TabIndex = 14;
+            this.btnPhrases.Text = "        Phrases";
+            this.btnPhrases.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPhrases.UseVisualStyleBackColor = true;
+            this.btnPhrases.Click += new System.EventHandler(this.btnPhrases_Click);
+            // 
+            // btnAdjectives
+            // 
+            this.btnAdjectives.FlatAppearance.BorderSize = 0;
+            this.btnAdjectives.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdjectives.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdjectives.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnAdjectives.IconChar = FontAwesome.Sharp.IconChar.LayerGroup;
+            this.btnAdjectives.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnAdjectives.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAdjectives.IconSize = 24;
+            this.btnAdjectives.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdjectives.Location = new System.Drawing.Point(0, 224);
+            this.btnAdjectives.Name = "btnAdjectives";
+            this.btnAdjectives.Size = new System.Drawing.Size(210, 44);
+            this.btnAdjectives.TabIndex = 14;
+            this.btnAdjectives.Text = "        Adjectives";
+            this.btnAdjectives.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdjectives.UseVisualStyleBackColor = true;
+            this.btnAdjectives.Click += new System.EventHandler(this.btnAdjectives_Click);
+            // 
+            // btnVerbs
+            // 
+            this.btnVerbs.FlatAppearance.BorderSize = 0;
+            this.btnVerbs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerbs.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerbs.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnVerbs.IconChar = FontAwesome.Sharp.IconChar.LayerGroup;
+            this.btnVerbs.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnVerbs.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnVerbs.IconSize = 24;
+            this.btnVerbs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVerbs.Location = new System.Drawing.Point(0, 175);
+            this.btnVerbs.Name = "btnVerbs";
+            this.btnVerbs.Size = new System.Drawing.Size(210, 44);
+            this.btnVerbs.TabIndex = 14;
+            this.btnVerbs.Text = "        Verbs";
+            this.btnVerbs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVerbs.UseVisualStyleBackColor = true;
+            this.btnVerbs.Click += new System.EventHandler(this.btnVerbs_Click);
             // 
             // btnNoun
             // 
@@ -305,10 +376,11 @@
             // panelTitleBar
             // 
             this.panelTitleBar.BackColor = System.Drawing.Color.Maroon;
+            this.panelTitleBar.Controls.Add(this.picProfile);
             this.panelTitleBar.Controls.Add(this.iconMinimize);
             this.panelTitleBar.Controls.Add(this.iconMaximize);
             this.panelTitleBar.Controls.Add(this.iconClose);
-            this.panelTitleBar.Controls.Add(this.label17);
+            this.panelTitleBar.Controls.Add(this.btnSettings);
             this.panelTitleBar.Controls.Add(this.labelTitleChildForm);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(210, 0);
@@ -367,7 +439,7 @@
             this.labelTitleChildForm.AutoSize = true;
             this.labelTitleChildForm.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelTitleChildForm.Location = new System.Drawing.Point(273, 3);
+            this.labelTitleChildForm.Location = new System.Drawing.Point(36, 9);
             this.labelTitleChildForm.Name = "labelTitleChildForm";
             this.labelTitleChildForm.Size = new System.Drawing.Size(235, 40);
             this.labelTitleChildForm.TabIndex = 12;
@@ -503,20 +575,6 @@
             this.label2.Text = "Nouns";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(3, 340);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(177, 34);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "In year (annualy)";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.SeaGreen;
@@ -589,6 +647,20 @@
             this.labelNoOfLastMonthAdjectives.TabIndex = 0;
             this.labelNoOfLastMonthAdjectives.Text = "0";
             // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(3, 20);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(171, 25);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Adjectives";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // tableLayoutPanel10
             // 
             this.tableLayoutPanel10.BackColor = System.Drawing.Color.Black;
@@ -618,19 +690,19 @@
             this.labelYearlyAdjectives.TabIndex = 0;
             this.labelYearlyAdjectives.Text = "0";
             // 
-            // label8
+            // label10
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(3, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(177, 34);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "In month (monthly)";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(3, 20);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(171, 25);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Adjectives";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tableLayoutPanel6
             // 
@@ -661,6 +733,20 @@
             this.labelYearlyVerbs.TabIndex = 0;
             this.labelYearlyVerbs.Text = "0";
             // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(3, 20);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(171, 25);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Verbs";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.BackColor = System.Drawing.Color.DarkSlateGray;
@@ -689,6 +775,20 @@
             this.labelYearlyNouns.Size = new System.Drawing.Size(34, 40);
             this.labelYearlyNouns.TabIndex = 0;
             this.labelYearlyNouns.Text = "0";
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(3, 20);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(171, 25);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Nouns";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tableLayoutPanel4
             // 
@@ -762,6 +862,20 @@
             this.labelNoOfLastMonthNouns.TabIndex = 0;
             this.labelNoOfLastMonthNouns.Text = "0";
             // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(3, 20);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(171, 25);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Nouns";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // tableLayoutPanel9
             // 
             this.tableLayoutPanel9.BackColor = System.Drawing.Color.Black;
@@ -791,88 +905,19 @@
             this.labelNoOfLastMonthVerbs.TabIndex = 0;
             this.labelNoOfLastMonthVerbs.Text = "0";
             // 
-            // panel1
+            // label6
             // 
-            this.panel1.Controls.Add(this.btnDeletedData);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 542);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(210, 58);
-            this.panel1.TabIndex = 16;
-            // 
-            // btnVerbs
-            // 
-            this.btnVerbs.FlatAppearance.BorderSize = 0;
-            this.btnVerbs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerbs.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerbs.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnVerbs.IconChar = FontAwesome.Sharp.IconChar.LayerGroup;
-            this.btnVerbs.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnVerbs.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnVerbs.IconSize = 24;
-            this.btnVerbs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVerbs.Location = new System.Drawing.Point(0, 175);
-            this.btnVerbs.Name = "btnVerbs";
-            this.btnVerbs.Size = new System.Drawing.Size(210, 44);
-            this.btnVerbs.TabIndex = 14;
-            this.btnVerbs.Text = "        Verbs";
-            this.btnVerbs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVerbs.UseVisualStyleBackColor = true;
-            this.btnVerbs.Click += new System.EventHandler(this.btnVerbs_Click);
-            // 
-            // btnAdjectives
-            // 
-            this.btnAdjectives.FlatAppearance.BorderSize = 0;
-            this.btnAdjectives.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdjectives.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdjectives.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnAdjectives.IconChar = FontAwesome.Sharp.IconChar.LayerGroup;
-            this.btnAdjectives.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnAdjectives.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAdjectives.IconSize = 24;
-            this.btnAdjectives.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdjectives.Location = new System.Drawing.Point(0, 224);
-            this.btnAdjectives.Name = "btnAdjectives";
-            this.btnAdjectives.Size = new System.Drawing.Size(210, 44);
-            this.btnAdjectives.TabIndex = 14;
-            this.btnAdjectives.Text = "        Adjectives";
-            this.btnAdjectives.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdjectives.UseVisualStyleBackColor = true;
-            this.btnAdjectives.Click += new System.EventHandler(this.btnAdjectives_Click);
-            // 
-            // btnPhrases
-            // 
-            this.btnPhrases.FlatAppearance.BorderSize = 0;
-            this.btnPhrases.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPhrases.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPhrases.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnPhrases.IconChar = FontAwesome.Sharp.IconChar.LayerGroup;
-            this.btnPhrases.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnPhrases.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnPhrases.IconSize = 24;
-            this.btnPhrases.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPhrases.Location = new System.Drawing.Point(0, 274);
-            this.btnPhrases.Name = "btnPhrases";
-            this.btnPhrases.Size = new System.Drawing.Size(210, 44);
-            this.btnPhrases.TabIndex = 14;
-            this.btnPhrases.Text = "        Phrases";
-            this.btnPhrases.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPhrases.UseVisualStyleBackColor = true;
-            this.btnPhrases.Click += new System.EventHandler(this.btnPhrases_Click);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(3, 170);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(177, 34);
-            this.label12.TabIndex = 10;
-            this.label12.Text = "In last month";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(3, 20);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(171, 25);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Verbs";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tableLayoutPanel11
             // 
@@ -946,6 +991,20 @@
             this.labelNoOfLastMonthPhrases.TabIndex = 0;
             this.labelNoOfLastMonthPhrases.Text = "0";
             // 
+            // label15
+            // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(3, 7);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(177, 50);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Phrases and Idioms";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // tableLayoutPanel13
             // 
             this.tableLayoutPanel13.BackColor = System.Drawing.Color.DarkMagenta;
@@ -975,62 +1034,6 @@
             this.labelYearlyPhrases.TabIndex = 0;
             this.labelYearlyPhrases.Text = "0";
             // 
-            // label14
-            // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(3, 20);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(171, 25);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Nouns";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(3, 20);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(171, 25);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Verbs";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label13
-            // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(3, 20);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(171, 25);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Adjectives";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label15
-            // 
-            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(3, 7);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(177, 50);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Phrases and Idioms";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // label18
             // 
             this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -1045,58 +1048,76 @@
             this.label18.Text = "Phrases and Idioms";
             this.label18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label10
+            // label4
             // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(3, 20);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(171, 25);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Adjectives";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(3, 340);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(177, 34);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "In year (annualy)";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label11
+            // label12
             // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(3, 20);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(171, 25);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Verbs";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(3, 170);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(177, 34);
+            this.label12.TabIndex = 10;
+            this.label12.Text = "In last month";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label9
+            // label8
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(3, 20);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(171, 25);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Nouns";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(3, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(177, 34);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "In month (monthly)";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label17
+            // btnSettings
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label17.Location = new System.Drawing.Point(22, 9);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(235, 40);
-            this.label17.TabIndex = 12;
-            this.label17.Text = "Vocabulary App";
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettings.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnSettings.IconChar = FontAwesome.Sharp.IconChar.ChartPie;
+            this.btnSettings.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnSettings.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSettings.IconSize = 24;
+            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.Location = new System.Drawing.Point(501, 9);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(118, 44);
+            this.btnSettings.TabIndex = 14;
+            this.btnSettings.Text = "        Settings";
+            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
+            // 
+            // picProfile
+            // 
+            this.picProfile.Location = new System.Drawing.Point(334, 16);
+            this.picProfile.Name = "picProfile";
+            this.picProfile.Size = new System.Drawing.Size(30, 30);
+            this.picProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picProfile.TabIndex = 16;
+            this.picProfile.TabStop = false;
             // 
             // FormDashboard
             // 
@@ -1116,6 +1137,7 @@
             this.Load += new System.EventHandler(this.FormDashboard_Load);
             this.panelSidebar.ResumeLayout(false);
             this.panelSidebar.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
             this.panelTitleBar.ResumeLayout(false);
@@ -1145,13 +1167,13 @@
             this.tableLayoutPanel8.PerformLayout();
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel11.PerformLayout();
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel12.PerformLayout();
             this.tableLayoutPanel13.ResumeLayout(false);
             this.tableLayoutPanel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picProfile)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1222,6 +1244,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label17;
+        private FontAwesome.Sharp.IconButton btnSettings;
+        private System.Windows.Forms.PictureBox picProfile;
     }
 }

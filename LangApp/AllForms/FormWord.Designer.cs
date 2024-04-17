@@ -43,13 +43,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtWord = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cmbCategory = new System.Windows.Forms.ComboBox();
-            this.txtExplanation = new System.Windows.Forms.TextBox();
+            this.cmbPartsOfSpeech = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtMeaning = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.btnClose = new FontAwesome.Sharp.IconButton();
             this.btnSave = new FontAwesome.Sharp.IconButton();
+            this.cmbCase = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cmbWordGroup = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconMinimize)).BeginInit();
@@ -202,7 +206,7 @@
             this.tableLayoutPanel3.Padding = new System.Windows.Forms.Padding(10);
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 273F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(252, 293);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
@@ -213,17 +217,27 @@
             this.tableLayoutPanel4.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.txtWord, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.label1, 0, 3);
-            this.tableLayoutPanel4.Controls.Add(this.cmbCategory, 0, 4);
+            this.tableLayoutPanel4.Controls.Add(this.cmbPartsOfSpeech, 0, 4);
+            this.tableLayoutPanel4.Controls.Add(this.cmbCase, 0, 7);
+            this.tableLayoutPanel4.Controls.Add(this.label4, 0, 6);
+            this.tableLayoutPanel4.Controls.Add(this.cmbWordGroup, 0, 10);
+            this.tableLayoutPanel4.Controls.Add(this.label5, 0, 9);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(13, 13);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 6;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel4.RowCount = 12;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(226, 267);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
@@ -232,7 +246,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 18);
+            this.label2.Location = new System.Drawing.Point(3, 5);
             this.label2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 21);
@@ -243,7 +257,7 @@
             // 
             this.txtWord.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtWord.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWord.Location = new System.Drawing.Point(3, 42);
+            this.txtWord.Location = new System.Drawing.Point(3, 29);
             this.txtWord.Name = "txtWord";
             this.txtWord.Size = new System.Drawing.Size(220, 27);
             this.txtWord.TabIndex = 3;
@@ -253,39 +267,29 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 101);
+            this.label1.Location = new System.Drawing.Point(3, 68);
             this.label1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 21);
+            this.label1.Size = new System.Drawing.Size(120, 21);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Category";
+            this.label1.Text = "Part of Speech";
             // 
-            // cmbCategory
+            // cmbPartsOfSpeech
             // 
-            this.cmbCategory.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbCategory.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbCategory.FormattingEnabled = true;
-            this.cmbCategory.Location = new System.Drawing.Point(3, 125);
-            this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(220, 28);
-            this.cmbCategory.TabIndex = 7;
-            // 
-            // txtExplanation
-            // 
-            this.txtExplanation.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtExplanation.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtExplanation.Location = new System.Drawing.Point(3, 46);
-            this.txtExplanation.Multiline = true;
-            this.txtExplanation.Name = "txtExplanation";
-            this.txtExplanation.Size = new System.Drawing.Size(375, 244);
-            this.txtExplanation.TabIndex = 4;
+            this.cmbPartsOfSpeech.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbPartsOfSpeech.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbPartsOfSpeech.FormattingEnabled = true;
+            this.cmbPartsOfSpeech.Location = new System.Drawing.Point(3, 92);
+            this.cmbPartsOfSpeech.Name = "cmbPartsOfSpeech";
+            this.cmbPartsOfSpeech.Size = new System.Drawing.Size(220, 28);
+            this.cmbPartsOfSpeech.TabIndex = 7;
             // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.Controls.Add(this.label3, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.txtExplanation, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.txtMeaning, 0, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(261, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -303,9 +307,19 @@
             this.label3.Location = new System.Drawing.Point(3, 22);
             this.label3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 21);
+            this.label3.Size = new System.Drawing.Size(141, 21);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Explanation";
+            this.label3.Text = "Meaning of word";
+            // 
+            // txtMeaning
+            // 
+            this.txtMeaning.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtMeaning.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMeaning.Location = new System.Drawing.Point(3, 46);
+            this.txtMeaning.Multiline = true;
+            this.txtMeaning.Name = "txtMeaning";
+            this.txtMeaning.Size = new System.Drawing.Size(375, 244);
+            this.txtMeaning.TabIndex = 4;
             // 
             // tableLayoutPanel6
             // 
@@ -358,6 +372,51 @@
             this.btnSave.TabIndex = 13;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // cmbCase
+            // 
+            this.cmbCase.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbCase.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCase.FormattingEnabled = true;
+            this.cmbCase.Location = new System.Drawing.Point(3, 155);
+            this.cmbCase.Name = "cmbCase";
+            this.cmbCase.Size = new System.Drawing.Size(220, 28);
+            this.cmbCase.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 131);
+            this.label4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 21);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Case";
+            // 
+            // cmbWordGroup
+            // 
+            this.cmbWordGroup.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbWordGroup.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbWordGroup.FormattingEnabled = true;
+            this.cmbWordGroup.Location = new System.Drawing.Point(3, 218);
+            this.cmbWordGroup.Name = "cmbWordGroup";
+            this.cmbWordGroup.Size = new System.Drawing.Size(220, 28);
+            this.cmbWordGroup.TabIndex = 7;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(3, 194);
+            this.label5.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(103, 21);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Word Group";
             // 
             // FormWord
             // 
@@ -406,12 +465,16 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtWord;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cmbCategory;
+        private System.Windows.Forms.ComboBox cmbPartsOfSpeech;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtExplanation;
+        private System.Windows.Forms.TextBox txtMeaning;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private FontAwesome.Sharp.IconButton btnClose;
         private FontAwesome.Sharp.IconButton btnSave;
+        private System.Windows.Forms.ComboBox cmbCase;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cmbWordGroup;
+        private System.Windows.Forms.Label label5;
     }
 }

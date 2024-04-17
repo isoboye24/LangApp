@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace LangApp.BLL
 {
-    public class CategoryBLL
+    public class PartOfSpeechBLL
     {
-        CategoryDAO dao = new CategoryDAO();
-        public CategoryDTO Select()
+        PartOfSpeechDAO dao = new PartOfSpeechDAO();
+        public PartOfSpeechDTO Select()
         {
-            CategoryDTO dto = new CategoryDTO();
-            dto.Categories = dao.Select();
+            PartOfSpeechDTO dto = new PartOfSpeechDTO();
+            dto.PartsOfSpeech = dao.Select();
             return dto;
         }
     }

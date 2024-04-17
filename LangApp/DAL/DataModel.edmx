@@ -37,6 +37,13 @@
           <Property Name="monthID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="monthName" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
+        <EntityType Name="PARTS_OF_SPEECH">
+          <Key>
+            <PropertyRef Name="partOfSpeechID" />
+          </Key>
+          <Property Name="partOfSpeechID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="partsOfSpeechName" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
         <EntityType Name="REGISTER">
           <Key>
             <PropertyRef Name="userID" />
@@ -54,13 +61,6 @@
           <Property Name="isDeleted" Type="bit" Nullable="false" />
           <Property Name="deletedDate" Type="date" />
         </EntityType>
-        <EntityType Name="TOPIC">
-          <Key>
-            <PropertyRef Name="topicID" />
-          </Key>
-          <Property Name="topicID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="topic" Type="varchar" MaxLength="100" Nullable="false" />
-        </EntityType>
         <EntityType Name="WORD">
           <Key>
             <PropertyRef Name="wordID" />
@@ -68,12 +68,35 @@
           <Property Name="wordID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="userID" Type="int" Nullable="false" />
           <Property Name="languageID" Type="int" Nullable="false" />
-          <Property Name="topicID" Type="int" Nullable="false" />
+          <Property Name="partOfSpeechID" Type="int" Nullable="false" />
           <Property Name="monthID" Type="int" Nullable="false" />
           <Property Name="word" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="day" Type="int" Nullable="false" />
           <Property Name="year" Type="int" Nullable="false" />
           <Property Name="explanation" Type="text" />
+          <Property Name="isDeleted" Type="bit" Nullable="false" />
+          <Property Name="deletedDate" Type="date" />
+          <Property Name="caseID" Type="int" Nullable="false" />
+          <Property Name="wordGroupID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="WORD_CASES">
+          <Key>
+            <PropertyRef Name="caseID" />
+          </Key>
+          <Property Name="caseID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="caseName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="languageID" Type="int" Nullable="false" />
+          <Property Name="isDeleted" Type="bit" Nullable="false" />
+          <Property Name="deletedDate" Type="date" />
+        </EntityType>
+        <EntityType Name="WORD_GROUP">
+          <Key>
+            <PropertyRef Name="wordGroupID" />
+          </Key>
+          <Property Name="wordGroupID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="wordGroupName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="partOfSpeechID" Type="int" Nullable="false" />
+          <Property Name="languageID" Type="int" Nullable="false" />
           <Property Name="isDeleted" Type="bit" Nullable="false" />
           <Property Name="deletedDate" Type="date" />
         </EntityType>
@@ -82,9 +105,11 @@
           <EntitySet Name="LANGUAGE" EntityType="Self.LANGUAGE" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="LANGUAGE_LIST" EntityType="Self.LANGUAGE_LIST" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="MONTH" EntityType="Self.MONTH" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PARTS_OF_SPEECH" EntityType="Self.PARTS_OF_SPEECH" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="REGISTER" EntityType="Self.REGISTER" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="TOPIC" EntityType="Self.TOPIC" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="WORD" EntityType="Self.WORD" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WORD_CASES" EntityType="Self.WORD_CASES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WORD_GROUP" EntityType="Self.WORD_GROUP" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
@@ -123,6 +148,13 @@
           <Property Name="monthID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="monthName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
         </EntityType>
+        <EntityType Name="PARTS_OF_SPEECH">
+          <Key>
+            <PropertyRef Name="partOfSpeechID" />
+          </Key>
+          <Property Name="partOfSpeechID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="partsOfSpeechName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
         <EntityType Name="REGISTER">
           <Key>
             <PropertyRef Name="userID" />
@@ -140,13 +172,6 @@
           <Property Name="isDeleted" Type="Boolean" Nullable="false" />
           <Property Name="deletedDate" Type="DateTime" Precision="0" />
         </EntityType>
-        <EntityType Name="TOPIC">
-          <Key>
-            <PropertyRef Name="topicID" />
-          </Key>
-          <Property Name="topicID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="topic1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-        </EntityType>
         <EntityType Name="WORD">
           <Key>
             <PropertyRef Name="wordID" />
@@ -154,12 +179,35 @@
           <Property Name="wordID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="userID" Type="Int32" Nullable="false" />
           <Property Name="languageID" Type="Int32" Nullable="false" />
-          <Property Name="topicID" Type="Int32" Nullable="false" />
+          <Property Name="partOfSpeechID" Type="Int32" Nullable="false" />
           <Property Name="monthID" Type="Int32" Nullable="false" />
           <Property Name="word1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="day" Type="Int32" Nullable="false" />
           <Property Name="year" Type="Int32" Nullable="false" />
           <Property Name="explanation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="deletedDate" Type="DateTime" Precision="0" />
+          <Property Name="caseID" Type="Int32" Nullable="false" />
+          <Property Name="wordGroupID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="WORD_CASES">
+          <Key>
+            <PropertyRef Name="caseID" />
+          </Key>
+          <Property Name="caseID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="caseName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="languageID" Type="Int32" Nullable="false" />
+          <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="deletedDate" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="WORD_GROUP">
+          <Key>
+            <PropertyRef Name="wordGroupID" />
+          </Key>
+          <Property Name="wordGroupID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="wordGroupName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="partOfSpeechID" Type="Int32" Nullable="false" />
+          <Property Name="languageID" Type="Int32" Nullable="false" />
           <Property Name="isDeleted" Type="Boolean" Nullable="false" />
           <Property Name="deletedDate" Type="DateTime" Precision="0" />
         </EntityType>
@@ -168,9 +216,11 @@
           <EntitySet Name="LANGUAGEs" EntityType="Self.LANGUAGE" />
           <EntitySet Name="LANGUAGE_LIST" EntityType="Self.LANGUAGE_LIST" />
           <EntitySet Name="MONTHs" EntityType="Self.MONTH" />
+          <EntitySet Name="PARTS_OF_SPEECH" EntityType="Self.PARTS_OF_SPEECH" />
           <EntitySet Name="REGISTERs" EntityType="Self.REGISTER" />
-          <EntitySet Name="TOPICs" EntityType="Self.TOPIC" />
           <EntitySet Name="WORDs" EntityType="Self.WORD" />
+          <EntitySet Name="WORD_CASES" EntityType="Self.WORD_CASES" />
+          <EntitySet Name="WORD_GROUP" EntityType="Self.WORD_GROUP" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -214,6 +264,14 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="PARTS_OF_SPEECH">
+            <EntityTypeMapping TypeName="LangDBModel.PARTS_OF_SPEECH">
+              <MappingFragment StoreEntitySet="PARTS_OF_SPEECH">
+                <ScalarProperty Name="partOfSpeechID" ColumnName="partOfSpeechID" />
+                <ScalarProperty Name="partsOfSpeechName" ColumnName="partsOfSpeechName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="REGISTERs">
             <EntityTypeMapping TypeName="LangDBModel.REGISTER">
               <MappingFragment StoreEntitySet="REGISTER">
@@ -232,26 +290,43 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="TOPICs">
-            <EntityTypeMapping TypeName="LangDBModel.TOPIC">
-              <MappingFragment StoreEntitySet="TOPIC">
-                <ScalarProperty Name="topicID" ColumnName="topicID" />
-                <ScalarProperty Name="topic1" ColumnName="topic" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="WORDs">
             <EntityTypeMapping TypeName="LangDBModel.WORD">
               <MappingFragment StoreEntitySet="WORD">
                 <ScalarProperty Name="wordID" ColumnName="wordID" />
                 <ScalarProperty Name="userID" ColumnName="userID" />
                 <ScalarProperty Name="languageID" ColumnName="languageID" />
-                <ScalarProperty Name="topicID" ColumnName="topicID" />
+                <ScalarProperty Name="partOfSpeechID" ColumnName="partOfSpeechID" />
                 <ScalarProperty Name="monthID" ColumnName="monthID" />
                 <ScalarProperty Name="word1" ColumnName="word" />
                 <ScalarProperty Name="day" ColumnName="day" />
                 <ScalarProperty Name="year" ColumnName="year" />
                 <ScalarProperty Name="explanation" ColumnName="explanation" />
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+                <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+                <ScalarProperty Name="caseID" ColumnName="caseID" />
+                <ScalarProperty Name="wordGroupID" ColumnName="wordGroupID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WORD_CASES">
+            <EntityTypeMapping TypeName="LangDBModel.WORD_CASES">
+              <MappingFragment StoreEntitySet="WORD_CASES">
+                <ScalarProperty Name="caseID" ColumnName="caseID" />
+                <ScalarProperty Name="caseName" ColumnName="caseName" />
+                <ScalarProperty Name="languageID" ColumnName="languageID" />
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+                <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WORD_GROUP">
+            <EntityTypeMapping TypeName="LangDBModel.WORD_GROUP">
+              <MappingFragment StoreEntitySet="WORD_GROUP">
+                <ScalarProperty Name="wordGroupID" ColumnName="wordGroupID" />
+                <ScalarProperty Name="wordGroupName" ColumnName="wordGroupName" />
+                <ScalarProperty Name="partOfSpeechID" ColumnName="partOfSpeechID" />
+                <ScalarProperty Name="languageID" ColumnName="languageID" />
                 <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
                 <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
               </MappingFragment>

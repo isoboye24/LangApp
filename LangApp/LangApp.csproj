@@ -92,6 +92,12 @@
     <Compile Include="AllForms\FormPhrases.Designer.cs">
       <DependentUpon>FormPhrases.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllForms\FormSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\FormSettings.Designer.cs">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllForms\FormTotalReportList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,20 +128,26 @@
     <Compile Include="AllForms\FormYearlyReportList.Designer.cs">
       <DependentUpon>FormYearlyReportList.cs</DependentUpon>
     </Compile>
-    <Compile Include="BLL\CategoryBLL.cs" />
+    <Compile Include="BLL\PartOfSpeechBLL.cs" />
     <Compile Include="BLL\IBLL.cs" />
     <Compile Include="BLL\LanguageBLL.cs" />
     <Compile Include="BLL\LanguagesBLL.cs" />
     <Compile Include="BLL\MonthsBLL.cs" />
     <Compile Include="BLL\UserBLL.cs" />
+    <Compile Include="BLL\WordBLL.cs" />
+    <Compile Include="BLL\WordCaseBLL.cs" />
+    <Compile Include="BLL\WordGroupBLL.cs" />
     <Compile Include="DAL\COLOR.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DAL\DAO\CategoryDAO.cs" />
+    <Compile Include="DAL\DAO\PartOfSpeechDAO.cs" />
     <Compile Include="DAL\DAO\LanguageDAO.cs" />
     <Compile Include="DAL\DAO\LanguagesDAO.cs" />
     <Compile Include="DAL\DAO\MonthDAO.cs" />
     <Compile Include="DAL\DAO\UserDAO.cs" />
+    <Compile Include="DAL\DAO\WordCaseDAO.cs" />
+    <Compile Include="DAL\DAO\WordDAO.cs" />
+    <Compile Include="DAL\DAO\WordGroupDAO.cs" />
     <Compile Include="DAL\DataModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -151,8 +163,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="DAL\DTO\CategoryDetailDTO.cs" />
-    <Compile Include="DAL\DTO\CategoryDTO.cs" />
+    <Compile Include="DAL\DTO\PartOfSpeechDetailDTO.cs" />
+    <Compile Include="DAL\DTO\PartOfSpeechDTO.cs" />
     <Compile Include="DAL\DTO\LanguageDetailDTO.cs" />
     <Compile Include="DAL\DTO\LanguageDTO.cs" />
     <Compile Include="DAL\DTO\LanguagesDetailDTO.cs" />
@@ -167,7 +179,12 @@
     <Compile Include="DAL\DTO\MonthDTO.cs" />
     <Compile Include="DAL\DTO\UserDetailDTO.cs" />
     <Compile Include="DAL\DTO\UserDTO.cs" />
+    <Compile Include="DAL\DTO\WordCaseDetailDTO.cs" />
+    <Compile Include="DAL\DTO\WordCaseDTO.cs" />
     <Compile Include="DAL\DTO\WordDetailDTO.cs" />
+    <Compile Include="DAL\DTO\WordDTO.cs" />
+    <Compile Include="DAL\DTO\WordGroupDetailDTO.cs" />
+    <Compile Include="DAL\DTO\WordGroupDTO.cs" />
     <Compile Include="DAL\LANGUAGE.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
@@ -177,13 +194,19 @@
     <Compile Include="DAL\MONTH.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="DAL\PARTS_OF_SPEECH.cs">
+      <DependentUpon>DataModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="DAL\REGISTER.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DAL\TOPIC.cs">
+    <Compile Include="DAL\WORD.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DAL\WORD.cs">
+    <Compile Include="DAL\WORD_CASES.cs">
+      <DependentUpon>DataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\WORD_GROUP.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="General Classes\ColorList.cs" />
@@ -218,6 +241,9 @@
     <Compile Include="General Classes\StaticUser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AllForms\FormSettings.resx">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AllForms\FormWord.resx">
       <DependentUpon>FormWord.cs</DependentUpon>
     </EmbeddedResource>
