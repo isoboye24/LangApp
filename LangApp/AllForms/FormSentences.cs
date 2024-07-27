@@ -9,28 +9,28 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Documents;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace LangApp.AllForms
 {
-    public partial class FormNouns : Form
+    public partial class FormSentences : Form
     {
-        public FormNouns()
+        public FormSentences()
         {
             InitializeComponent();
         }
         WordBLL bll = new WordBLL();
         WordDTO dto = new WordDTO();
-        private void FormNouns_Load(object sender, EventArgs e)
+        private void FormSentences_Load(object sender, EventArgs e)
         {
             dto = bll.Select(StaticUser.UserID, StaticUser.LanguageID);
-            cmbCases.DataSource = dto.WordCases;
-            General.ComboBoxProps(cmbCases, "WordCaseName", "WordCaseID");
+            cmbGroup.DataSource = dto.WordGroups;
+            General.ComboBoxProps(cmbGroup, "WordGroupName", "WordGroupID");
             cmbMonth.DataSource = dto.Months;
             General.ComboBoxProps(cmbMonth, "MonthName", "MonthID");
 
-            List<WordDetailDTO> list = dto.Nouns;
+            List<WordDetailDTO> list = dto.Sentences;
             list = list.Where(x => x.Year == DateTime.Today.Year && x.MonthID == DateTime.Today.Month).ToList();
             dataGridView1.DataSource = list;
             dataGridView1.Columns[0].HeaderText = "No.";
@@ -42,10 +42,11 @@ namespace LangApp.AllForms
             dataGridView1.Columns[5].Visible = false;
             dataGridView1.Columns[6].Visible = false;
             dataGridView1.Columns[7].Visible = false;
-            dataGridView1.Columns[8].HeaderText = "Nouns";
-            dataGridView1.Columns[9].Visible = false;
+            dataGridView1.Columns[8].HeaderText = "Sentences";
+            dataGridView1.Columns[9].HeaderText = "Group";
+            dataGridView1.Columns[9].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridView1.Columns[10].Visible = false;
-            dataGridView1.Columns[11].HeaderText = "Case";
+            dataGridView1.Columns[11].Visible = false;
             dataGridView1.Columns[12].Visible = false;
             dataGridView1.Columns[13].HeaderText = "Month";
             dataGridView1.Columns[13].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
@@ -57,16 +58,14 @@ namespace LangApp.AllForms
                 column.HeaderCell.Style.Font = new Font("Segoe UI", 14, FontStyle.Bold);
             }
             RefreshCounts();
-            btnLastMonthsVerbs.Text = General.ConventIntToMonthGerman(DateTime.Today.Month - 1);
-            btnThisMonthsVerbs.Text = General.ConventIntToMonthGerman(DateTime.Today.Month);
+            btnLastMonthsSentences.Text = General.ConventIntToMonthGerman(DateTime.Today.Month - 1);
+            btnThisMonthsSentences.Text = General.ConventIntToMonthGerman(DateTime.Today.Month);
         }
         private void RefreshCounts()
         {
             labelTotalWords.Text = dataGridView1.RowCount.ToString();
         }
         WordDetailDTO detail = new WordDetailDTO();
-        private bool isLastMonth = false;
-        private bool isThisMonth = false;
         private void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
             detail = new WordDetailDTO();
@@ -85,13 +84,14 @@ namespace LangApp.AllForms
             detail.Day = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[12].Value);
             detail.MonthName = dataGridView1.Rows[e.RowIndex].Cells[13].Value.ToString();
             detail.Year = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[14].Value);
-            detail.Explanation = dataGridView1.Rows[e.RowIndex].Cells[15].Value.ToString();
-            txtExplanation.Text = dataGridView1.Rows[e.RowIndex].Cells[15].Value.ToString();
+            detail.Explanation = dataGridView1.Rows[e.RowIndex].Cells[15].Value.ToString();            
         }
+        private bool isLastMonth = false;
+        private bool isThisMonth = false;
         private void ClearFilters()
         {
             dto = bll.Select(StaticUser.UserID, StaticUser.LanguageID);
-            List<WordDetailDTO> list = dto.Nouns;
+            List<WordDetailDTO> list = dto.Sentences;
             if (isLastMonth)
             {
                 int month = DateTime.Today.Month - 1;
@@ -115,9 +115,9 @@ namespace LangApp.AllForms
             {
                 dataGridView1.DataSource = list;
             }
-            txtWord.Clear();
+            txtSentence.Clear();
             txtYear.Clear();
-            cmbCases.SelectedIndex = -1;
+            cmbGroup.SelectedIndex = -1;
             cmbMonth.SelectedIndex = -1;
             RefreshCounts();
         }
@@ -127,9 +127,9 @@ namespace LangApp.AllForms
             ClearFilters();
         }
 
-        private void txtWord_TextChanged(object sender, EventArgs e)
+        private void txtSentence_TextChanged(object sender, EventArgs e)
         {
-            List<WordDetailDTO> list = dto.Nouns;
+            List<WordDetailDTO> list = dto.Sentences;
             if (isLastMonth)
             {
                 int month = DateTime.Today.Month - 1;
@@ -137,20 +137,20 @@ namespace LangApp.AllForms
                 if (month == 12)
                 {
                     year -= 1;
-                    list = list.Where(x => x.MonthID == month && x.Year == year && x.Word.Contains(txtWord.Text.Trim())).ToList();
+                    list = list.Where(x => x.MonthID == month && x.Year == year && x.Word.Contains(txtSentence.Text.Trim())).ToList();
                 }
                 else
                 {
-                    list = list.Where(x => x.MonthID == month && x.Year == year && x.Word.Contains(txtWord.Text.Trim())).ToList();
+                    list = list.Where(x => x.MonthID == month && x.Year == year && x.Word.Contains(txtSentence.Text.Trim())).ToList();
                 }
             }
             else if (isThisMonth)
             {
-                list = list.Where(x => x.MonthID == DateTime.Today.Month && x.Year == DateTime.Today.Year && x.Word.Contains(txtWord.Text.Trim())).ToList();
+                list = list.Where(x => x.MonthID == DateTime.Today.Month && x.Year == DateTime.Today.Year && x.Word.Contains(txtSentence.Text.Trim())).ToList();
             }
             else
             {
-                list = list.Where(x => x.Word.Contains(txtWord.Text.Trim())).ToList();
+                list = list.Where(x => x.Word.Contains(txtSentence.Text.Trim())).ToList();
             }
             dataGridView1.DataSource = list;
             RefreshCounts();
@@ -158,7 +158,7 @@ namespace LangApp.AllForms
 
         private void txtYear_TextChanged(object sender, EventArgs e)
         {
-            List<WordDetailDTO> list = dto.Nouns;
+            List<WordDetailDTO> list = dto.Sentences;
             list = list.Where(x => x.Year.ToString().Contains(txtYear.Text.Trim())).ToList();
             dataGridView1.DataSource = list;
             RefreshCounts();
@@ -172,12 +172,12 @@ namespace LangApp.AllForms
         private void btnSearch_Click(object sender, EventArgs e)
         {
             dto = bll.Select(StaticUser.UserID, StaticUser.LanguageID);
-            List<WordDetailDTO> list = dto.Nouns;
+            List<WordDetailDTO> list = dto.Sentences;
             if (cmbMonth.SelectedIndex != -1)
             {
                 list = list.Where(x => x.MonthID == Convert.ToInt32(cmbMonth.SelectedValue)).ToList();
             }
-            else if (cmbCases.SelectedIndex != -1)
+            else if (cmbGroup.SelectedIndex != -1)
             {
                 if (isLastMonth)
                 {
@@ -186,20 +186,20 @@ namespace LangApp.AllForms
                     if (month == 12)
                     {
                         year -= 1;
-                        list = list.Where(x => x.MonthID == month && x.Year == year && x.WordCaseID == Convert.ToInt32(cmbCases.SelectedValue)).ToList();
+                        list = list.Where(x => x.MonthID == month && x.Year == year && x.WordGroupID == Convert.ToInt32(cmbGroup.SelectedValue)).ToList();
                     }
                     else
                     {
-                        list = list.Where(x => x.MonthID == month && x.Year == year && x.WordCaseID == Convert.ToInt32(cmbCases.SelectedValue)).ToList();
+                        list = list.Where(x => x.MonthID == month && x.Year == year && x.WordGroupID == Convert.ToInt32(cmbGroup.SelectedValue)).ToList();
                     }
                 }
                 else if (isThisMonth)
                 {
-                    list = list.Where(x => x.MonthID == DateTime.Today.Month && x.Year == DateTime.Today.Year && x.WordCaseID == Convert.ToInt32(cmbCases.SelectedValue)).ToList();
+                    list = list.Where(x => x.MonthID == DateTime.Today.Month && x.Year == DateTime.Today.Year && x.WordGroupID == Convert.ToInt32(cmbGroup.SelectedValue)).ToList();
                 }
                 else
                 {
-                    list = list.Where(x => x.WordCaseID == Convert.ToInt32(cmbCases.SelectedValue)).ToList();
+                    list = list.Where(x => x.WordGroupID == Convert.ToInt32(cmbGroup.SelectedValue)).ToList();
                 }
             }
             dataGridView1.DataSource = list;
@@ -223,25 +223,41 @@ namespace LangApp.AllForms
             }
         }
 
-        private void btnLastMonthsVerbs_Click_1(object sender, EventArgs e)
+        private void btnLastMonthsSentences_Click(object sender, EventArgs e)
         {
-            isLastMonth = true;
             isThisMonth = false;
+            isLastMonth = true;
             ClearFilters();
         }
 
-        private void btnAllVerbs_Click_1(object sender, EventArgs e)
+        private void btnAllSentences_Click(object sender, EventArgs e)
         {
             isThisMonth = false;
             isLastMonth = false;
             ClearFilters();
         }
 
-        private void btnThisMonthsVerbs_Click_1(object sender, EventArgs e)
+        private void btnThisMonthsSentences_Click(object sender, EventArgs e)
         {
             isLastMonth = false;
             isThisMonth = true;
             ClearFilters();
+        }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            if (detail.WordID == 0)
+            {
+                MessageBox.Show("Please select a word from the table");
+            }
+            else
+            {
+                FormViewSentence open = new FormViewSentence();
+                open.detail = detail;
+                this.Close();
+                open.ShowDialog();
+                this.Visible = true;
+            }
         }
     }
 }

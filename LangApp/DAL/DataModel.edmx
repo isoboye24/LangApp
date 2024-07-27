@@ -70,7 +70,7 @@
           <Property Name="languageID" Type="int" Nullable="false" />
           <Property Name="partOfSpeechID" Type="int" Nullable="false" />
           <Property Name="monthID" Type="int" Nullable="false" />
-          <Property Name="word" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="word" Type="varchar(max)" Nullable="false" />
           <Property Name="day" Type="int" Nullable="false" />
           <Property Name="year" Type="int" Nullable="false" />
           <Property Name="explanation" Type="text" />
@@ -181,7 +181,7 @@
           <Property Name="languageID" Type="Int32" Nullable="false" />
           <Property Name="partOfSpeechID" Type="Int32" Nullable="false" />
           <Property Name="monthID" Type="Int32" Nullable="false" />
-          <Property Name="word1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="word1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="day" Type="Int32" Nullable="false" />
           <Property Name="year" Type="Int32" Nullable="false" />
           <Property Name="explanation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />

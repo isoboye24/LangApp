@@ -44,16 +44,18 @@
             this.txtWord = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbPartsOfSpeech = new System.Windows.Forms.ComboBox();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtMeaning = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnClose = new FontAwesome.Sharp.IconButton();
-            this.btnSave = new FontAwesome.Sharp.IconButton();
             this.cmbCase = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbWordGroup = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtMeaning = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnSameWordGroup = new FontAwesome.Sharp.IconButton();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnClose = new FontAwesome.Sharp.IconButton();
+            this.btnSave = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconMinimize)).BeginInit();
@@ -63,6 +65,7 @@
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -249,9 +252,9 @@
             this.label2.Location = new System.Drawing.Point(3, 5);
             this.label2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 21);
+            this.label2.Size = new System.Drawing.Size(87, 21);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Word";
+            this.label2.Text = "Add Word";
             // 
             // txtWord
             // 
@@ -270,9 +273,9 @@
             this.label1.Location = new System.Drawing.Point(3, 68);
             this.label1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 21);
+            this.label1.Size = new System.Drawing.Size(170, 21);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Part of Speech";
+            this.label1.Text = "Select Part of Speech";
             // 
             // cmbPartsOfSpeech
             // 
@@ -284,12 +287,56 @@
             this.cmbPartsOfSpeech.Size = new System.Drawing.Size(220, 28);
             this.cmbPartsOfSpeech.TabIndex = 7;
             // 
+            // cmbCase
+            // 
+            this.cmbCase.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbCase.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCase.FormattingEnabled = true;
+            this.cmbCase.Location = new System.Drawing.Point(3, 155);
+            this.cmbCase.Name = "cmbCase";
+            this.cmbCase.Size = new System.Drawing.Size(220, 28);
+            this.cmbCase.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 131);
+            this.label4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(95, 21);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Select Case";
+            // 
+            // cmbWordGroup
+            // 
+            this.cmbWordGroup.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbWordGroup.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbWordGroup.FormattingEnabled = true;
+            this.cmbWordGroup.Location = new System.Drawing.Point(3, 218);
+            this.cmbWordGroup.Name = "cmbWordGroup";
+            this.cmbWordGroup.Size = new System.Drawing.Size(220, 28);
+            this.cmbWordGroup.TabIndex = 7;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(3, 194);
+            this.label5.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(153, 21);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Select Word Group";
+            // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.txtMeaning, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel7, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(261, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -298,18 +345,6 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(381, 293);
             this.tableLayoutPanel5.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 22);
-            this.label3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 21);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Meaning of word";
             // 
             // txtMeaning
             // 
@@ -320,6 +355,51 @@
             this.txtMeaning.Name = "txtMeaning";
             this.txtMeaning.Size = new System.Drawing.Size(375, 244);
             this.txtMeaning.TabIndex = 4;
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.ColumnCount = 3;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.8F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.6F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.6F));
+            this.tableLayoutPanel7.Controls.Add(this.label3, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.btnSameWordGroup, 2, 0);
+            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 1;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(375, 37);
+            this.tableLayoutPanel7.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 16);
+            this.label3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(141, 21);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Meaning of word";
+            // 
+            // btnSameWordGroup
+            // 
+            this.btnSameWordGroup.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnSameWordGroup.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSameWordGroup.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSameWordGroup.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSameWordGroup.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnSameWordGroup.IconColor = System.Drawing.Color.Salmon;
+            this.btnSameWordGroup.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSameWordGroup.Location = new System.Drawing.Point(192, 3);
+            this.btnSameWordGroup.Name = "btnSameWordGroup";
+            this.btnSameWordGroup.Size = new System.Drawing.Size(180, 31);
+            this.btnSameWordGroup.TabIndex = 14;
+            this.btnSameWordGroup.Text = "Add to same group";
+            this.btnSameWordGroup.UseVisualStyleBackColor = false;
+            this.btnSameWordGroup.Click += new System.EventHandler(this.btnSameWordGroup_Click);
             // 
             // tableLayoutPanel6
             // 
@@ -374,50 +454,6 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // cmbCase
-            // 
-            this.cmbCase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbCase.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbCase.FormattingEnabled = true;
-            this.cmbCase.Location = new System.Drawing.Point(3, 155);
-            this.cmbCase.Name = "cmbCase";
-            this.cmbCase.Size = new System.Drawing.Size(220, 28);
-            this.cmbCase.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 131);
-            this.label4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 21);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Case";
-            // 
-            // cmbWordGroup
-            // 
-            this.cmbWordGroup.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbWordGroup.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbWordGroup.FormattingEnabled = true;
-            this.cmbWordGroup.Location = new System.Drawing.Point(3, 218);
-            this.cmbWordGroup.Name = "cmbWordGroup";
-            this.cmbWordGroup.Size = new System.Drawing.Size(220, 28);
-            this.cmbWordGroup.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 194);
-            this.label5.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 21);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Word Group";
-            // 
             // FormWord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -430,7 +466,9 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormWord";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormWord";
+            this.Load += new System.EventHandler(this.FormWord_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconMaximize)).EndInit();
@@ -443,6 +481,8 @@
             this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -476,5 +516,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbWordGroup;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private FontAwesome.Sharp.IconButton btnSameWordGroup;
     }
 }

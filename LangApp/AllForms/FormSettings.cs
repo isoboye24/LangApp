@@ -224,6 +224,7 @@ namespace LangApp.AllForms
                             isGroupUpdate = false;
                             FillGroupGrid();
                             label1.Text = "Add Group";
+                            label3.Text = "Select Part of speech";
                         }
                     }
                 }
@@ -252,8 +253,8 @@ namespace LangApp.AllForms
                 groupDetail.LanguageID = Convert.ToInt32(dataGridViewGroup.Rows[e.RowIndex].Cells[4].Value);
                 if (isGroupUpdate)
                 {
-                    txtWordGroup.Text = dataGridViewGroup.Rows[e.RowIndex].Cells[1].Value.ToString();
-                    cmbPartsOfSpeech.SelectedIndex = Convert.ToInt32(dataGridViewGroup.Rows[e.RowIndex].Cells[4].Value);
+                    txtWordGroup.Text = groupDetail.WordGroupName;
+                    cmbPartsOfSpeech.SelectedValue = groupDetail.PartOfSpeechID;
                 }
             }
         }

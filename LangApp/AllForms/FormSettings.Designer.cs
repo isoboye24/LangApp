@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControlSettings = new System.Windows.Forms.TabControl();
             this.pageProfile = new System.Windows.Forms.TabPage();
             this.pageWordCases = new System.Windows.Forms.TabPage();
@@ -52,9 +52,9 @@
             this.btnEditWordGroup = new FontAwesome.Sharp.IconButton();
             this.btnSaveWordGroup = new FontAwesome.Sharp.IconButton();
             this.btnDeleteWordGroup = new FontAwesome.Sharp.IconButton();
-            this.pageColor = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
             this.cmbPartsOfSpeech = new System.Windows.Forms.ComboBox();
+            this.pageColor = new System.Windows.Forms.TabPage();
             this.tabControlSettings.SuspendLayout();
             this.pageWordCases.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -128,8 +128,8 @@
             this.dataGridViewCases.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewCases.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewCases.Name = "dataGridViewCases";
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewCases.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewCases.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewCases.RowTemplate.Height = 30;
             this.dataGridViewCases.Size = new System.Drawing.Size(424, 434);
             this.dataGridViewCases.TabIndex = 8;
@@ -282,8 +282,8 @@
             this.dataGridViewGroup.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewGroup.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewGroup.Name = "dataGridViewGroup";
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewGroup.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewGroup.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewGroup.RowTemplate.Height = 30;
             this.dataGridViewGroup.Size = new System.Drawing.Size(427, 440);
             this.dataGridViewGroup.TabIndex = 8;
@@ -405,17 +405,6 @@
             this.btnDeleteWordGroup.UseVisualStyleBackColor = false;
             this.btnDeleteWordGroup.Click += new System.EventHandler(this.btnDeleteWordGroup_Click);
             // 
-            // pageColor
-            // 
-            this.pageColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pageColor.Location = new System.Drawing.Point(4, 22);
-            this.pageColor.Name = "pageColor";
-            this.pageColor.Size = new System.Drawing.Size(723, 446);
-            this.pageColor.TabIndex = 3;
-            this.pageColor.Text = "Colors";
-            this.pageColor.UseVisualStyleBackColor = true;
-            this.pageColor.Click += new System.EventHandler(this.pageColor_Click);
-            // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -437,6 +426,17 @@
             this.cmbPartsOfSpeech.Name = "cmbPartsOfSpeech";
             this.cmbPartsOfSpeech.Size = new System.Drawing.Size(278, 28);
             this.cmbPartsOfSpeech.TabIndex = 16;
+            // 
+            // pageColor
+            // 
+            this.pageColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pageColor.Location = new System.Drawing.Point(4, 22);
+            this.pageColor.Name = "pageColor";
+            this.pageColor.Size = new System.Drawing.Size(723, 446);
+            this.pageColor.TabIndex = 3;
+            this.pageColor.Text = "Colors";
+            this.pageColor.UseVisualStyleBackColor = true;
+            this.pageColor.Click += new System.EventHandler(this.pageColor_Click);
             // 
             // FormSettings
             // 

@@ -65,7 +65,7 @@ namespace LangApp.DAL.DAO
             try
             {
                 List<WordCaseDetailDTO> wordCases = new List<WordCaseDetailDTO>();
-                var list = db.WORD_CASES.Where(x => x.isDeleted == false && x.languageID == ID);
+                var list = db.WORD_CASES.Where(x => x.isDeleted == false && x.languageID == ID).OrderBy(x=>x.caseName);
                 foreach (var item in list)
                 {
                     WordCaseDetailDTO dto = new WordCaseDetailDTO();

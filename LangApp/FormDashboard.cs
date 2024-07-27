@@ -126,6 +126,7 @@ namespace LangApp
             childForm.Show();
             labelTitleChildForm.Text = childForm.Text;
         }
+        WordBLL bll = new WordBLL();
         private void FormDashboard_Load(object sender, EventArgs e)
         {
             labelLogo.Text = dashboard;
@@ -174,19 +175,27 @@ namespace LangApp
 
         private void RefreshCards()
         {
-            //labelTimeOnExercise.Text = bll.SelectTimeInMonth(DateTime.Today.Month, "Exercise").ToString();
-            //labelTimeOnFamilyInMonth.Text = bll.SelectTimeInMonth(DateTime.Today.Month, "Time with family").ToString();
-            //labelTimeOnGermanInMonth.Text = bll.SelectTimeInMonth(DateTime.Today.Month, "German studies").ToString();
-            //labelTimeOnGodInMonth.Text = bll.SelectTimeInMonth(DateTime.Today.Month, "Time with God").ToString();
-            //labelTimeOnProgrammingInMonth.Text = bll.SelectTimeInMonth(DateTime.Today.Month, "Programming").ToString();
-            //labelTimeOnBooksInMonth.Text = bll.SelectTimeInMonth(DateTime.Today.Month, "Books").ToString();
+            labelNoOfAdjectives.Text = bll.WordCount(StaticUser.UserID, StaticUser.LanguageID, "Adjective", DateTime.Today.Month, DateTime.Today.Year).ToString();
+            labelNoOfNouns.Text = bll.WordCount(StaticUser.UserID, StaticUser.LanguageID, "Noun", DateTime.Today.Month, DateTime.Today.Year).ToString();
+            labelNoOfPhrases.Text = bll.WordCount(StaticUser.UserID, StaticUser.LanguageID, "Phrase or Idiom", DateTime.Today.Month, DateTime.Today.Year).ToString();
+            labelNoOfVerbs.Text = bll.WordCount(StaticUser.UserID, StaticUser.LanguageID, "Verb", DateTime.Today.Month, DateTime.Today.Year).ToString();
+            
+            labelYearlyAdjectives.Text = bll.WordCountYearly(StaticUser.UserID, StaticUser.LanguageID, "Adjective",  DateTime.Today.Year).ToString();
+            labelYearlyNouns.Text = bll.WordCountYearly(StaticUser.UserID, StaticUser.LanguageID, "Noun",  DateTime.Today.Year).ToString();
+            labelYearlyPhrases.Text = bll.WordCountYearly(StaticUser.UserID, StaticUser.LanguageID, "Phrase or Idiom",  DateTime.Today.Year).ToString();
+            labelYearlyVerbs.Text = bll.WordCountYearly(StaticUser.UserID, StaticUser.LanguageID, "Verb",  DateTime.Today.Year).ToString();
+            int lastMonth = DateTime.Today.Month - 1;
+            int yearOfLastMonth = DateTime.Today.Year;
 
-            //labelTimeOnRussianInYear.Text = bll.SelectTimeInYear(DateTime.Today.Year, "Russian studies").ToString();
-            //labelTimeOnGermanInYear.Text = bll.SelectTimeInYear(DateTime.Today.Year, "German studies").ToString();
-            //labelTimeOnProgrammingInYear.Text = bll.SelectTimeInYear(DateTime.Today.Year, "Programming").ToString();
-
-            //label4.Text = "In " + DateTime.Today.Year + " (annualy)";
-            //label8.Text = "In " + General.ConventIntToMonth(DateTime.Today.Month) + " (monthly)";
+            if (lastMonth - 1 == 0)
+            {
+                lastMonth = 12;
+                yearOfLastMonth -= 1;
+            }
+            labelNoOfLastMonthAdjectives.Text = bll.WordCount(StaticUser.UserID, StaticUser.LanguageID, "Adjective", lastMonth, yearOfLastMonth).ToString();
+            labelNoOfLastMonthNouns.Text = bll.WordCount(StaticUser.UserID, StaticUser.LanguageID, "Noun", lastMonth, yearOfLastMonth).ToString();
+            labelNoOfLastMonthPhrases.Text = bll.WordCount(StaticUser.UserID, StaticUser.LanguageID, "Phrase or Idiom", lastMonth, yearOfLastMonth).ToString();
+            labelNoOfLastMonthVerbs.Text = bll.WordCount(StaticUser.UserID, StaticUser.LanguageID, "Verb", lastMonth, yearOfLastMonth).ToString();
         }
 
         private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
@@ -210,7 +219,7 @@ namespace LangApp
             OpenChildForm(new FormNouns());
         }
 
-        private void btnAdjectives_Click(object sender, EventArgs e)
+        public void btnAdjectives_Click(object sender, EventArgs e)
         {
             buttonWasClicked = true;
             ActivateButton(sender, RBGColors.color2);
@@ -295,6 +304,13 @@ namespace LangApp
         {
             buttonWasClicked = true;
             OpenChildForm(new FormSettings());
+        }
+
+        private void btnSentences_Click(object sender, EventArgs e)
+        {
+            buttonWasClicked = true;
+            ActivateButton(sender, RBGColors.color2);
+            OpenChildForm(new FormSentences());
         }
     }
 }

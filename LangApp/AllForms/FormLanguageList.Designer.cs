@@ -38,8 +38,6 @@
             this.btnClose = new FontAwesome.Sharp.IconButton();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btnAdd = new FontAwesome.Sharp.IconButton();
-            this.btnEdit = new FontAwesome.Sharp.IconButton();
-            this.btnDelete = new FontAwesome.Sharp.IconButton();
             this.buttonsPanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.tableLayoutPanelContainingButtonsPanel.SuspendLayout();
@@ -153,9 +151,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32F));
-            this.tableLayoutPanel3.Controls.Add(this.btnAdd, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.btnEdit, 2, 0);
-            this.tableLayoutPanel3.Controls.Add(this.btnDelete, 4, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnAdd, 2, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -173,44 +169,12 @@
             this.btnAdd.IconColor = System.Drawing.Color.Black;
             this.btnAdd.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAdd.IconSize = 24;
-            this.btnAdd.Location = new System.Drawing.Point(3, 3);
+            this.btnAdd.Location = new System.Drawing.Point(105, 3);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(90, 38);
             this.btnAdd.TabIndex = 17;
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.IconChar = FontAwesome.Sharp.IconChar.PenToSquare;
-            this.btnEdit.IconColor = System.Drawing.Color.Black;
-            this.btnEdit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnEdit.IconSize = 24;
-            this.btnEdit.Location = new System.Drawing.Point(105, 3);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(90, 38);
-            this.btnEdit.TabIndex = 17;
-            this.btnEdit.UseVisualStyleBackColor = true;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDelete.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            this.btnDelete.IconColor = System.Drawing.Color.Black;
-            this.btnDelete.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDelete.IconSize = 24;
-            this.btnDelete.Location = new System.Drawing.Point(207, 3);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(90, 38);
-            this.btnDelete.TabIndex = 17;
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // buttonsPanel
             // 
@@ -256,8 +220,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private FontAwesome.Sharp.IconButton btnClose;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private FontAwesome.Sharp.IconButton btnEdit;
-        private FontAwesome.Sharp.IconButton btnDelete;
         private System.Windows.Forms.Panel buttonsPanel;
     }
 }

@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="9df93ff53b034b4aaa42d269f7b1c507" Name="Diagram1">
+      <Diagram DiagramId="f983e54847144be4b46a67ac1ee50bbe" Name="Diagram1">
         <EntityTypeShape EntityType="LangDBModel.COLOR" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="LangDBModel.LANGUAGE" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="LangDBModel.LANGUAGE_LIST" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />

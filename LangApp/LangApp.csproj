@@ -92,6 +92,12 @@
     <Compile Include="AllForms\FormPhrases.Designer.cs">
       <DependentUpon>FormPhrases.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllForms\FormSentences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\FormSentences.Designer.cs">
+      <DependentUpon>FormSentences.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllForms\FormSettings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,12 @@
     </Compile>
     <Compile Include="AllForms\FormVerbs.Designer.cs">
       <DependentUpon>FormVerbs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\FormViewSentence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\FormViewSentence.Designer.cs">
+      <DependentUpon>FormViewSentence.cs</DependentUpon>
     </Compile>
     <Compile Include="AllForms\FormWord.cs">
       <SubType>Form</SubType>
@@ -241,14 +253,41 @@
     <Compile Include="General Classes\StaticUser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AllForms\FormAdjectives.resx">
+      <DependentUpon>FormAdjectives.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\FormMonthlyReportList.resx">
+      <DependentUpon>FormMonthlyReportList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\FormNouns.resx">
+      <DependentUpon>FormNouns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\FormPhrases.resx">
+      <DependentUpon>FormPhrases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\FormSentences.resx">
+      <DependentUpon>FormSentences.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AllForms\FormSettings.resx">
       <DependentUpon>FormSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\FormTotalReportList.resx">
+      <DependentUpon>FormTotalReportList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\FormVerbs.resx">
+      <DependentUpon>FormVerbs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\FormViewSentence.resx">
+      <DependentUpon>FormViewSentence.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllForms\FormWord.resx">
       <DependentUpon>FormWord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllForms\FormWordsList.resx">
       <DependentUpon>FormWordsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\FormYearlyReportList.resx">
+      <DependentUpon>FormYearlyReportList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDashboard.resx">
       <DependentUpon>FormDashboard.cs</DependentUpon>
