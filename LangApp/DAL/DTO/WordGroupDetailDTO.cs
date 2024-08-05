@@ -12,6 +12,6 @@ namespace LangApp.DAL.DTO
         public string WordGroupName { get; set; }
         public int PartOfSpeechID { get; set; }
         public string PartOfSpeechName { get; set; }
-        public int LanguageID { get; set; }
+        public int LanguageID { get; set; } = 1;
     }
 }

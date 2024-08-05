@@ -149,8 +149,8 @@ namespace LangApp.AllForms
                         detail.PartOfSpeechID = Convert.ToInt32(cmbPartsOfSpeech.SelectedValue);
                         detail.WordCaseID = Convert.ToInt32(cmbCase.SelectedValue);
                         detail.WordGroupID = Convert.ToInt32(cmbWordGroup.SelectedValue);
-                        detail.UserID = StaticUser.UserID;
-                        detail.LanguageID = StaticUser.LanguageID;
+                        detail.UserID = detail.UserID;
+                        detail.LanguageID = detail.LanguageID;
                         detail.Day = detail.Day;
                         detail.MonthID = detail.MonthID;
                         detail.Year = detail.Year;

@@ -84,6 +84,8 @@ namespace LangApp.BLL
             dto.Adjectives = dao.SelectSpecificWords(userID, languageID, "Adjective");
             dto.Verbs = dao.SelectSpecificWords(userID, languageID, "Verb");
             dto.Sentences = dao.SelectSpecificWords(userID, languageID, "Sentence");
+            dto.Adverbs = dao.SelectSpecificWords(userID, languageID, "Adverb");
+            dto.Conjunction = dao.SelectSpecificWords(userID, languageID, "Conjunction");
             return dto;
         }
 

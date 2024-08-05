@@ -24,7 +24,7 @@ namespace LangApp.AllForms
 
         private void FormWords_Load(object sender, EventArgs e)
         {
-            dto = bll.Select(StaticUser.UserID, StaticUser.LanguageID);
+            dto = bll.Select(StaticUser.UserID, 1);
             cmbPartsOfSpeech.DataSource = dto.PartsOfSpeech;
             General.ComboBoxProps(cmbPartsOfSpeech, "PartOfSpeechName", "PartOfSpeechID");
             cmbMonth.DataSource = dto.Months;
@@ -39,14 +39,14 @@ namespace LangApp.AllForms
             dataGridView1.Columns[5].Visible = false;
             dataGridView1.Columns[6].Visible = false;
             dataGridView1.Columns[7].Visible = false;
-            dataGridView1.Columns[8].HeaderText = "Word";
-            dataGridView1.Columns[9].HeaderText = "Group";
+            dataGridView1.Columns[8].HeaderText = "Wörter";
+            dataGridView1.Columns[9].HeaderText = "Gruppen";
             dataGridView1.Columns[10].Visible = false;
             dataGridView1.Columns[11].Visible = false;
             dataGridView1.Columns[12].Visible = false;
-            dataGridView1.Columns[13].HeaderText = "Month";
+            dataGridView1.Columns[13].HeaderText = "Monat";
             dataGridView1.Columns[13].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridView1.Columns[14].HeaderText = "Year";
+            dataGridView1.Columns[14].HeaderText = "Jahr";
             dataGridView1.Columns[14].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridView1.Columns[15].Visible = false;
             foreach (DataGridViewColumn column in dataGridView1.Columns)
@@ -56,17 +56,9 @@ namespace LangApp.AllForms
             RefreshCounts();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            FormWord open = new FormWord();
-            this.Hide();
-            open.ShowDialog();
-            this.Visible = true;
-            ClearFilters();
-        }
         private void ClearFilters()
         {
-            dto = bll.Select(StaticUser.UserID, StaticUser.LanguageID);
+            dto = bll.Select(StaticUser.UserID, 1);
             dataGridView1.DataSource = dto.Words;
             txtWord.Clear();
             txtYear.Clear();
@@ -79,23 +71,6 @@ namespace LangApp.AllForms
             labelTotalWords.Text = dataGridView1.RowCount.ToString();
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            if (detail.WordID == 0)
-            {
-                MessageBox.Show("Please select a word from the table");
-            }
-            else
-            {
-                FormWord open = new FormWord();
-                open.isUpdate = true;
-                open.detail = detail;
-                this.Hide();
-                open.ShowDialog();
-                this.Visible = true;
-                ClearFilters();
-            }            
-        }
         WordDetailDTO detail = new WordDetailDTO();
         private void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
@@ -119,24 +94,6 @@ namespace LangApp.AllForms
             txtExplanation.Text = dataGridView1.Rows[e.RowIndex].Cells[15].Value.ToString();
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Delete now?","Warning!",MessageBoxButtons.YesNo);
-            if (result == DialogResult.Yes)
-            {
-                if (bll.Delete(detail))
-                {
-                    MessageBox.Show("Word was deleted successfully!");
-                    ClearFilters();
-                }
-            }
-        }
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            ClearFilters();
-        }
-
         private void txtWord_TextChanged(object sender, EventArgs e)
         {
             List<WordDetailDTO> list = dto.Words;
@@ -158,7 +115,47 @@ namespace LangApp.AllForms
             e.Handled = General.isNumber(e);
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
+        private void iconAdd_Click(object sender, EventArgs e)
+        {
+            FormWord open = new FormWord();
+            this.Hide();
+            open.ShowDialog();
+            this.Visible = true;
+            ClearFilters();
+        }
+
+        private void iconEdit_Click(object sender, EventArgs e)
+        {
+            if (detail.WordID == 0)
+            {
+                MessageBox.Show("Please select a word from the table");
+            }
+            else
+            {
+                FormWord open = new FormWord();
+                open.isUpdate = true;
+                open.detail = detail;
+                this.Hide();
+                open.ShowDialog();
+                this.Visible = true;
+                ClearFilters();
+            }
+        }
+
+        private void iconDelete_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Delete now?", "Warning!", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                if (bll.Delete(detail))
+                {
+                    MessageBox.Show("Word was deleted successfully!");
+                    ClearFilters();
+                }
+            }
+        }
+
+        private void iconSearch_Click(object sender, EventArgs e)
         {
             List<WordDetailDTO> list = dto.Words;
             if (cmbMonth.SelectedIndex != -1)
@@ -171,6 +168,11 @@ namespace LangApp.AllForms
             }
             dataGridView1.DataSource = list;
             RefreshCounts();
+        }
+
+        private void iconClear_Click(object sender, EventArgs e)
+        {
+            ClearFilters();
         }
     }
 }

@@ -91,6 +91,11 @@ namespace LangApp
         {
             if (currentBtn != null)
             {
+                // Left Border button
+                leftBorderBtn.BackColor = Color.Transparent;
+                leftBorderBtn.Visible = false;
+                leftBorderBtn.Location = new Point(-10, 0);
+
                 currentBtn.BackColor = Color.Maroon;
                 currentBtn.ForeColor = Color.Gainsboro;
                 currentBtn.IconColor = Color.Gainsboro; ;
@@ -108,6 +113,7 @@ namespace LangApp
         {
             DisableButton();
             leftBorderBtn.Visible = false;
+            leftBorderBtn.Location = new Point(0, 0);
             labelTitleChildForm.Text = "Vocabulary App";
         }
         private void OpenChildForm(Form childForm)
@@ -129,40 +135,16 @@ namespace LangApp
         WordBLL bll = new WordBLL();
         private void FormDashboard_Load(object sender, EventArgs e)
         {
-            labelLogo.Text = dashboard;
-            labelTitleChildForm.Text = title;
-            btnWords.Text = "         " + words;
-            btnNoun.Text = "         " + nouns;
-            btnVerbs.Text = "         " + verbs;
-            btnAdjectives.Text = "         " + adjectives;
-            btnPhrases.Text = "         " + phrases;
-            label3.Text = reports;
-            btnMonthlyReports.Text = "         " + monthlyReport;
-            btnYearlyReports.Text = "         " + yearlyReports;
-            btnTotalReports.Text = "         " + TotalReport;
-            btnDeletedData.Text = "         " + deletedData;
-            label8.Text = monthly;
-            label12.Text = lastMonthly;
-            label4.Text = yearly;
-            label2.Text = nounsCard;
-            label5.Text = verbsCard;
-            label7.Text = adjectivesCard;
-            label16.Text = phrasesCard;
-            label14.Text = nounsCard;
-            label6.Text = verbsCard;
-            label13.Text = adjectivesCard;
-            label15.Text = phrasesCard;
-            label9.Text = nounsCard;
-            label11.Text = verbsCard;
-            label10.Text = adjectivesCard;
-            label18.Text = phrasesCard;
-
             RefreshCards();
             picProfile.SizeMode = PictureBoxSizeMode.Zoom;
             picProfile.BorderStyle = BorderStyle.None;
             picProfile.BackColor = Color.Green;
             picProfile.Width = picProfile.Height = 30;
             picProfile.Paint += new PaintEventHandler(picProfile_Paint);
+
+            label8.Text = "Im " + General.ConventIntToMonthGerman(DateTime.Today.Month);
+            label12.Text = "Im " + General.ConventIntToMonthGerman(DateTime.Today.Month - 1);
+            label4.Text = "Im " + DateTime.Today.Year;
         }
 
         private void picProfile_Paint(object sender, PaintEventArgs e)
@@ -175,15 +157,15 @@ namespace LangApp
 
         private void RefreshCards()
         {
-            labelNoOfAdjectives.Text = bll.WordCount(StaticUser.UserID, StaticUser.LanguageID, "Adjective", DateTime.Today.Month, DateTime.Today.Year).ToString();
-            labelNoOfNouns.Text = bll.WordCount(StaticUser.UserID, StaticUser.LanguageID, "Noun", DateTime.Today.Month, DateTime.Today.Year).ToString();
-            labelNoOfPhrases.Text = bll.WordCount(StaticUser.UserID, StaticUser.LanguageID, "Phrase or Idiom", DateTime.Today.Month, DateTime.Today.Year).ToString();
-            labelNoOfVerbs.Text = bll.WordCount(StaticUser.UserID, StaticUser.LanguageID, "Verb", DateTime.Today.Month, DateTime.Today.Year).ToString();
+            labelNoOfAdjectives.Text = bll.WordCount(StaticUser.UserID, 1, "Adjective", DateTime.Today.Month, DateTime.Today.Year).ToString();
+            labelNoOfNouns.Text = bll.WordCount(StaticUser.UserID, 1, "Noun", DateTime.Today.Month, DateTime.Today.Year).ToString();
+            labelNoOfPhrases.Text = bll.WordCount(StaticUser.UserID, 1, "Phrase or Idiom", DateTime.Today.Month, DateTime.Today.Year).ToString();
+            labelNoOfVerbs.Text = bll.WordCount(StaticUser.UserID, 1, "Verb", DateTime.Today.Month, DateTime.Today.Year).ToString();
             
-            labelYearlyAdjectives.Text = bll.WordCountYearly(StaticUser.UserID, StaticUser.LanguageID, "Adjective",  DateTime.Today.Year).ToString();
-            labelYearlyNouns.Text = bll.WordCountYearly(StaticUser.UserID, StaticUser.LanguageID, "Noun",  DateTime.Today.Year).ToString();
-            labelYearlyPhrases.Text = bll.WordCountYearly(StaticUser.UserID, StaticUser.LanguageID, "Phrase or Idiom",  DateTime.Today.Year).ToString();
-            labelYearlyVerbs.Text = bll.WordCountYearly(StaticUser.UserID, StaticUser.LanguageID, "Verb",  DateTime.Today.Year).ToString();
+            labelYearlyAdjectives.Text = bll.WordCountYearly(StaticUser.UserID, 1, "Adjective",  DateTime.Today.Year).ToString();
+            labelYearlyNouns.Text = bll.WordCountYearly(StaticUser.UserID, 1, "Noun",  DateTime.Today.Year).ToString();
+            labelYearlyPhrases.Text = bll.WordCountYearly(StaticUser.UserID, 1, "Phrase or Idiom",  DateTime.Today.Year).ToString();
+            labelYearlyVerbs.Text = bll.WordCountYearly(StaticUser.UserID, 1, "Verb",  DateTime.Today.Year).ToString();
             int lastMonth = DateTime.Today.Month - 1;
             int yearOfLastMonth = DateTime.Today.Year;
 
@@ -192,10 +174,10 @@ namespace LangApp
                 lastMonth = 12;
                 yearOfLastMonth -= 1;
             }
-            labelNoOfLastMonthAdjectives.Text = bll.WordCount(StaticUser.UserID, StaticUser.LanguageID, "Adjective", lastMonth, yearOfLastMonth).ToString();
-            labelNoOfLastMonthNouns.Text = bll.WordCount(StaticUser.UserID, StaticUser.LanguageID, "Noun", lastMonth, yearOfLastMonth).ToString();
-            labelNoOfLastMonthPhrases.Text = bll.WordCount(StaticUser.UserID, StaticUser.LanguageID, "Phrase or Idiom", lastMonth, yearOfLastMonth).ToString();
-            labelNoOfLastMonthVerbs.Text = bll.WordCount(StaticUser.UserID, StaticUser.LanguageID, "Verb", lastMonth, yearOfLastMonth).ToString();
+            labelNoOfLastMonthAdjectives.Text = bll.WordCount(StaticUser.UserID, 1, "Adjective", lastMonth, yearOfLastMonth).ToString();
+            labelNoOfLastMonthNouns.Text = bll.WordCount(StaticUser.UserID, 1, "Noun", lastMonth, yearOfLastMonth).ToString();
+            labelNoOfLastMonthPhrases.Text = bll.WordCount(StaticUser.UserID, 1, "Phrase or Idiom", lastMonth, yearOfLastMonth).ToString();
+            labelNoOfLastMonthVerbs.Text = bll.WordCount(StaticUser.UserID, 1, "Verb", lastMonth, yearOfLastMonth).ToString();
         }
 
         private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
@@ -212,55 +194,7 @@ namespace LangApp
             OpenChildForm(new FormWordsList());
         }
 
-        private void btnNoun_Click(object sender, EventArgs e)
-        {
-            buttonWasClicked = true;
-            ActivateButton(sender, RBGColors.color2);
-            OpenChildForm(new FormNouns());
-        }
-
-        public void btnAdjectives_Click(object sender, EventArgs e)
-        {
-            buttonWasClicked = true;
-            ActivateButton(sender, RBGColors.color2);
-            OpenChildForm(new FormAdjectives());
-        }
-
-        private void btnVerbs_Click(object sender, EventArgs e)
-        {
-            buttonWasClicked = true;
-            ActivateButton(sender, RBGColors.color2);
-            OpenChildForm(new FormVerbs());
-        }
-
-        private void btnPhrases_Click(object sender, EventArgs e)
-        {
-            buttonWasClicked = true;
-            ActivateButton(sender, RBGColors.color2);
-            OpenChildForm(new FormPhrases());
-        }
-
-        private void btnMonthlyReports_Click(object sender, EventArgs e)
-        {
-            buttonWasClicked = true;
-            ActivateButton(sender, RBGColors.color2);
-            OpenChildForm(new FormMonthlyReportList());
-        }
-
-        private void btnYearlyReports_Click(object sender, EventArgs e)
-        {
-            buttonWasClicked = true;
-            ActivateButton(sender, RBGColors.color2);
-            OpenChildForm(new FormYearlyReportList());
-        }
-
-        private void btnTotalReports_Click(object sender, EventArgs e)
-        {
-            buttonWasClicked = true;
-            ActivateButton(sender, RBGColors.color2);
-            OpenChildForm(new FormTotalReportList());
-        }
-
+        
         private void iconClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -303,14 +237,27 @@ namespace LangApp
         private void btnSettings_Click(object sender, EventArgs e)
         {
             buttonWasClicked = true;
+            ActivateButton(sender, RBGColors.color2);
             OpenChildForm(new FormSettings());
         }
 
-        private void btnSentences_Click(object sender, EventArgs e)
+        private void btnPartsOfSpeech_Click(object sender, EventArgs e)
         {
             buttonWasClicked = true;
             ActivateButton(sender, RBGColors.color2);
-            OpenChildForm(new FormSentences());
+            OpenChildForm(new FormPartsOfSpeech());
+        }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+            buttonWasClicked = true;
+            ActivateButton(sender, RBGColors.color2);
+            OpenChildForm(new FormReports());
+        }
+
+        private void btnGraphs_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace LangApp.AllForms
 {
-    partial class FormYearlyReportList
+    partial class FormReports
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // FormYearlyReportList
+            // FormReports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "FormYearlyReportList";
-            this.Text = "Yearly Report";
+            this.ClientSize = new System.Drawing.Size(731, 472);
+            this.Name = "FormReports";
+            this.Text = "Alle Berichten";
             this.ResumeLayout(false);
 
         }

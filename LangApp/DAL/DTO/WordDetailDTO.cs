@@ -11,7 +11,7 @@ namespace LangApp.DAL.DTO
         public int WordsCount { get; set; }
         public int WordID { get; set; }
         public int UserID { get; set; }
-        public int LanguageID { get; set; }
+        public int LanguageID { get; set; } = 1;
         public int MonthID { get; set; }
         public int PartOfSpeechID { get; set; }
         public int WordCaseID { get; set; }

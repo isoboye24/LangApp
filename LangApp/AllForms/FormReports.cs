@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LangApp.AllForms
 {
-    public partial class FormTotalReportList : Form
+    public partial class FormReports : Form
     {
-        public FormTotalReportList()
+        public FormReports()
         {
             InitializeComponent();
         }

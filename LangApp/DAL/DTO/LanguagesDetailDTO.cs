@@ -8,7 +8,7 @@ namespace LangApp.DAL.DTO
 {
     public class LanguagesDetailDTO
     {
-        public int LanguageID { get; set; }
+        public int LanguageID { get; set; } = 1;
         public string Language { get; set; }
     }
 }

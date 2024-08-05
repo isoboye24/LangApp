@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LangApp.AllForms
 {
-    public partial class FormMonthlyReportList : Form
+    public partial class FormGraphs : Form
     {
-        public FormMonthlyReportList()
+        public FormGraphs()
         {
             InitializeComponent();
         }

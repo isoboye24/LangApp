@@ -1,6 +1,6 @@
 ﻿namespace LangApp.AllForms
 {
-    partial class FormTotalReportList
+    partial class FormGraphs
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // FormTotalReportList
+            // FormGraphs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "FormTotalReportList";
-            this.Text = "Total Report";
+            this.ClientSize = new System.Drawing.Size(731, 472);
+            this.Name = "FormGraphs";
+            this.Text = "Alle Graphs";
             this.ResumeLayout(false);
 
         }

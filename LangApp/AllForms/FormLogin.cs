@@ -1,6 +1,5 @@
 ﻿using LangApp.BLL;
 using LangApp.DAL;
-using LangApp.Forms;
 using LangApp.General_Classes;
 using System;
 using System.Collections.Generic;
@@ -71,7 +70,7 @@ namespace LangApp
                     StaticUser.Username = user.username;
                     StaticUser.Password = user.password;
 
-                    FormLanguageList open = new FormLanguageList();
+                    FormDashboard open = new FormDashboard();
                     txtPassword.Clear();
                     txtUsername.Clear();
                     this.Hide();

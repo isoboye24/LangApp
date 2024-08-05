@@ -10,6 +10,6 @@ namespace LangApp.DAL.DTO
     {
         public int WordCaseID { get; set; }
         public string WordCaseName { get; set; }
-        public int LanguageID { get; set; }
+        public int LanguageID { get; set; } = 1;
     }
 }

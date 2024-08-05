@@ -68,53 +68,29 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AllForms\FormAdjectives.cs">
+    <Compile Include="AllForms\FormGraphs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AllForms\FormAdjectives.Designer.cs">
-      <DependentUpon>FormAdjectives.cs</DependentUpon>
+    <Compile Include="AllForms\FormGraphs.Designer.cs">
+      <DependentUpon>FormGraphs.cs</DependentUpon>
     </Compile>
-    <Compile Include="AllForms\FormMonthlyReportList.cs">
+    <Compile Include="AllForms\FormPartsOfSpeech.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AllForms\FormMonthlyReportList.Designer.cs">
-      <DependentUpon>FormMonthlyReportList.cs</DependentUpon>
+    <Compile Include="AllForms\FormPartsOfSpeech.Designer.cs">
+      <DependentUpon>FormPartsOfSpeech.cs</DependentUpon>
     </Compile>
-    <Compile Include="AllForms\FormNouns.cs">
+    <Compile Include="AllForms\FormReports.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AllForms\FormNouns.Designer.cs">
-      <DependentUpon>FormNouns.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AllForms\FormPhrases.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AllForms\FormPhrases.Designer.cs">
-      <DependentUpon>FormPhrases.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AllForms\FormSentences.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AllForms\FormSentences.Designer.cs">
-      <DependentUpon>FormSentences.cs</DependentUpon>
+    <Compile Include="AllForms\FormReports.Designer.cs">
+      <DependentUpon>FormReports.cs</DependentUpon>
     </Compile>
     <Compile Include="AllForms\FormSettings.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AllForms\FormSettings.Designer.cs">
       <DependentUpon>FormSettings.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AllForms\FormTotalReportList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AllForms\FormTotalReportList.Designer.cs">
-      <DependentUpon>FormTotalReportList.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AllForms\FormVerbs.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AllForms\FormVerbs.Designer.cs">
-      <DependentUpon>FormVerbs.cs</DependentUpon>
     </Compile>
     <Compile Include="AllForms\FormViewSentence.cs">
       <SubType>Form</SubType>
@@ -133,12 +109,6 @@
     </Compile>
     <Compile Include="AllForms\FormWordsList.Designer.cs">
       <DependentUpon>FormWordsList.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AllForms\FormYearlyReportList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AllForms\FormYearlyReportList.Designer.cs">
-      <DependentUpon>FormYearlyReportList.cs</DependentUpon>
     </Compile>
     <Compile Include="BLL\PartOfSpeechBLL.cs" />
     <Compile Include="BLL\IBLL.cs" />
@@ -181,12 +151,6 @@
     <Compile Include="DAL\DTO\LanguageDTO.cs" />
     <Compile Include="DAL\DTO\LanguagesDetailDTO.cs" />
     <Compile Include="DAL\DTO\LanguagesDTO.cs" />
-    <Compile Include="AllForms\FormLanguage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AllForms\FormLanguage.Designer.cs">
-      <DependentUpon>FormLanguage.cs</DependentUpon>
-    </Compile>
     <Compile Include="DAL\DTO\MonthDetailDTO.cs" />
     <Compile Include="DAL\DTO\MonthDTO.cs" />
     <Compile Include="DAL\DTO\UserDetailDTO.cs" />
@@ -230,12 +194,6 @@
     <Compile Include="FormDashboard.Designer.cs">
       <DependentUpon>FormDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="AllForms\FormLanguageList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AllForms\FormLanguageList.Designer.cs">
-      <DependentUpon>FormLanguageList.cs</DependentUpon>
-    </Compile>
     <Compile Include="AllForms\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -253,29 +211,17 @@
     <Compile Include="General Classes\StaticUser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AllForms\FormAdjectives.resx">
-      <DependentUpon>FormAdjectives.cs</DependentUpon>
+    <EmbeddedResource Include="AllForms\FormGraphs.resx">
+      <DependentUpon>FormGraphs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AllForms\FormMonthlyReportList.resx">
-      <DependentUpon>FormMonthlyReportList.cs</DependentUpon>
+    <EmbeddedResource Include="AllForms\FormPartsOfSpeech.resx">
+      <DependentUpon>FormPartsOfSpeech.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AllForms\FormNouns.resx">
-      <DependentUpon>FormNouns.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AllForms\FormPhrases.resx">
-      <DependentUpon>FormPhrases.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AllForms\FormSentences.resx">
-      <DependentUpon>FormSentences.cs</DependentUpon>
+    <EmbeddedResource Include="AllForms\FormReports.resx">
+      <DependentUpon>FormReports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllForms\FormSettings.resx">
       <DependentUpon>FormSettings.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AllForms\FormTotalReportList.resx">
-      <DependentUpon>FormTotalReportList.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AllForms\FormVerbs.resx">
-      <DependentUpon>FormVerbs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllForms\FormViewSentence.resx">
       <DependentUpon>FormViewSentence.cs</DependentUpon>
@@ -286,17 +232,8 @@
     <EmbeddedResource Include="AllForms\FormWordsList.resx">
       <DependentUpon>FormWordsList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AllForms\FormYearlyReportList.resx">
-      <DependentUpon>FormYearlyReportList.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormDashboard.resx">
       <DependentUpon>FormDashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AllForms\FormLanguage.resx">
-      <DependentUpon>FormLanguage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AllForms\FormLanguageList.resx">
-      <DependentUpon>FormLanguageList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllForms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
