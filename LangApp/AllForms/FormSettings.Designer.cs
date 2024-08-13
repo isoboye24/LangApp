@@ -200,52 +200,55 @@
             // 
             // btnCaseSave
             // 
-            this.btnCaseSave.BackColor = System.Drawing.Color.Orange;
+            this.btnCaseSave.BackColor = System.Drawing.Color.Transparent;
             this.btnCaseSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnCaseSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCaseSave.FlatAppearance.BorderSize = 0;
+            this.btnCaseSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCaseSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCaseSave.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnCaseSave.IconColor = System.Drawing.Color.Silver;
+            this.btnCaseSave.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
+            this.btnCaseSave.IconColor = System.Drawing.Color.Black;
             this.btnCaseSave.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCaseSave.IconSize = 32;
             this.btnCaseSave.Location = new System.Drawing.Point(96, 3);
             this.btnCaseSave.Name = "btnCaseSave";
             this.btnCaseSave.Size = new System.Drawing.Size(82, 31);
             this.btnCaseSave.TabIndex = 14;
-            this.btnCaseSave.Text = "Save";
             this.btnCaseSave.UseVisualStyleBackColor = false;
             this.btnCaseSave.Click += new System.EventHandler(this.btnCaseSave_Click);
             // 
             // btnDeleteCase
             // 
-            this.btnDeleteCase.BackColor = System.Drawing.Color.LightCoral;
+            this.btnDeleteCase.BackColor = System.Drawing.Color.Transparent;
             this.btnDeleteCase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDeleteCase.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDeleteCase.FlatAppearance.BorderSize = 0;
+            this.btnDeleteCase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteCase.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteCase.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnDeleteCase.IconColor = System.Drawing.Color.IndianRed;
+            this.btnDeleteCase.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.btnDeleteCase.IconColor = System.Drawing.Color.DarkRed;
             this.btnDeleteCase.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDeleteCase.IconSize = 32;
             this.btnDeleteCase.Location = new System.Drawing.Point(189, 3);
             this.btnDeleteCase.Name = "btnDeleteCase";
             this.btnDeleteCase.Size = new System.Drawing.Size(83, 31);
             this.btnDeleteCase.TabIndex = 14;
-            this.btnDeleteCase.Text = "Delete";
             this.btnDeleteCase.UseVisualStyleBackColor = false;
             this.btnDeleteCase.Click += new System.EventHandler(this.btnDeleteCase_Click);
             // 
             // btnEditCase
             // 
-            this.btnEditCase.BackColor = System.Drawing.SystemColors.Control;
+            this.btnEditCase.BackColor = System.Drawing.Color.Transparent;
             this.btnEditCase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEditCase.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEditCase.FlatAppearance.BorderSize = 0;
+            this.btnEditCase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditCase.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditCase.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnEditCase.IconColor = System.Drawing.Color.Silver;
+            this.btnEditCase.IconChar = FontAwesome.Sharp.IconChar.Pen;
+            this.btnEditCase.IconColor = System.Drawing.Color.Black;
             this.btnEditCase.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEditCase.IconSize = 32;
             this.btnEditCase.Location = new System.Drawing.Point(3, 3);
             this.btnEditCase.Name = "btnEditCase";
             this.btnEditCase.Size = new System.Drawing.Size(82, 31);
             this.btnEditCase.TabIndex = 14;
-            this.btnEditCase.Text = "Edit";
             this.btnEditCase.UseVisualStyleBackColor = false;
             this.btnEditCase.Click += new System.EventHandler(this.btnEditCase_Click);
             // 
@@ -356,52 +359,55 @@
             // 
             // btnEditWordGroup
             // 
-            this.btnEditWordGroup.BackColor = System.Drawing.SystemColors.Control;
+            this.btnEditWordGroup.BackColor = System.Drawing.Color.Transparent;
             this.btnEditWordGroup.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEditWordGroup.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEditWordGroup.FlatAppearance.BorderSize = 0;
+            this.btnEditWordGroup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditWordGroup.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditWordGroup.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnEditWordGroup.IconColor = System.Drawing.Color.Silver;
+            this.btnEditWordGroup.IconChar = FontAwesome.Sharp.IconChar.Pen;
+            this.btnEditWordGroup.IconColor = System.Drawing.Color.Black;
             this.btnEditWordGroup.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEditWordGroup.IconSize = 32;
             this.btnEditWordGroup.Location = new System.Drawing.Point(3, 3);
             this.btnEditWordGroup.Name = "btnEditWordGroup";
             this.btnEditWordGroup.Size = new System.Drawing.Size(82, 32);
             this.btnEditWordGroup.TabIndex = 14;
-            this.btnEditWordGroup.Text = "Edit";
             this.btnEditWordGroup.UseVisualStyleBackColor = false;
             this.btnEditWordGroup.Click += new System.EventHandler(this.btnEditWordGroup_Click);
             // 
             // btnSaveWordGroup
             // 
-            this.btnSaveWordGroup.BackColor = System.Drawing.Color.Orange;
+            this.btnSaveWordGroup.BackColor = System.Drawing.Color.Transparent;
             this.btnSaveWordGroup.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSaveWordGroup.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSaveWordGroup.FlatAppearance.BorderSize = 0;
+            this.btnSaveWordGroup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaveWordGroup.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveWordGroup.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnSaveWordGroup.IconColor = System.Drawing.Color.Silver;
+            this.btnSaveWordGroup.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
+            this.btnSaveWordGroup.IconColor = System.Drawing.Color.Black;
             this.btnSaveWordGroup.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSaveWordGroup.IconSize = 32;
             this.btnSaveWordGroup.Location = new System.Drawing.Point(96, 3);
             this.btnSaveWordGroup.Name = "btnSaveWordGroup";
             this.btnSaveWordGroup.Size = new System.Drawing.Size(82, 32);
             this.btnSaveWordGroup.TabIndex = 14;
-            this.btnSaveWordGroup.Text = "Save";
             this.btnSaveWordGroup.UseVisualStyleBackColor = false;
             this.btnSaveWordGroup.Click += new System.EventHandler(this.btnSaveWordGroup_Click);
             // 
             // btnDeleteWordGroup
             // 
-            this.btnDeleteWordGroup.BackColor = System.Drawing.Color.LightCoral;
+            this.btnDeleteWordGroup.BackColor = System.Drawing.Color.Transparent;
             this.btnDeleteWordGroup.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDeleteWordGroup.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDeleteWordGroup.FlatAppearance.BorderSize = 0;
+            this.btnDeleteWordGroup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteWordGroup.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteWordGroup.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnDeleteWordGroup.IconColor = System.Drawing.Color.IndianRed;
+            this.btnDeleteWordGroup.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.btnDeleteWordGroup.IconColor = System.Drawing.Color.Maroon;
             this.btnDeleteWordGroup.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDeleteWordGroup.IconSize = 32;
             this.btnDeleteWordGroup.Location = new System.Drawing.Point(189, 3);
             this.btnDeleteWordGroup.Name = "btnDeleteWordGroup";
             this.btnDeleteWordGroup.Size = new System.Drawing.Size(86, 32);
             this.btnDeleteWordGroup.TabIndex = 14;
-            this.btnDeleteWordGroup.Text = "Delete";
             this.btnDeleteWordGroup.UseVisualStyleBackColor = false;
             this.btnDeleteWordGroup.Click += new System.EventHandler(this.btnDeleteWordGroup_Click);
             // 

@@ -80,7 +80,7 @@ namespace LangApp.DAL.DAO
         {
             try
             {
-                var list = db.WORDs.Where(x=>x.userID==userID && x.languageID==languageID && x.word1==word && x.wordGroupID == wordGroup && x.caseID == wordCase && x.partOfSpeechID==partOfSpeech).ToList();
+                var list = db.WORDs.Where(x=>x.isDeleted == false && x.userID==userID && x.languageID==languageID && x.word1==word && x.wordGroupID == wordGroup && x.caseID == wordCase && x.partOfSpeechID==partOfSpeech).ToList();
                 return list;
             }
             catch (Exception ex)

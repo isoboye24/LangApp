@@ -28,14 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControlPartsOfSpeech = new System.Windows.Forms.TabControl();
+            this.pageVerbs = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel49 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel50 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtExplanationVerb = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel51 = new System.Windows.Forms.TableLayoutPanel();
+            this.labelTotalWordsVerb = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel52 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel53 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel54 = new System.Windows.Forms.TableLayoutPanel();
+            this.iconThisMonthVerb = new FontAwesome.Sharp.IconButton();
+            this.iconLastMonthVerb = new FontAwesome.Sharp.IconButton();
+            this.iconEditPageVerb = new FontAwesome.Sharp.IconButton();
+            this.iconAllVerb = new FontAwesome.Sharp.IconButton();
+            this.tableLayoutPanel55 = new System.Windows.Forms.TableLayoutPanel();
+            this.iconSearchPageVerb = new FontAwesome.Sharp.IconButton();
+            this.iconClearPageVerb = new FontAwesome.Sharp.IconButton();
+            this.dataGridViewVerb = new System.Windows.Forms.DataGridView();
+            this.tableLayoutPanel56 = new System.Windows.Forms.TableLayoutPanel();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.cmbCasesPageVerb = new System.Windows.Forms.ComboBox();
+            this.txtWordPageVerb = new System.Windows.Forms.TextBox();
+            this.txtYearPageVerb = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.cmbMonthPageVerb = new System.Windows.Forms.ComboBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.cmbGroupPageVerb = new System.Windows.Forms.ComboBox();
             this.pageAdjectives = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
@@ -66,66 +96,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.cmbGroupPageAdj = new System.Windows.Forms.ComboBox();
-            this.pageAdverbs = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtExplanationAdv = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.labelTotalWordsAdv = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
-            this.iconThisMonthAdv = new FontAwesome.Sharp.IconButton();
-            this.iconLastMonthAdv = new FontAwesome.Sharp.IconButton();
-            this.iconEditPageAdv = new FontAwesome.Sharp.IconButton();
-            this.iconAllAdv = new FontAwesome.Sharp.IconButton();
-            this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
-            this.iconSearchPageAdv = new FontAwesome.Sharp.IconButton();
-            this.iconClearPageAdv = new FontAwesome.Sharp.IconButton();
-            this.dataGridViewAdv = new System.Windows.Forms.DataGridView();
-            this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.cmbCasesPageAdv = new System.Windows.Forms.ComboBox();
-            this.txtWordPageAdv = new System.Windows.Forms.TextBox();
-            this.txtYearPageAdv = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.cmbMonthPageAdv = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.cmbGroupPageAdv = new System.Windows.Forms.ComboBox();
-            this.pageConjunctions = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtExplanationConj = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
-            this.labelTotalWordsConj = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
-            this.iconThisMonthConj = new FontAwesome.Sharp.IconButton();
-            this.iconLastMonthConj = new FontAwesome.Sharp.IconButton();
-            this.iconEditPageConj = new FontAwesome.Sharp.IconButton();
-            this.iconAllConj = new FontAwesome.Sharp.IconButton();
-            this.tableLayoutPanel23 = new System.Windows.Forms.TableLayoutPanel();
-            this.iconSearchPageConj = new FontAwesome.Sharp.IconButton();
-            this.iconClearPageConj = new FontAwesome.Sharp.IconButton();
-            this.dataGridViewConj = new System.Windows.Forms.DataGridView();
-            this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.cmbCasesPageConj = new System.Windows.Forms.ComboBox();
-            this.txtWordPageConj = new System.Windows.Forms.TextBox();
-            this.txtYearPageConj = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.cmbMonthPageConj = new System.Windows.Forms.ComboBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.cmbGroupPageConj = new System.Windows.Forms.ComboBox();
             this.pageNouns = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel26 = new System.Windows.Forms.TableLayoutPanel();
@@ -186,6 +156,66 @@
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.cmbGroupPagePhrase = new System.Windows.Forms.ComboBox();
+            this.pageAdverbs = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtExplanationAdv = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.labelTotalWordsAdv = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
+            this.iconThisMonthAdv = new FontAwesome.Sharp.IconButton();
+            this.iconLastMonthAdv = new FontAwesome.Sharp.IconButton();
+            this.iconEditPageAdv = new FontAwesome.Sharp.IconButton();
+            this.iconAllAdv = new FontAwesome.Sharp.IconButton();
+            this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
+            this.iconSearchPageAdv = new FontAwesome.Sharp.IconButton();
+            this.iconClearPageAdv = new FontAwesome.Sharp.IconButton();
+            this.dataGridViewAdv = new System.Windows.Forms.DataGridView();
+            this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.cmbCasesPageAdv = new System.Windows.Forms.ComboBox();
+            this.txtWordPageAdv = new System.Windows.Forms.TextBox();
+            this.txtYearPageAdv = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.cmbMonthPageAdv = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.cmbGroupPageAdv = new System.Windows.Forms.ComboBox();
+            this.pageConjunctions = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtExplanationConj = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
+            this.labelTotalWordsConj = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
+            this.iconThisMonthConj = new FontAwesome.Sharp.IconButton();
+            this.iconLastMonthConj = new FontAwesome.Sharp.IconButton();
+            this.iconEditPageConj = new FontAwesome.Sharp.IconButton();
+            this.iconAllConj = new FontAwesome.Sharp.IconButton();
+            this.tableLayoutPanel23 = new System.Windows.Forms.TableLayoutPanel();
+            this.iconSearchPageConj = new FontAwesome.Sharp.IconButton();
+            this.iconClearPageConj = new FontAwesome.Sharp.IconButton();
+            this.dataGridViewConj = new System.Windows.Forms.DataGridView();
+            this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.cmbCasesPageConj = new System.Windows.Forms.ComboBox();
+            this.txtWordPageConj = new System.Windows.Forms.TextBox();
+            this.txtYearPageConj = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.cmbMonthPageConj = new System.Windows.Forms.ComboBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.cmbGroupPageConj = new System.Windows.Forms.ComboBox();
             this.pageSentences = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel41 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel42 = new System.Windows.Forms.TableLayoutPanel();
@@ -201,6 +231,7 @@
             this.iconLastMonthSentence = new FontAwesome.Sharp.IconButton();
             this.iconEditPageSentence = new FontAwesome.Sharp.IconButton();
             this.iconAllSentence = new FontAwesome.Sharp.IconButton();
+            this.iconViewPageSentence = new FontAwesome.Sharp.IconButton();
             this.tableLayoutPanel47 = new System.Windows.Forms.TableLayoutPanel();
             this.iconSearchPageSentence = new FontAwesome.Sharp.IconButton();
             this.iconClearPageSentence = new FontAwesome.Sharp.IconButton();
@@ -216,37 +247,17 @@
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.cmbGroupPageSentence = new System.Windows.Forms.ComboBox();
-            this.pageVerbs = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel49 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel50 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtExplanationVerb = new System.Windows.Forms.TextBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel51 = new System.Windows.Forms.TableLayoutPanel();
-            this.labelTotalWordsVerb = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel52 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel53 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel54 = new System.Windows.Forms.TableLayoutPanel();
-            this.iconThisMonthVerb = new FontAwesome.Sharp.IconButton();
-            this.iconLastMonthVerb = new FontAwesome.Sharp.IconButton();
-            this.iconEditPageVerb = new FontAwesome.Sharp.IconButton();
-            this.iconAllVerb = new FontAwesome.Sharp.IconButton();
-            this.tableLayoutPanel55 = new System.Windows.Forms.TableLayoutPanel();
-            this.iconSearchPageVerb = new FontAwesome.Sharp.IconButton();
-            this.iconClearPageVerb = new FontAwesome.Sharp.IconButton();
-            this.dataGridViewVerb = new System.Windows.Forms.DataGridView();
-            this.tableLayoutPanel56 = new System.Windows.Forms.TableLayoutPanel();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.cmbCasesPageVerb = new System.Windows.Forms.ComboBox();
-            this.txtWordPageVerb = new System.Windows.Forms.TextBox();
-            this.txtYearPageVerb = new System.Windows.Forms.TextBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.cmbMonthPageVerb = new System.Windows.Forms.ComboBox();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.cmbGroupPageVerb = new System.Windows.Forms.ComboBox();
             this.tabControlPartsOfSpeech.SuspendLayout();
+            this.pageVerbs.SuspendLayout();
+            this.tableLayoutPanel49.SuspendLayout();
+            this.tableLayoutPanel50.SuspendLayout();
+            this.tableLayoutPanel51.SuspendLayout();
+            this.tableLayoutPanel52.SuspendLayout();
+            this.tableLayoutPanel53.SuspendLayout();
+            this.tableLayoutPanel54.SuspendLayout();
+            this.tableLayoutPanel55.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVerb)).BeginInit();
+            this.tableLayoutPanel56.SuspendLayout();
             this.pageAdjectives.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
@@ -257,26 +268,6 @@
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdj)).BeginInit();
             this.tableLayoutPanel5.SuspendLayout();
-            this.pageAdverbs.SuspendLayout();
-            this.tableLayoutPanel7.SuspendLayout();
-            this.tableLayoutPanel8.SuspendLayout();
-            this.tableLayoutPanel11.SuspendLayout();
-            this.tableLayoutPanel12.SuspendLayout();
-            this.tableLayoutPanel13.SuspendLayout();
-            this.tableLayoutPanel14.SuspendLayout();
-            this.tableLayoutPanel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdv)).BeginInit();
-            this.tableLayoutPanel16.SuspendLayout();
-            this.pageConjunctions.SuspendLayout();
-            this.tableLayoutPanel17.SuspendLayout();
-            this.tableLayoutPanel18.SuspendLayout();
-            this.tableLayoutPanel19.SuspendLayout();
-            this.tableLayoutPanel20.SuspendLayout();
-            this.tableLayoutPanel21.SuspendLayout();
-            this.tableLayoutPanel22.SuspendLayout();
-            this.tableLayoutPanel23.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConj)).BeginInit();
-            this.tableLayoutPanel24.SuspendLayout();
             this.pageNouns.SuspendLayout();
             this.tableLayoutPanel25.SuspendLayout();
             this.tableLayoutPanel26.SuspendLayout();
@@ -297,6 +288,26 @@
             this.tableLayoutPanel39.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhrase)).BeginInit();
             this.tableLayoutPanel40.SuspendLayout();
+            this.pageAdverbs.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
+            this.tableLayoutPanel8.SuspendLayout();
+            this.tableLayoutPanel11.SuspendLayout();
+            this.tableLayoutPanel12.SuspendLayout();
+            this.tableLayoutPanel13.SuspendLayout();
+            this.tableLayoutPanel14.SuspendLayout();
+            this.tableLayoutPanel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdv)).BeginInit();
+            this.tableLayoutPanel16.SuspendLayout();
+            this.pageConjunctions.SuspendLayout();
+            this.tableLayoutPanel17.SuspendLayout();
+            this.tableLayoutPanel18.SuspendLayout();
+            this.tableLayoutPanel19.SuspendLayout();
+            this.tableLayoutPanel20.SuspendLayout();
+            this.tableLayoutPanel21.SuspendLayout();
+            this.tableLayoutPanel22.SuspendLayout();
+            this.tableLayoutPanel23.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConj)).BeginInit();
+            this.tableLayoutPanel24.SuspendLayout();
             this.pageSentences.SuspendLayout();
             this.tableLayoutPanel41.SuspendLayout();
             this.tableLayoutPanel42.SuspendLayout();
@@ -307,27 +318,17 @@
             this.tableLayoutPanel47.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSentence)).BeginInit();
             this.tableLayoutPanel48.SuspendLayout();
-            this.pageVerbs.SuspendLayout();
-            this.tableLayoutPanel49.SuspendLayout();
-            this.tableLayoutPanel50.SuspendLayout();
-            this.tableLayoutPanel51.SuspendLayout();
-            this.tableLayoutPanel52.SuspendLayout();
-            this.tableLayoutPanel53.SuspendLayout();
-            this.tableLayoutPanel54.SuspendLayout();
-            this.tableLayoutPanel55.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVerb)).BeginInit();
-            this.tableLayoutPanel56.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlPartsOfSpeech
             // 
+            this.tabControlPartsOfSpeech.Controls.Add(this.pageVerbs);
             this.tabControlPartsOfSpeech.Controls.Add(this.pageAdjectives);
-            this.tabControlPartsOfSpeech.Controls.Add(this.pageAdverbs);
-            this.tabControlPartsOfSpeech.Controls.Add(this.pageConjunctions);
             this.tabControlPartsOfSpeech.Controls.Add(this.pageNouns);
             this.tabControlPartsOfSpeech.Controls.Add(this.pagePhrases);
+            this.tabControlPartsOfSpeech.Controls.Add(this.pageAdverbs);
+            this.tabControlPartsOfSpeech.Controls.Add(this.pageConjunctions);
             this.tabControlPartsOfSpeech.Controls.Add(this.pageSentences);
-            this.tabControlPartsOfSpeech.Controls.Add(this.pageVerbs);
             this.tabControlPartsOfSpeech.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlPartsOfSpeech.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControlPartsOfSpeech.Location = new System.Drawing.Point(0, 0);
@@ -335,6 +336,453 @@
             this.tabControlPartsOfSpeech.SelectedIndex = 0;
             this.tabControlPartsOfSpeech.Size = new System.Drawing.Size(731, 472);
             this.tabControlPartsOfSpeech.TabIndex = 0;
+            // 
+            // pageVerbs
+            // 
+            this.pageVerbs.Controls.Add(this.tableLayoutPanel49);
+            this.pageVerbs.Location = new System.Drawing.Point(4, 30);
+            this.pageVerbs.Name = "pageVerbs";
+            this.pageVerbs.Size = new System.Drawing.Size(723, 438);
+            this.pageVerbs.TabIndex = 6;
+            this.pageVerbs.Text = "Verben";
+            this.pageVerbs.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel49
+            // 
+            this.tableLayoutPanel49.ColumnCount = 1;
+            this.tableLayoutPanel49.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel49.Controls.Add(this.tableLayoutPanel50, 0, 2);
+            this.tableLayoutPanel49.Controls.Add(this.tableLayoutPanel52, 0, 1);
+            this.tableLayoutPanel49.Controls.Add(this.tableLayoutPanel56, 0, 0);
+            this.tableLayoutPanel49.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel49.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel49.Name = "tableLayoutPanel49";
+            this.tableLayoutPanel49.RowCount = 3;
+            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel49.Size = new System.Drawing.Size(723, 438);
+            this.tableLayoutPanel49.TabIndex = 7;
+            // 
+            // tableLayoutPanel50
+            // 
+            this.tableLayoutPanel50.ColumnCount = 3;
+            this.tableLayoutPanel50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel50.Controls.Add(this.txtExplanationVerb, 1, 0);
+            this.tableLayoutPanel50.Controls.Add(this.label37, 0, 0);
+            this.tableLayoutPanel50.Controls.Add(this.tableLayoutPanel51, 2, 0);
+            this.tableLayoutPanel50.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel50.Location = new System.Drawing.Point(3, 374);
+            this.tableLayoutPanel50.Name = "tableLayoutPanel50";
+            this.tableLayoutPanel50.RowCount = 1;
+            this.tableLayoutPanel50.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel50.Size = new System.Drawing.Size(717, 61);
+            this.tableLayoutPanel50.TabIndex = 10;
+            // 
+            // txtExplanationVerb
+            // 
+            this.txtExplanationVerb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtExplanationVerb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtExplanationVerb.Location = new System.Drawing.Point(110, 3);
+            this.txtExplanationVerb.Multiline = true;
+            this.txtExplanationVerb.Name = "txtExplanationVerb";
+            this.txtExplanationVerb.Size = new System.Drawing.Size(495, 55);
+            this.txtExplanationVerb.TabIndex = 37;
+            // 
+            // label37
+            // 
+            this.label37.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(6, 0);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(98, 21);
+            this.label37.TabIndex = 38;
+            this.label37.Text = "Bedeutung:";
+            // 
+            // tableLayoutPanel51
+            // 
+            this.tableLayoutPanel51.ColumnCount = 1;
+            this.tableLayoutPanel51.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel51.Controls.Add(this.labelTotalWordsVerb, 0, 1);
+            this.tableLayoutPanel51.Controls.Add(this.label45, 0, 0);
+            this.tableLayoutPanel51.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel51.Location = new System.Drawing.Point(611, 3);
+            this.tableLayoutPanel51.Name = "tableLayoutPanel51";
+            this.tableLayoutPanel51.RowCount = 2;
+            this.tableLayoutPanel51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel51.Size = new System.Drawing.Size(103, 55);
+            this.tableLayoutPanel51.TabIndex = 3;
+            // 
+            // labelTotalWordsVerb
+            // 
+            this.labelTotalWordsVerb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTotalWordsVerb.AutoSize = true;
+            this.labelTotalWordsVerb.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalWordsVerb.Location = new System.Drawing.Point(3, 27);
+            this.labelTotalWordsVerb.Name = "labelTotalWordsVerb";
+            this.labelTotalWordsVerb.Size = new System.Drawing.Size(97, 17);
+            this.labelTotalWordsVerb.TabIndex = 0;
+            this.labelTotalWordsVerb.Text = "0";
+            this.labelTotalWordsVerb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label45
+            // 
+            this.label45.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(3, 5);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(97, 17);
+            this.label45.TabIndex = 0;
+            this.label45.Text = "Total";
+            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel52
+            // 
+            this.tableLayoutPanel52.ColumnCount = 2;
+            this.tableLayoutPanel52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
+            this.tableLayoutPanel52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel52.Controls.Add(this.tableLayoutPanel53, 0, 0);
+            this.tableLayoutPanel52.Controls.Add(this.dataGridViewVerb, 0, 0);
+            this.tableLayoutPanel52.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel52.Location = new System.Drawing.Point(3, 68);
+            this.tableLayoutPanel52.Name = "tableLayoutPanel52";
+            this.tableLayoutPanel52.RowCount = 1;
+            this.tableLayoutPanel52.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel52.Size = new System.Drawing.Size(717, 300);
+            this.tableLayoutPanel52.TabIndex = 8;
+            // 
+            // tableLayoutPanel53
+            // 
+            this.tableLayoutPanel53.ColumnCount = 1;
+            this.tableLayoutPanel53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel53.Controls.Add(this.tableLayoutPanel54, 0, 2);
+            this.tableLayoutPanel53.Controls.Add(this.tableLayoutPanel55, 0, 0);
+            this.tableLayoutPanel53.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel53.Location = new System.Drawing.Point(612, 3);
+            this.tableLayoutPanel53.Name = "tableLayoutPanel53";
+            this.tableLayoutPanel53.RowCount = 3;
+            this.tableLayoutPanel53.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel53.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel53.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
+            this.tableLayoutPanel53.Size = new System.Drawing.Size(102, 294);
+            this.tableLayoutPanel53.TabIndex = 8;
+            // 
+            // tableLayoutPanel54
+            // 
+            this.tableLayoutPanel54.ColumnCount = 1;
+            this.tableLayoutPanel54.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel54.Controls.Add(this.iconThisMonthVerb, 0, 0);
+            this.tableLayoutPanel54.Controls.Add(this.iconLastMonthVerb, 0, 4);
+            this.tableLayoutPanel54.Controls.Add(this.iconEditPageVerb, 0, 6);
+            this.tableLayoutPanel54.Controls.Add(this.iconAllVerb, 0, 2);
+            this.tableLayoutPanel54.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel54.Location = new System.Drawing.Point(3, 135);
+            this.tableLayoutPanel54.Name = "tableLayoutPanel54";
+            this.tableLayoutPanel54.RowCount = 7;
+            this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
+            this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
+            this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
+            this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
+            this.tableLayoutPanel54.Size = new System.Drawing.Size(96, 156);
+            this.tableLayoutPanel54.TabIndex = 3;
+            // 
+            // iconThisMonthVerb
+            // 
+            this.iconThisMonthVerb.BackColor = System.Drawing.Color.MidnightBlue;
+            this.iconThisMonthVerb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconThisMonthVerb.FlatAppearance.BorderSize = 0;
+            this.iconThisMonthVerb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconThisMonthVerb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconThisMonthVerb.ForeColor = System.Drawing.Color.White;
+            this.iconThisMonthVerb.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconThisMonthVerb.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconThisMonthVerb.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconThisMonthVerb.IconSize = 32;
+            this.iconThisMonthVerb.Location = new System.Drawing.Point(3, 3);
+            this.iconThisMonthVerb.Name = "iconThisMonthVerb";
+            this.iconThisMonthVerb.Size = new System.Drawing.Size(90, 30);
+            this.iconThisMonthVerb.TabIndex = 15;
+            this.iconThisMonthVerb.Text = "This Month";
+            this.iconThisMonthVerb.UseVisualStyleBackColor = false;
+            this.iconThisMonthVerb.Click += new System.EventHandler(this.iconThisMonthVerb_Click);
+            // 
+            // iconLastMonthVerb
+            // 
+            this.iconLastMonthVerb.BackColor = System.Drawing.Color.MidnightBlue;
+            this.iconLastMonthVerb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconLastMonthVerb.FlatAppearance.BorderSize = 0;
+            this.iconLastMonthVerb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconLastMonthVerb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconLastMonthVerb.ForeColor = System.Drawing.Color.White;
+            this.iconLastMonthVerb.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconLastMonthVerb.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconLastMonthVerb.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconLastMonthVerb.IconSize = 32;
+            this.iconLastMonthVerb.Location = new System.Drawing.Point(3, 81);
+            this.iconLastMonthVerb.Name = "iconLastMonthVerb";
+            this.iconLastMonthVerb.Size = new System.Drawing.Size(90, 30);
+            this.iconLastMonthVerb.TabIndex = 15;
+            this.iconLastMonthVerb.Text = "Last Month";
+            this.iconLastMonthVerb.UseVisualStyleBackColor = false;
+            this.iconLastMonthVerb.Click += new System.EventHandler(this.iconLastMonthVerb_Click);
+            // 
+            // iconEditPageVerb
+            // 
+            this.iconEditPageVerb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconEditPageVerb.FlatAppearance.BorderSize = 0;
+            this.iconEditPageVerb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconEditPageVerb.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconEditPageVerb.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconEditPageVerb.IconChar = FontAwesome.Sharp.IconChar.Pen;
+            this.iconEditPageVerb.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconEditPageVerb.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconEditPageVerb.IconSize = 32;
+            this.iconEditPageVerb.Location = new System.Drawing.Point(3, 120);
+            this.iconEditPageVerb.Name = "iconEditPageVerb";
+            this.iconEditPageVerb.Size = new System.Drawing.Size(90, 33);
+            this.iconEditPageVerb.TabIndex = 15;
+            this.iconEditPageVerb.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconEditPageVerb.UseVisualStyleBackColor = true;
+            this.iconEditPageVerb.Click += new System.EventHandler(this.iconEditPageVerb_Click);
+            // 
+            // iconAllVerb
+            // 
+            this.iconAllVerb.BackColor = System.Drawing.Color.MidnightBlue;
+            this.iconAllVerb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconAllVerb.FlatAppearance.BorderSize = 0;
+            this.iconAllVerb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconAllVerb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconAllVerb.ForeColor = System.Drawing.Color.White;
+            this.iconAllVerb.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconAllVerb.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconAllVerb.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconAllVerb.IconSize = 32;
+            this.iconAllVerb.Location = new System.Drawing.Point(3, 42);
+            this.iconAllVerb.Name = "iconAllVerb";
+            this.iconAllVerb.Size = new System.Drawing.Size(90, 30);
+            this.iconAllVerb.TabIndex = 15;
+            this.iconAllVerb.Text = "All";
+            this.iconAllVerb.UseVisualStyleBackColor = false;
+            this.iconAllVerb.Click += new System.EventHandler(this.iconAllVerb_Click);
+            // 
+            // tableLayoutPanel55
+            // 
+            this.tableLayoutPanel55.ColumnCount = 1;
+            this.tableLayoutPanel55.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel55.Controls.Add(this.iconSearchPageVerb, 0, 0);
+            this.tableLayoutPanel55.Controls.Add(this.iconClearPageVerb, 0, 2);
+            this.tableLayoutPanel55.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel55.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel55.Name = "tableLayoutPanel55";
+            this.tableLayoutPanel55.RowCount = 3;
+            this.tableLayoutPanel55.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
+            this.tableLayoutPanel55.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel55.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
+            this.tableLayoutPanel55.Size = new System.Drawing.Size(96, 82);
+            this.tableLayoutPanel55.TabIndex = 3;
+            // 
+            // iconSearchPageVerb
+            // 
+            this.iconSearchPageVerb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconSearchPageVerb.FlatAppearance.BorderSize = 0;
+            this.iconSearchPageVerb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconSearchPageVerb.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconSearchPageVerb.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconSearchPageVerb.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.iconSearchPageVerb.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconSearchPageVerb.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconSearchPageVerb.IconSize = 32;
+            this.iconSearchPageVerb.Location = new System.Drawing.Point(3, 3);
+            this.iconSearchPageVerb.Name = "iconSearchPageVerb";
+            this.iconSearchPageVerb.Size = new System.Drawing.Size(90, 32);
+            this.iconSearchPageVerb.TabIndex = 15;
+            this.iconSearchPageVerb.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconSearchPageVerb.UseVisualStyleBackColor = true;
+            this.iconSearchPageVerb.Click += new System.EventHandler(this.iconSearchPageVerb_Click);
+            // 
+            // iconClearPageVerb
+            // 
+            this.iconClearPageVerb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconClearPageVerb.FlatAppearance.BorderSize = 0;
+            this.iconClearPageVerb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconClearPageVerb.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconClearPageVerb.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconClearPageVerb.IconChar = FontAwesome.Sharp.IconChar.Broom;
+            this.iconClearPageVerb.IconColor = System.Drawing.Color.Crimson;
+            this.iconClearPageVerb.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconClearPageVerb.IconSize = 32;
+            this.iconClearPageVerb.Location = new System.Drawing.Point(3, 45);
+            this.iconClearPageVerb.Name = "iconClearPageVerb";
+            this.iconClearPageVerb.Size = new System.Drawing.Size(90, 34);
+            this.iconClearPageVerb.TabIndex = 15;
+            this.iconClearPageVerb.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconClearPageVerb.UseVisualStyleBackColor = true;
+            this.iconClearPageVerb.Click += new System.EventHandler(this.iconClearPageVerb_Click);
+            // 
+            // dataGridViewVerb
+            // 
+            this.dataGridViewVerb.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewVerb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewVerb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewVerb.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewVerb.Name = "dataGridViewVerb";
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewVerb.RowsDefaultCellStyle = dataGridViewCellStyle36;
+            this.dataGridViewVerb.RowTemplate.Height = 30;
+            this.dataGridViewVerb.Size = new System.Drawing.Size(603, 294);
+            this.dataGridViewVerb.TabIndex = 7;
+            this.dataGridViewVerb.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewVerb_RowEnter);
+            // 
+            // tableLayoutPanel56
+            // 
+            this.tableLayoutPanel56.ColumnCount = 5;
+            this.tableLayoutPanel56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel56.Controls.Add(this.label46, 0, 0);
+            this.tableLayoutPanel56.Controls.Add(this.label47, 1, 0);
+            this.tableLayoutPanel56.Controls.Add(this.cmbCasesPageVerb, 1, 1);
+            this.tableLayoutPanel56.Controls.Add(this.txtWordPageVerb, 0, 1);
+            this.tableLayoutPanel56.Controls.Add(this.txtYearPageVerb, 4, 1);
+            this.tableLayoutPanel56.Controls.Add(this.label48, 4, 0);
+            this.tableLayoutPanel56.Controls.Add(this.cmbMonthPageVerb, 3, 1);
+            this.tableLayoutPanel56.Controls.Add(this.label49, 3, 0);
+            this.tableLayoutPanel56.Controls.Add(this.label50, 2, 0);
+            this.tableLayoutPanel56.Controls.Add(this.cmbGroupPageVerb, 2, 1);
+            this.tableLayoutPanel56.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel56.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel56.Name = "tableLayoutPanel56";
+            this.tableLayoutPanel56.RowCount = 2;
+            this.tableLayoutPanel56.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel56.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel56.Size = new System.Drawing.Size(717, 59);
+            this.tableLayoutPanel56.TabIndex = 9;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label46.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(3, 3);
+            this.label46.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(137, 26);
+            this.label46.TabIndex = 0;
+            this.label46.Text = "Wörter";
+            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label47.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.Location = new System.Drawing.Point(146, 3);
+            this.label47.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(173, 26);
+            this.label47.TabIndex = 0;
+            this.label47.Text = "Kasus";
+            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cmbCasesPageVerb
+            // 
+            this.cmbCasesPageVerb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbCasesPageVerb.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCasesPageVerb.FormattingEnabled = true;
+            this.cmbCasesPageVerb.Location = new System.Drawing.Point(146, 32);
+            this.cmbCasesPageVerb.Name = "cmbCasesPageVerb";
+            this.cmbCasesPageVerb.Size = new System.Drawing.Size(173, 28);
+            this.cmbCasesPageVerb.TabIndex = 6;
+            // 
+            // txtWordPageVerb
+            // 
+            this.txtWordPageVerb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtWordPageVerb.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWordPageVerb.Location = new System.Drawing.Point(3, 32);
+            this.txtWordPageVerb.Name = "txtWordPageVerb";
+            this.txtWordPageVerb.Size = new System.Drawing.Size(137, 27);
+            this.txtWordPageVerb.TabIndex = 2;
+            this.txtWordPageVerb.TextChanged += new System.EventHandler(this.txtWordPageVerb_TextChanged);
+            // 
+            // txtYearPageVerb
+            // 
+            this.txtYearPageVerb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtYearPageVerb.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtYearPageVerb.Location = new System.Drawing.Point(647, 32);
+            this.txtYearPageVerb.Name = "txtYearPageVerb";
+            this.txtYearPageVerb.Size = new System.Drawing.Size(67, 27);
+            this.txtYearPageVerb.TabIndex = 2;
+            this.txtYearPageVerb.TextChanged += new System.EventHandler(this.txtYearPageVerb_TextChanged);
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label48.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Location = new System.Drawing.Point(647, 3);
+            this.label48.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(67, 26);
+            this.label48.TabIndex = 0;
+            this.label48.Text = "Jahr";
+            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cmbMonthPageVerb
+            // 
+            this.cmbMonthPageVerb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbMonthPageVerb.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMonthPageVerb.FormattingEnabled = true;
+            this.cmbMonthPageVerb.Location = new System.Drawing.Point(540, 32);
+            this.cmbMonthPageVerb.Name = "cmbMonthPageVerb";
+            this.cmbMonthPageVerb.Size = new System.Drawing.Size(101, 28);
+            this.cmbMonthPageVerb.TabIndex = 6;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label49.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.Location = new System.Drawing.Point(540, 3);
+            this.label49.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(101, 26);
+            this.label49.TabIndex = 0;
+            this.label49.Text = "Monat";
+            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label50.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Location = new System.Drawing.Point(325, 3);
+            this.label50.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(209, 26);
+            this.label50.TabIndex = 0;
+            this.label50.Text = "Gruppen";
+            this.label50.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // cmbGroupPageVerb
+            // 
+            this.cmbGroupPageVerb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbGroupPageVerb.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbGroupPageVerb.FormattingEnabled = true;
+            this.cmbGroupPageVerb.Location = new System.Drawing.Point(325, 32);
+            this.cmbGroupPageVerb.Name = "cmbGroupPageVerb";
+            this.cmbGroupPageVerb.Size = new System.Drawing.Size(209, 28);
+            this.cmbGroupPageVerb.TabIndex = 6;
             // 
             // pageAdjectives
             // 
@@ -368,8 +816,8 @@
             // 
             this.tableLayoutPanel9.ColumnCount = 3;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel9.Controls.Add(this.txtExplanationAdj, 1, 0);
             this.tableLayoutPanel9.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel2, 2, 0);
@@ -388,7 +836,7 @@
             this.txtExplanationAdj.Location = new System.Drawing.Point(109, 3);
             this.txtExplanationAdj.Multiline = true;
             this.txtExplanationAdj.Name = "txtExplanationAdj";
-            this.txtExplanationAdj.Size = new System.Drawing.Size(527, 54);
+            this.txtExplanationAdj.Size = new System.Drawing.Size(491, 54);
             this.txtExplanationAdj.TabIndex = 37;
             // 
             // label3
@@ -409,12 +857,12 @@
             this.tableLayoutPanel2.Controls.Add(this.labelTotalWordsAdj, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label6, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(642, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(606, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(66, 54);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(102, 54);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
             // labelTotalWordsAdj
@@ -425,7 +873,7 @@
             this.labelTotalWordsAdj.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotalWordsAdj.Location = new System.Drawing.Point(3, 27);
             this.labelTotalWordsAdj.Name = "labelTotalWordsAdj";
-            this.labelTotalWordsAdj.Size = new System.Drawing.Size(60, 17);
+            this.labelTotalWordsAdj.Size = new System.Drawing.Size(96, 17);
             this.labelTotalWordsAdj.TabIndex = 0;
             this.labelTotalWordsAdj.Text = "0";
             this.labelTotalWordsAdj.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -437,7 +885,7 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(3, 5);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 17);
+            this.label6.Size = new System.Drawing.Size(96, 17);
             this.label6.TabIndex = 0;
             this.label6.Text = "Total";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -445,8 +893,8 @@
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel10, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.dataGridViewAdj, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -464,13 +912,13 @@
             this.tableLayoutPanel10.Controls.Add(this.tableLayoutPanel6, 0, 2);
             this.tableLayoutPanel10.Controls.Add(this.tableLayoutPanel4, 0, 0);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(586, 3);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(607, 3);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 3;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(122, 290);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(101, 290);
             this.tableLayoutPanel10.TabIndex = 8;
             // 
             // tableLayoutPanel6
@@ -492,7 +940,7 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(116, 154);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(95, 154);
             this.tableLayoutPanel6.TabIndex = 3;
             // 
             // iconThisMonthAdj
@@ -509,7 +957,7 @@
             this.iconThisMonthAdj.IconSize = 32;
             this.iconThisMonthAdj.Location = new System.Drawing.Point(3, 3);
             this.iconThisMonthAdj.Name = "iconThisMonthAdj";
-            this.iconThisMonthAdj.Size = new System.Drawing.Size(110, 30);
+            this.iconThisMonthAdj.Size = new System.Drawing.Size(89, 30);
             this.iconThisMonthAdj.TabIndex = 15;
             this.iconThisMonthAdj.Text = "This Month";
             this.iconThisMonthAdj.UseVisualStyleBackColor = false;
@@ -529,7 +977,7 @@
             this.iconLastMonthAdj.IconSize = 32;
             this.iconLastMonthAdj.Location = new System.Drawing.Point(3, 81);
             this.iconLastMonthAdj.Name = "iconLastMonthAdj";
-            this.iconLastMonthAdj.Size = new System.Drawing.Size(110, 30);
+            this.iconLastMonthAdj.Size = new System.Drawing.Size(89, 30);
             this.iconLastMonthAdj.TabIndex = 15;
             this.iconLastMonthAdj.Text = "Last Month";
             this.iconLastMonthAdj.UseVisualStyleBackColor = false;
@@ -548,7 +996,7 @@
             this.iconEditPageAdj.IconSize = 32;
             this.iconEditPageAdj.Location = new System.Drawing.Point(3, 120);
             this.iconEditPageAdj.Name = "iconEditPageAdj";
-            this.iconEditPageAdj.Size = new System.Drawing.Size(110, 31);
+            this.iconEditPageAdj.Size = new System.Drawing.Size(89, 31);
             this.iconEditPageAdj.TabIndex = 15;
             this.iconEditPageAdj.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconEditPageAdj.UseVisualStyleBackColor = true;
@@ -568,7 +1016,7 @@
             this.iconAllAdj.IconSize = 32;
             this.iconAllAdj.Location = new System.Drawing.Point(3, 42);
             this.iconAllAdj.Name = "iconAllAdj";
-            this.iconAllAdj.Size = new System.Drawing.Size(110, 30);
+            this.iconAllAdj.Size = new System.Drawing.Size(89, 30);
             this.iconAllAdj.TabIndex = 15;
             this.iconAllAdj.Text = "All";
             this.iconAllAdj.UseVisualStyleBackColor = false;
@@ -587,7 +1035,7 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(116, 81);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(95, 81);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
             // iconSearchPageAdj
@@ -603,7 +1051,7 @@
             this.iconSearchPageAdj.IconSize = 32;
             this.iconSearchPageAdj.Location = new System.Drawing.Point(3, 3);
             this.iconSearchPageAdj.Name = "iconSearchPageAdj";
-            this.iconSearchPageAdj.Size = new System.Drawing.Size(110, 32);
+            this.iconSearchPageAdj.Size = new System.Drawing.Size(89, 32);
             this.iconSearchPageAdj.TabIndex = 15;
             this.iconSearchPageAdj.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconSearchPageAdj.UseVisualStyleBackColor = true;
@@ -622,7 +1070,7 @@
             this.iconClearPageAdj.IconSize = 32;
             this.iconClearPageAdj.Location = new System.Drawing.Point(3, 45);
             this.iconClearPageAdj.Name = "iconClearPageAdj";
-            this.iconClearPageAdj.Size = new System.Drawing.Size(110, 33);
+            this.iconClearPageAdj.Size = new System.Drawing.Size(89, 33);
             this.iconClearPageAdj.TabIndex = 15;
             this.iconClearPageAdj.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconClearPageAdj.UseVisualStyleBackColor = true;
@@ -635,10 +1083,10 @@
             this.dataGridViewAdj.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewAdj.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewAdj.Name = "dataGridViewAdj";
-            dataGridViewCellStyle58.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewAdj.RowsDefaultCellStyle = dataGridViewCellStyle58;
+            dataGridViewCellStyle37.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewAdj.RowsDefaultCellStyle = dataGridViewCellStyle37;
             this.dataGridViewAdj.RowTemplate.Height = 30;
-            this.dataGridViewAdj.Size = new System.Drawing.Size(577, 290);
+            this.dataGridViewAdj.Size = new System.Drawing.Size(598, 290);
             this.dataGridViewAdj.TabIndex = 7;
             this.dataGridViewAdj.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAdj_RowEnter);
             // 
@@ -785,6 +1233,903 @@
             this.cmbGroupPageAdj.Size = new System.Drawing.Size(207, 28);
             this.cmbGroupPageAdj.TabIndex = 6;
             // 
+            // pageNouns
+            // 
+            this.pageNouns.Controls.Add(this.tableLayoutPanel25);
+            this.pageNouns.Location = new System.Drawing.Point(4, 30);
+            this.pageNouns.Name = "pageNouns";
+            this.pageNouns.Size = new System.Drawing.Size(723, 438);
+            this.pageNouns.TabIndex = 2;
+            this.pageNouns.Text = "Nomen";
+            this.pageNouns.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel25
+            // 
+            this.tableLayoutPanel25.ColumnCount = 1;
+            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel25.Controls.Add(this.tableLayoutPanel26, 0, 2);
+            this.tableLayoutPanel25.Controls.Add(this.tableLayoutPanel28, 0, 1);
+            this.tableLayoutPanel25.Controls.Add(this.tableLayoutPanel32, 0, 0);
+            this.tableLayoutPanel25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel25.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel25.Name = "tableLayoutPanel25";
+            this.tableLayoutPanel25.RowCount = 3;
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel25.Size = new System.Drawing.Size(723, 438);
+            this.tableLayoutPanel25.TabIndex = 4;
+            // 
+            // tableLayoutPanel26
+            // 
+            this.tableLayoutPanel26.ColumnCount = 3;
+            this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel26.Controls.Add(this.txtExplanationNoun, 1, 0);
+            this.tableLayoutPanel26.Controls.Add(this.label16, 0, 0);
+            this.tableLayoutPanel26.Controls.Add(this.tableLayoutPanel27, 2, 0);
+            this.tableLayoutPanel26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel26.Location = new System.Drawing.Point(3, 374);
+            this.tableLayoutPanel26.Name = "tableLayoutPanel26";
+            this.tableLayoutPanel26.RowCount = 1;
+            this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel26.Size = new System.Drawing.Size(717, 61);
+            this.tableLayoutPanel26.TabIndex = 10;
+            // 
+            // txtExplanationNoun
+            // 
+            this.txtExplanationNoun.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtExplanationNoun.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtExplanationNoun.Location = new System.Drawing.Point(110, 3);
+            this.txtExplanationNoun.Multiline = true;
+            this.txtExplanationNoun.Name = "txtExplanationNoun";
+            this.txtExplanationNoun.Size = new System.Drawing.Size(495, 55);
+            this.txtExplanationNoun.TabIndex = 37;
+            // 
+            // label16
+            // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(6, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(98, 21);
+            this.label16.TabIndex = 38;
+            this.label16.Text = "Bedeutung:";
+            // 
+            // tableLayoutPanel27
+            // 
+            this.tableLayoutPanel27.ColumnCount = 1;
+            this.tableLayoutPanel27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel27.Controls.Add(this.labelTotalWordsNoun, 0, 1);
+            this.tableLayoutPanel27.Controls.Add(this.label24, 0, 0);
+            this.tableLayoutPanel27.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel27.Location = new System.Drawing.Point(611, 3);
+            this.tableLayoutPanel27.Name = "tableLayoutPanel27";
+            this.tableLayoutPanel27.RowCount = 2;
+            this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel27.Size = new System.Drawing.Size(103, 55);
+            this.tableLayoutPanel27.TabIndex = 3;
+            // 
+            // labelTotalWordsNoun
+            // 
+            this.labelTotalWordsNoun.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTotalWordsNoun.AutoSize = true;
+            this.labelTotalWordsNoun.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalWordsNoun.Location = new System.Drawing.Point(3, 27);
+            this.labelTotalWordsNoun.Name = "labelTotalWordsNoun";
+            this.labelTotalWordsNoun.Size = new System.Drawing.Size(97, 17);
+            this.labelTotalWordsNoun.TabIndex = 0;
+            this.labelTotalWordsNoun.Text = "0";
+            this.labelTotalWordsNoun.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label24
+            // 
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(3, 5);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(97, 17);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "Total";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel28
+            // 
+            this.tableLayoutPanel28.ColumnCount = 2;
+            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
+            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel28.Controls.Add(this.tableLayoutPanel29, 0, 0);
+            this.tableLayoutPanel28.Controls.Add(this.dataGridViewNoun, 0, 0);
+            this.tableLayoutPanel28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel28.Location = new System.Drawing.Point(3, 68);
+            this.tableLayoutPanel28.Name = "tableLayoutPanel28";
+            this.tableLayoutPanel28.RowCount = 1;
+            this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel28.Size = new System.Drawing.Size(717, 300);
+            this.tableLayoutPanel28.TabIndex = 8;
+            // 
+            // tableLayoutPanel29
+            // 
+            this.tableLayoutPanel29.ColumnCount = 1;
+            this.tableLayoutPanel29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel29.Controls.Add(this.tableLayoutPanel30, 0, 2);
+            this.tableLayoutPanel29.Controls.Add(this.tableLayoutPanel31, 0, 0);
+            this.tableLayoutPanel29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel29.Location = new System.Drawing.Point(612, 3);
+            this.tableLayoutPanel29.Name = "tableLayoutPanel29";
+            this.tableLayoutPanel29.RowCount = 3;
+            this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
+            this.tableLayoutPanel29.Size = new System.Drawing.Size(102, 294);
+            this.tableLayoutPanel29.TabIndex = 8;
+            // 
+            // tableLayoutPanel30
+            // 
+            this.tableLayoutPanel30.ColumnCount = 1;
+            this.tableLayoutPanel30.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel30.Controls.Add(this.iconThisMonthNoun, 0, 0);
+            this.tableLayoutPanel30.Controls.Add(this.iconLastMonthNoun, 0, 4);
+            this.tableLayoutPanel30.Controls.Add(this.iconEditPageNoun, 0, 6);
+            this.tableLayoutPanel30.Controls.Add(this.iconAllNoun, 0, 2);
+            this.tableLayoutPanel30.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel30.Location = new System.Drawing.Point(3, 135);
+            this.tableLayoutPanel30.Name = "tableLayoutPanel30";
+            this.tableLayoutPanel30.RowCount = 7;
+            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
+            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
+            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
+            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
+            this.tableLayoutPanel30.Size = new System.Drawing.Size(96, 156);
+            this.tableLayoutPanel30.TabIndex = 3;
+            // 
+            // iconThisMonthNoun
+            // 
+            this.iconThisMonthNoun.BackColor = System.Drawing.Color.MidnightBlue;
+            this.iconThisMonthNoun.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconThisMonthNoun.FlatAppearance.BorderSize = 0;
+            this.iconThisMonthNoun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconThisMonthNoun.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconThisMonthNoun.ForeColor = System.Drawing.Color.White;
+            this.iconThisMonthNoun.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconThisMonthNoun.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconThisMonthNoun.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconThisMonthNoun.IconSize = 32;
+            this.iconThisMonthNoun.Location = new System.Drawing.Point(3, 3);
+            this.iconThisMonthNoun.Name = "iconThisMonthNoun";
+            this.iconThisMonthNoun.Size = new System.Drawing.Size(90, 30);
+            this.iconThisMonthNoun.TabIndex = 15;
+            this.iconThisMonthNoun.Text = "This Month";
+            this.iconThisMonthNoun.UseVisualStyleBackColor = false;
+            this.iconThisMonthNoun.Click += new System.EventHandler(this.iconThisMonthNoun_Click);
+            // 
+            // iconLastMonthNoun
+            // 
+            this.iconLastMonthNoun.BackColor = System.Drawing.Color.MidnightBlue;
+            this.iconLastMonthNoun.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconLastMonthNoun.FlatAppearance.BorderSize = 0;
+            this.iconLastMonthNoun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconLastMonthNoun.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconLastMonthNoun.ForeColor = System.Drawing.Color.White;
+            this.iconLastMonthNoun.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconLastMonthNoun.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconLastMonthNoun.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconLastMonthNoun.IconSize = 32;
+            this.iconLastMonthNoun.Location = new System.Drawing.Point(3, 81);
+            this.iconLastMonthNoun.Name = "iconLastMonthNoun";
+            this.iconLastMonthNoun.Size = new System.Drawing.Size(90, 30);
+            this.iconLastMonthNoun.TabIndex = 15;
+            this.iconLastMonthNoun.Text = "Last Month";
+            this.iconLastMonthNoun.UseVisualStyleBackColor = false;
+            this.iconLastMonthNoun.Click += new System.EventHandler(this.iconLastMonthNoun_Click);
+            // 
+            // iconEditPageNoun
+            // 
+            this.iconEditPageNoun.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconEditPageNoun.FlatAppearance.BorderSize = 0;
+            this.iconEditPageNoun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconEditPageNoun.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconEditPageNoun.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconEditPageNoun.IconChar = FontAwesome.Sharp.IconChar.Pen;
+            this.iconEditPageNoun.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconEditPageNoun.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconEditPageNoun.IconSize = 32;
+            this.iconEditPageNoun.Location = new System.Drawing.Point(3, 120);
+            this.iconEditPageNoun.Name = "iconEditPageNoun";
+            this.iconEditPageNoun.Size = new System.Drawing.Size(90, 33);
+            this.iconEditPageNoun.TabIndex = 15;
+            this.iconEditPageNoun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconEditPageNoun.UseVisualStyleBackColor = true;
+            this.iconEditPageNoun.Click += new System.EventHandler(this.iconEditPageNoun_Click);
+            // 
+            // iconAllNoun
+            // 
+            this.iconAllNoun.BackColor = System.Drawing.Color.MidnightBlue;
+            this.iconAllNoun.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconAllNoun.FlatAppearance.BorderSize = 0;
+            this.iconAllNoun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconAllNoun.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconAllNoun.ForeColor = System.Drawing.Color.White;
+            this.iconAllNoun.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconAllNoun.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconAllNoun.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconAllNoun.IconSize = 32;
+            this.iconAllNoun.Location = new System.Drawing.Point(3, 42);
+            this.iconAllNoun.Name = "iconAllNoun";
+            this.iconAllNoun.Size = new System.Drawing.Size(90, 30);
+            this.iconAllNoun.TabIndex = 15;
+            this.iconAllNoun.Text = "All";
+            this.iconAllNoun.UseVisualStyleBackColor = false;
+            this.iconAllNoun.Click += new System.EventHandler(this.iconAllNoun_Click);
+            // 
+            // tableLayoutPanel31
+            // 
+            this.tableLayoutPanel31.ColumnCount = 1;
+            this.tableLayoutPanel31.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel31.Controls.Add(this.iconSearchPageNoun, 0, 0);
+            this.tableLayoutPanel31.Controls.Add(this.iconClearPageNoun, 0, 2);
+            this.tableLayoutPanel31.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel31.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel31.Name = "tableLayoutPanel31";
+            this.tableLayoutPanel31.RowCount = 3;
+            this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
+            this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
+            this.tableLayoutPanel31.Size = new System.Drawing.Size(96, 82);
+            this.tableLayoutPanel31.TabIndex = 3;
+            // 
+            // iconSearchPageNoun
+            // 
+            this.iconSearchPageNoun.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconSearchPageNoun.FlatAppearance.BorderSize = 0;
+            this.iconSearchPageNoun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconSearchPageNoun.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconSearchPageNoun.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconSearchPageNoun.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.iconSearchPageNoun.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconSearchPageNoun.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconSearchPageNoun.IconSize = 32;
+            this.iconSearchPageNoun.Location = new System.Drawing.Point(3, 3);
+            this.iconSearchPageNoun.Name = "iconSearchPageNoun";
+            this.iconSearchPageNoun.Size = new System.Drawing.Size(90, 32);
+            this.iconSearchPageNoun.TabIndex = 15;
+            this.iconSearchPageNoun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconSearchPageNoun.UseVisualStyleBackColor = true;
+            this.iconSearchPageNoun.Click += new System.EventHandler(this.iconSearchPageNoun_Click);
+            // 
+            // iconClearPageNoun
+            // 
+            this.iconClearPageNoun.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconClearPageNoun.FlatAppearance.BorderSize = 0;
+            this.iconClearPageNoun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconClearPageNoun.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconClearPageNoun.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconClearPageNoun.IconChar = FontAwesome.Sharp.IconChar.Broom;
+            this.iconClearPageNoun.IconColor = System.Drawing.Color.Crimson;
+            this.iconClearPageNoun.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconClearPageNoun.IconSize = 32;
+            this.iconClearPageNoun.Location = new System.Drawing.Point(3, 45);
+            this.iconClearPageNoun.Name = "iconClearPageNoun";
+            this.iconClearPageNoun.Size = new System.Drawing.Size(90, 34);
+            this.iconClearPageNoun.TabIndex = 15;
+            this.iconClearPageNoun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconClearPageNoun.UseVisualStyleBackColor = true;
+            this.iconClearPageNoun.Click += new System.EventHandler(this.iconClearPageNoun_Click);
+            // 
+            // dataGridViewNoun
+            // 
+            this.dataGridViewNoun.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewNoun.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewNoun.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewNoun.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewNoun.Name = "dataGridViewNoun";
+            dataGridViewCellStyle38.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewNoun.RowsDefaultCellStyle = dataGridViewCellStyle38;
+            this.dataGridViewNoun.RowTemplate.Height = 30;
+            this.dataGridViewNoun.Size = new System.Drawing.Size(603, 294);
+            this.dataGridViewNoun.TabIndex = 7;
+            this.dataGridViewNoun.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewNoun_RowEnter);
+            // 
+            // tableLayoutPanel32
+            // 
+            this.tableLayoutPanel32.ColumnCount = 5;
+            this.tableLayoutPanel32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel32.Controls.Add(this.label25, 0, 0);
+            this.tableLayoutPanel32.Controls.Add(this.label26, 1, 0);
+            this.tableLayoutPanel32.Controls.Add(this.cmbCasesPageNoun, 1, 1);
+            this.tableLayoutPanel32.Controls.Add(this.txtWordPageNoun, 0, 1);
+            this.tableLayoutPanel32.Controls.Add(this.txtYearPageNoun, 4, 1);
+            this.tableLayoutPanel32.Controls.Add(this.label27, 4, 0);
+            this.tableLayoutPanel32.Controls.Add(this.cmbMonthPageNoun, 3, 1);
+            this.tableLayoutPanel32.Controls.Add(this.label28, 3, 0);
+            this.tableLayoutPanel32.Controls.Add(this.label29, 2, 0);
+            this.tableLayoutPanel32.Controls.Add(this.cmbGroupPageNoun, 2, 1);
+            this.tableLayoutPanel32.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel32.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel32.Name = "tableLayoutPanel32";
+            this.tableLayoutPanel32.RowCount = 2;
+            this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel32.Size = new System.Drawing.Size(717, 59);
+            this.tableLayoutPanel32.TabIndex = 9;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(3, 3);
+            this.label25.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(137, 26);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "Wörter";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label26.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(146, 3);
+            this.label26.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(173, 26);
+            this.label26.TabIndex = 0;
+            this.label26.Text = "Kasus";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cmbCasesPageNoun
+            // 
+            this.cmbCasesPageNoun.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbCasesPageNoun.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCasesPageNoun.FormattingEnabled = true;
+            this.cmbCasesPageNoun.Location = new System.Drawing.Point(146, 32);
+            this.cmbCasesPageNoun.Name = "cmbCasesPageNoun";
+            this.cmbCasesPageNoun.Size = new System.Drawing.Size(173, 28);
+            this.cmbCasesPageNoun.TabIndex = 6;
+            // 
+            // txtWordPageNoun
+            // 
+            this.txtWordPageNoun.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtWordPageNoun.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWordPageNoun.Location = new System.Drawing.Point(3, 32);
+            this.txtWordPageNoun.Name = "txtWordPageNoun";
+            this.txtWordPageNoun.Size = new System.Drawing.Size(137, 27);
+            this.txtWordPageNoun.TabIndex = 2;
+            this.txtWordPageNoun.TextChanged += new System.EventHandler(this.txtWordPageNoun_TextChanged);
+            // 
+            // txtYearPageNoun
+            // 
+            this.txtYearPageNoun.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtYearPageNoun.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtYearPageNoun.Location = new System.Drawing.Point(647, 32);
+            this.txtYearPageNoun.Name = "txtYearPageNoun";
+            this.txtYearPageNoun.Size = new System.Drawing.Size(67, 27);
+            this.txtYearPageNoun.TabIndex = 2;
+            this.txtYearPageNoun.TextChanged += new System.EventHandler(this.txtYearPageNoun_TextChanged);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label27.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(647, 3);
+            this.label27.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(67, 26);
+            this.label27.TabIndex = 0;
+            this.label27.Text = "Jahr";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cmbMonthPageNoun
+            // 
+            this.cmbMonthPageNoun.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbMonthPageNoun.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMonthPageNoun.FormattingEnabled = true;
+            this.cmbMonthPageNoun.Location = new System.Drawing.Point(540, 32);
+            this.cmbMonthPageNoun.Name = "cmbMonthPageNoun";
+            this.cmbMonthPageNoun.Size = new System.Drawing.Size(101, 28);
+            this.cmbMonthPageNoun.TabIndex = 6;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label28.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(540, 3);
+            this.label28.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(101, 26);
+            this.label28.TabIndex = 0;
+            this.label28.Text = "Monat";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label29.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(325, 3);
+            this.label29.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(209, 26);
+            this.label29.TabIndex = 0;
+            this.label29.Text = "Gruppen";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // cmbGroupPageNoun
+            // 
+            this.cmbGroupPageNoun.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbGroupPageNoun.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbGroupPageNoun.FormattingEnabled = true;
+            this.cmbGroupPageNoun.Location = new System.Drawing.Point(325, 32);
+            this.cmbGroupPageNoun.Name = "cmbGroupPageNoun";
+            this.cmbGroupPageNoun.Size = new System.Drawing.Size(209, 28);
+            this.cmbGroupPageNoun.TabIndex = 6;
+            // 
+            // pagePhrases
+            // 
+            this.pagePhrases.Controls.Add(this.tableLayoutPanel33);
+            this.pagePhrases.Location = new System.Drawing.Point(4, 30);
+            this.pagePhrases.Name = "pagePhrases";
+            this.pagePhrases.Size = new System.Drawing.Size(723, 438);
+            this.pagePhrases.TabIndex = 5;
+            this.pagePhrases.Text = "Phrasen & Idioms";
+            this.pagePhrases.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel33
+            // 
+            this.tableLayoutPanel33.ColumnCount = 1;
+            this.tableLayoutPanel33.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel33.Controls.Add(this.tableLayoutPanel34, 0, 2);
+            this.tableLayoutPanel33.Controls.Add(this.tableLayoutPanel36, 0, 1);
+            this.tableLayoutPanel33.Controls.Add(this.tableLayoutPanel40, 0, 0);
+            this.tableLayoutPanel33.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel33.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel33.Name = "tableLayoutPanel33";
+            this.tableLayoutPanel33.RowCount = 3;
+            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel33.Size = new System.Drawing.Size(723, 438);
+            this.tableLayoutPanel33.TabIndex = 5;
+            // 
+            // tableLayoutPanel34
+            // 
+            this.tableLayoutPanel34.ColumnCount = 3;
+            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel34.Controls.Add(this.txtExplanationPhrase, 1, 0);
+            this.tableLayoutPanel34.Controls.Add(this.label23, 0, 0);
+            this.tableLayoutPanel34.Controls.Add(this.tableLayoutPanel35, 2, 0);
+            this.tableLayoutPanel34.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel34.Location = new System.Drawing.Point(3, 374);
+            this.tableLayoutPanel34.Name = "tableLayoutPanel34";
+            this.tableLayoutPanel34.RowCount = 1;
+            this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel34.Size = new System.Drawing.Size(717, 61);
+            this.tableLayoutPanel34.TabIndex = 10;
+            // 
+            // txtExplanationPhrase
+            // 
+            this.txtExplanationPhrase.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtExplanationPhrase.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtExplanationPhrase.Location = new System.Drawing.Point(110, 3);
+            this.txtExplanationPhrase.Multiline = true;
+            this.txtExplanationPhrase.Name = "txtExplanationPhrase";
+            this.txtExplanationPhrase.Size = new System.Drawing.Size(495, 55);
+            this.txtExplanationPhrase.TabIndex = 37;
+            // 
+            // label23
+            // 
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(6, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(98, 21);
+            this.label23.TabIndex = 38;
+            this.label23.Text = "Bedeutung:";
+            // 
+            // tableLayoutPanel35
+            // 
+            this.tableLayoutPanel35.ColumnCount = 1;
+            this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel35.Controls.Add(this.labelTotalWordsPhrase, 0, 1);
+            this.tableLayoutPanel35.Controls.Add(this.label31, 0, 0);
+            this.tableLayoutPanel35.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel35.Location = new System.Drawing.Point(611, 3);
+            this.tableLayoutPanel35.Name = "tableLayoutPanel35";
+            this.tableLayoutPanel35.RowCount = 2;
+            this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel35.Size = new System.Drawing.Size(103, 55);
+            this.tableLayoutPanel35.TabIndex = 3;
+            // 
+            // labelTotalWordsPhrase
+            // 
+            this.labelTotalWordsPhrase.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTotalWordsPhrase.AutoSize = true;
+            this.labelTotalWordsPhrase.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalWordsPhrase.Location = new System.Drawing.Point(3, 27);
+            this.labelTotalWordsPhrase.Name = "labelTotalWordsPhrase";
+            this.labelTotalWordsPhrase.Size = new System.Drawing.Size(97, 17);
+            this.labelTotalWordsPhrase.TabIndex = 0;
+            this.labelTotalWordsPhrase.Text = "0";
+            this.labelTotalWordsPhrase.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label31
+            // 
+            this.label31.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(3, 5);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(97, 17);
+            this.label31.TabIndex = 0;
+            this.label31.Text = "Total";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel36
+            // 
+            this.tableLayoutPanel36.ColumnCount = 2;
+            this.tableLayoutPanel36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
+            this.tableLayoutPanel36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel36.Controls.Add(this.tableLayoutPanel37, 0, 0);
+            this.tableLayoutPanel36.Controls.Add(this.dataGridViewPhrase, 0, 0);
+            this.tableLayoutPanel36.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel36.Location = new System.Drawing.Point(3, 68);
+            this.tableLayoutPanel36.Name = "tableLayoutPanel36";
+            this.tableLayoutPanel36.RowCount = 1;
+            this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel36.Size = new System.Drawing.Size(717, 300);
+            this.tableLayoutPanel36.TabIndex = 8;
+            // 
+            // tableLayoutPanel37
+            // 
+            this.tableLayoutPanel37.ColumnCount = 1;
+            this.tableLayoutPanel37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel37.Controls.Add(this.tableLayoutPanel38, 0, 2);
+            this.tableLayoutPanel37.Controls.Add(this.tableLayoutPanel39, 0, 0);
+            this.tableLayoutPanel37.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel37.Location = new System.Drawing.Point(612, 3);
+            this.tableLayoutPanel37.Name = "tableLayoutPanel37";
+            this.tableLayoutPanel37.RowCount = 3;
+            this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
+            this.tableLayoutPanel37.Size = new System.Drawing.Size(102, 294);
+            this.tableLayoutPanel37.TabIndex = 8;
+            // 
+            // tableLayoutPanel38
+            // 
+            this.tableLayoutPanel38.ColumnCount = 1;
+            this.tableLayoutPanel38.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel38.Controls.Add(this.iconThisMonthPhrase, 0, 0);
+            this.tableLayoutPanel38.Controls.Add(this.iconLastMonthPhrase, 0, 4);
+            this.tableLayoutPanel38.Controls.Add(this.iconEditPagePhrase, 0, 6);
+            this.tableLayoutPanel38.Controls.Add(this.iconAllPhrase, 0, 2);
+            this.tableLayoutPanel38.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel38.Location = new System.Drawing.Point(3, 135);
+            this.tableLayoutPanel38.Name = "tableLayoutPanel38";
+            this.tableLayoutPanel38.RowCount = 7;
+            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
+            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
+            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
+            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
+            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel38.Size = new System.Drawing.Size(96, 156);
+            this.tableLayoutPanel38.TabIndex = 3;
+            // 
+            // iconThisMonthPhrase
+            // 
+            this.iconThisMonthPhrase.BackColor = System.Drawing.Color.MidnightBlue;
+            this.iconThisMonthPhrase.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconThisMonthPhrase.FlatAppearance.BorderSize = 0;
+            this.iconThisMonthPhrase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconThisMonthPhrase.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconThisMonthPhrase.ForeColor = System.Drawing.Color.White;
+            this.iconThisMonthPhrase.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconThisMonthPhrase.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconThisMonthPhrase.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconThisMonthPhrase.IconSize = 32;
+            this.iconThisMonthPhrase.Location = new System.Drawing.Point(3, 3);
+            this.iconThisMonthPhrase.Name = "iconThisMonthPhrase";
+            this.iconThisMonthPhrase.Size = new System.Drawing.Size(90, 30);
+            this.iconThisMonthPhrase.TabIndex = 15;
+            this.iconThisMonthPhrase.Text = "This Month";
+            this.iconThisMonthPhrase.UseVisualStyleBackColor = false;
+            this.iconThisMonthPhrase.Click += new System.EventHandler(this.iconThisMonthPhrase_Click);
+            // 
+            // iconLastMonthPhrase
+            // 
+            this.iconLastMonthPhrase.BackColor = System.Drawing.Color.MidnightBlue;
+            this.iconLastMonthPhrase.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconLastMonthPhrase.FlatAppearance.BorderSize = 0;
+            this.iconLastMonthPhrase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconLastMonthPhrase.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconLastMonthPhrase.ForeColor = System.Drawing.Color.White;
+            this.iconLastMonthPhrase.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconLastMonthPhrase.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconLastMonthPhrase.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconLastMonthPhrase.IconSize = 32;
+            this.iconLastMonthPhrase.Location = new System.Drawing.Point(3, 81);
+            this.iconLastMonthPhrase.Name = "iconLastMonthPhrase";
+            this.iconLastMonthPhrase.Size = new System.Drawing.Size(90, 30);
+            this.iconLastMonthPhrase.TabIndex = 15;
+            this.iconLastMonthPhrase.Text = "Last Month";
+            this.iconLastMonthPhrase.UseVisualStyleBackColor = false;
+            this.iconLastMonthPhrase.Click += new System.EventHandler(this.iconLastMonthPhrase_Click);
+            // 
+            // iconEditPagePhrase
+            // 
+            this.iconEditPagePhrase.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconEditPagePhrase.FlatAppearance.BorderSize = 0;
+            this.iconEditPagePhrase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconEditPagePhrase.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconEditPagePhrase.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconEditPagePhrase.IconChar = FontAwesome.Sharp.IconChar.Pen;
+            this.iconEditPagePhrase.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconEditPagePhrase.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconEditPagePhrase.IconSize = 32;
+            this.iconEditPagePhrase.Location = new System.Drawing.Point(3, 120);
+            this.iconEditPagePhrase.Name = "iconEditPagePhrase";
+            this.iconEditPagePhrase.Size = new System.Drawing.Size(90, 33);
+            this.iconEditPagePhrase.TabIndex = 15;
+            this.iconEditPagePhrase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconEditPagePhrase.UseVisualStyleBackColor = true;
+            this.iconEditPagePhrase.Click += new System.EventHandler(this.iconEditPagePhrase_Click);
+            // 
+            // iconAllPhrase
+            // 
+            this.iconAllPhrase.BackColor = System.Drawing.Color.MidnightBlue;
+            this.iconAllPhrase.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconAllPhrase.FlatAppearance.BorderSize = 0;
+            this.iconAllPhrase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconAllPhrase.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconAllPhrase.ForeColor = System.Drawing.Color.White;
+            this.iconAllPhrase.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconAllPhrase.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconAllPhrase.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconAllPhrase.IconSize = 32;
+            this.iconAllPhrase.Location = new System.Drawing.Point(3, 42);
+            this.iconAllPhrase.Name = "iconAllPhrase";
+            this.iconAllPhrase.Size = new System.Drawing.Size(90, 30);
+            this.iconAllPhrase.TabIndex = 15;
+            this.iconAllPhrase.Text = "All";
+            this.iconAllPhrase.UseVisualStyleBackColor = false;
+            this.iconAllPhrase.Click += new System.EventHandler(this.iconAllPhrase_Click);
+            // 
+            // tableLayoutPanel39
+            // 
+            this.tableLayoutPanel39.ColumnCount = 1;
+            this.tableLayoutPanel39.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel39.Controls.Add(this.iconSearchPagePhrase, 0, 0);
+            this.tableLayoutPanel39.Controls.Add(this.iconClearPagePhrase, 0, 2);
+            this.tableLayoutPanel39.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel39.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel39.Name = "tableLayoutPanel39";
+            this.tableLayoutPanel39.RowCount = 3;
+            this.tableLayoutPanel39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
+            this.tableLayoutPanel39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
+            this.tableLayoutPanel39.Size = new System.Drawing.Size(96, 82);
+            this.tableLayoutPanel39.TabIndex = 3;
+            // 
+            // iconSearchPagePhrase
+            // 
+            this.iconSearchPagePhrase.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconSearchPagePhrase.FlatAppearance.BorderSize = 0;
+            this.iconSearchPagePhrase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconSearchPagePhrase.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconSearchPagePhrase.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconSearchPagePhrase.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.iconSearchPagePhrase.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconSearchPagePhrase.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconSearchPagePhrase.IconSize = 32;
+            this.iconSearchPagePhrase.Location = new System.Drawing.Point(3, 3);
+            this.iconSearchPagePhrase.Name = "iconSearchPagePhrase";
+            this.iconSearchPagePhrase.Size = new System.Drawing.Size(90, 32);
+            this.iconSearchPagePhrase.TabIndex = 15;
+            this.iconSearchPagePhrase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconSearchPagePhrase.UseVisualStyleBackColor = true;
+            this.iconSearchPagePhrase.Click += new System.EventHandler(this.iconSearchPagePhrase_Click);
+            // 
+            // iconClearPagePhrase
+            // 
+            this.iconClearPagePhrase.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconClearPagePhrase.FlatAppearance.BorderSize = 0;
+            this.iconClearPagePhrase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconClearPagePhrase.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconClearPagePhrase.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconClearPagePhrase.IconChar = FontAwesome.Sharp.IconChar.Broom;
+            this.iconClearPagePhrase.IconColor = System.Drawing.Color.Crimson;
+            this.iconClearPagePhrase.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconClearPagePhrase.IconSize = 32;
+            this.iconClearPagePhrase.Location = new System.Drawing.Point(3, 45);
+            this.iconClearPagePhrase.Name = "iconClearPagePhrase";
+            this.iconClearPagePhrase.Size = new System.Drawing.Size(90, 34);
+            this.iconClearPagePhrase.TabIndex = 15;
+            this.iconClearPagePhrase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconClearPagePhrase.UseVisualStyleBackColor = true;
+            this.iconClearPagePhrase.Click += new System.EventHandler(this.iconClearPagePhrase_Click);
+            // 
+            // dataGridViewPhrase
+            // 
+            this.dataGridViewPhrase.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewPhrase.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPhrase.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewPhrase.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewPhrase.Name = "dataGridViewPhrase";
+            dataGridViewCellStyle39.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewPhrase.RowsDefaultCellStyle = dataGridViewCellStyle39;
+            this.dataGridViewPhrase.RowTemplate.Height = 30;
+            this.dataGridViewPhrase.Size = new System.Drawing.Size(603, 294);
+            this.dataGridViewPhrase.TabIndex = 7;
+            this.dataGridViewPhrase.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPhrase_RowEnter);
+            // 
+            // tableLayoutPanel40
+            // 
+            this.tableLayoutPanel40.ColumnCount = 5;
+            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel40.Controls.Add(this.label32, 0, 0);
+            this.tableLayoutPanel40.Controls.Add(this.label33, 1, 0);
+            this.tableLayoutPanel40.Controls.Add(this.cmbCasesPagePhrase, 1, 1);
+            this.tableLayoutPanel40.Controls.Add(this.txtWordPagePhrase, 0, 1);
+            this.tableLayoutPanel40.Controls.Add(this.txtYearPagePhrase, 4, 1);
+            this.tableLayoutPanel40.Controls.Add(this.label34, 4, 0);
+            this.tableLayoutPanel40.Controls.Add(this.cmbMonthPagePhrase, 3, 1);
+            this.tableLayoutPanel40.Controls.Add(this.label35, 3, 0);
+            this.tableLayoutPanel40.Controls.Add(this.label36, 2, 0);
+            this.tableLayoutPanel40.Controls.Add(this.cmbGroupPagePhrase, 2, 1);
+            this.tableLayoutPanel40.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel40.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel40.Name = "tableLayoutPanel40";
+            this.tableLayoutPanel40.RowCount = 2;
+            this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel40.Size = new System.Drawing.Size(717, 59);
+            this.tableLayoutPanel40.TabIndex = 9;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label32.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(3, 3);
+            this.label32.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(137, 26);
+            this.label32.TabIndex = 0;
+            this.label32.Text = "Wörter";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label33.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(146, 3);
+            this.label33.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(173, 26);
+            this.label33.TabIndex = 0;
+            this.label33.Text = "Kasus";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cmbCasesPagePhrase
+            // 
+            this.cmbCasesPagePhrase.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbCasesPagePhrase.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCasesPagePhrase.FormattingEnabled = true;
+            this.cmbCasesPagePhrase.Location = new System.Drawing.Point(146, 32);
+            this.cmbCasesPagePhrase.Name = "cmbCasesPagePhrase";
+            this.cmbCasesPagePhrase.Size = new System.Drawing.Size(173, 28);
+            this.cmbCasesPagePhrase.TabIndex = 6;
+            // 
+            // txtWordPagePhrase
+            // 
+            this.txtWordPagePhrase.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtWordPagePhrase.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWordPagePhrase.Location = new System.Drawing.Point(3, 32);
+            this.txtWordPagePhrase.Name = "txtWordPagePhrase";
+            this.txtWordPagePhrase.Size = new System.Drawing.Size(137, 27);
+            this.txtWordPagePhrase.TabIndex = 2;
+            this.txtWordPagePhrase.TextChanged += new System.EventHandler(this.txtWordPagePhrase_TextChanged);
+            // 
+            // txtYearPagePhrase
+            // 
+            this.txtYearPagePhrase.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtYearPagePhrase.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtYearPagePhrase.Location = new System.Drawing.Point(647, 32);
+            this.txtYearPagePhrase.Name = "txtYearPagePhrase";
+            this.txtYearPagePhrase.Size = new System.Drawing.Size(67, 27);
+            this.txtYearPagePhrase.TabIndex = 2;
+            this.txtYearPagePhrase.TextChanged += new System.EventHandler(this.txtYearPagePhrase_TextChanged);
+            this.txtYearPagePhrase.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtYearPagePhrase_KeyPress);
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label34.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(647, 3);
+            this.label34.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(67, 26);
+            this.label34.TabIndex = 0;
+            this.label34.Text = "Jahr";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cmbMonthPagePhrase
+            // 
+            this.cmbMonthPagePhrase.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbMonthPagePhrase.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMonthPagePhrase.FormattingEnabled = true;
+            this.cmbMonthPagePhrase.Location = new System.Drawing.Point(540, 32);
+            this.cmbMonthPagePhrase.Name = "cmbMonthPagePhrase";
+            this.cmbMonthPagePhrase.Size = new System.Drawing.Size(101, 28);
+            this.cmbMonthPagePhrase.TabIndex = 6;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label35.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(540, 3);
+            this.label35.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(101, 26);
+            this.label35.TabIndex = 0;
+            this.label35.Text = "Monat";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label36.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(325, 3);
+            this.label36.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(209, 26);
+            this.label36.TabIndex = 0;
+            this.label36.Text = "Gruppen";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // cmbGroupPagePhrase
+            // 
+            this.cmbGroupPagePhrase.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbGroupPagePhrase.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbGroupPagePhrase.FormattingEnabled = true;
+            this.cmbGroupPagePhrase.Location = new System.Drawing.Point(325, 32);
+            this.cmbGroupPagePhrase.Name = "cmbGroupPagePhrase";
+            this.cmbGroupPagePhrase.Size = new System.Drawing.Size(209, 28);
+            this.cmbGroupPagePhrase.TabIndex = 6;
+            // 
             // pageAdverbs
             // 
             this.pageAdverbs.Controls.Add(this.tableLayoutPanel7);
@@ -817,8 +2162,8 @@
             // 
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel8.Controls.Add(this.txtExplanationAdv, 1, 0);
             this.tableLayoutPanel8.Controls.Add(this.label8, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.tableLayoutPanel11, 2, 0);
@@ -837,7 +2182,7 @@
             this.txtExplanationAdv.Location = new System.Drawing.Point(109, 3);
             this.txtExplanationAdv.Multiline = true;
             this.txtExplanationAdv.Name = "txtExplanationAdv";
-            this.txtExplanationAdv.Size = new System.Drawing.Size(527, 54);
+            this.txtExplanationAdv.Size = new System.Drawing.Size(491, 54);
             this.txtExplanationAdv.TabIndex = 37;
             // 
             // label8
@@ -858,12 +2203,12 @@
             this.tableLayoutPanel11.Controls.Add(this.labelTotalWordsAdv, 0, 1);
             this.tableLayoutPanel11.Controls.Add(this.label10, 0, 0);
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(642, 3);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(606, 3);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 2;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(66, 54);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(102, 54);
             this.tableLayoutPanel11.TabIndex = 3;
             // 
             // labelTotalWordsAdv
@@ -874,7 +2219,7 @@
             this.labelTotalWordsAdv.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotalWordsAdv.Location = new System.Drawing.Point(3, 27);
             this.labelTotalWordsAdv.Name = "labelTotalWordsAdv";
-            this.labelTotalWordsAdv.Size = new System.Drawing.Size(60, 17);
+            this.labelTotalWordsAdv.Size = new System.Drawing.Size(96, 17);
             this.labelTotalWordsAdv.TabIndex = 0;
             this.labelTotalWordsAdv.Text = "0";
             this.labelTotalWordsAdv.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -886,7 +2231,7 @@
             this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(3, 5);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(60, 17);
+            this.label10.Size = new System.Drawing.Size(96, 17);
             this.label10.TabIndex = 0;
             this.label10.Text = "Total";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -894,8 +2239,8 @@
             // tableLayoutPanel12
             // 
             this.tableLayoutPanel12.ColumnCount = 2;
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel12.Controls.Add(this.tableLayoutPanel13, 0, 0);
             this.tableLayoutPanel12.Controls.Add(this.dataGridViewAdv, 0, 0);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -913,13 +2258,13 @@
             this.tableLayoutPanel13.Controls.Add(this.tableLayoutPanel14, 0, 2);
             this.tableLayoutPanel13.Controls.Add(this.tableLayoutPanel15, 0, 0);
             this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(586, 3);
+            this.tableLayoutPanel13.Location = new System.Drawing.Point(607, 3);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 3;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(122, 290);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(101, 290);
             this.tableLayoutPanel13.TabIndex = 8;
             // 
             // tableLayoutPanel14
@@ -941,7 +2286,7 @@
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(116, 154);
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(95, 154);
             this.tableLayoutPanel14.TabIndex = 3;
             // 
             // iconThisMonthAdv
@@ -958,7 +2303,7 @@
             this.iconThisMonthAdv.IconSize = 32;
             this.iconThisMonthAdv.Location = new System.Drawing.Point(3, 3);
             this.iconThisMonthAdv.Name = "iconThisMonthAdv";
-            this.iconThisMonthAdv.Size = new System.Drawing.Size(110, 30);
+            this.iconThisMonthAdv.Size = new System.Drawing.Size(89, 30);
             this.iconThisMonthAdv.TabIndex = 15;
             this.iconThisMonthAdv.Text = "This Month";
             this.iconThisMonthAdv.UseVisualStyleBackColor = false;
@@ -978,7 +2323,7 @@
             this.iconLastMonthAdv.IconSize = 32;
             this.iconLastMonthAdv.Location = new System.Drawing.Point(3, 81);
             this.iconLastMonthAdv.Name = "iconLastMonthAdv";
-            this.iconLastMonthAdv.Size = new System.Drawing.Size(110, 30);
+            this.iconLastMonthAdv.Size = new System.Drawing.Size(89, 30);
             this.iconLastMonthAdv.TabIndex = 15;
             this.iconLastMonthAdv.Text = "Last Month";
             this.iconLastMonthAdv.UseVisualStyleBackColor = false;
@@ -997,7 +2342,7 @@
             this.iconEditPageAdv.IconSize = 32;
             this.iconEditPageAdv.Location = new System.Drawing.Point(3, 120);
             this.iconEditPageAdv.Name = "iconEditPageAdv";
-            this.iconEditPageAdv.Size = new System.Drawing.Size(110, 31);
+            this.iconEditPageAdv.Size = new System.Drawing.Size(89, 31);
             this.iconEditPageAdv.TabIndex = 15;
             this.iconEditPageAdv.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconEditPageAdv.UseVisualStyleBackColor = true;
@@ -1017,7 +2362,7 @@
             this.iconAllAdv.IconSize = 32;
             this.iconAllAdv.Location = new System.Drawing.Point(3, 42);
             this.iconAllAdv.Name = "iconAllAdv";
-            this.iconAllAdv.Size = new System.Drawing.Size(110, 30);
+            this.iconAllAdv.Size = new System.Drawing.Size(89, 30);
             this.iconAllAdv.TabIndex = 15;
             this.iconAllAdv.Text = "All";
             this.iconAllAdv.UseVisualStyleBackColor = false;
@@ -1036,7 +2381,7 @@
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(116, 81);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(95, 81);
             this.tableLayoutPanel15.TabIndex = 3;
             // 
             // iconSearchPageAdv
@@ -1052,7 +2397,7 @@
             this.iconSearchPageAdv.IconSize = 32;
             this.iconSearchPageAdv.Location = new System.Drawing.Point(3, 3);
             this.iconSearchPageAdv.Name = "iconSearchPageAdv";
-            this.iconSearchPageAdv.Size = new System.Drawing.Size(110, 32);
+            this.iconSearchPageAdv.Size = new System.Drawing.Size(89, 32);
             this.iconSearchPageAdv.TabIndex = 15;
             this.iconSearchPageAdv.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconSearchPageAdv.UseVisualStyleBackColor = true;
@@ -1071,7 +2416,7 @@
             this.iconClearPageAdv.IconSize = 32;
             this.iconClearPageAdv.Location = new System.Drawing.Point(3, 45);
             this.iconClearPageAdv.Name = "iconClearPageAdv";
-            this.iconClearPageAdv.Size = new System.Drawing.Size(110, 33);
+            this.iconClearPageAdv.Size = new System.Drawing.Size(89, 33);
             this.iconClearPageAdv.TabIndex = 15;
             this.iconClearPageAdv.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconClearPageAdv.UseVisualStyleBackColor = true;
@@ -1084,10 +2429,10 @@
             this.dataGridViewAdv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewAdv.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewAdv.Name = "dataGridViewAdv";
-            dataGridViewCellStyle59.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewAdv.RowsDefaultCellStyle = dataGridViewCellStyle59;
+            dataGridViewCellStyle40.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewAdv.RowsDefaultCellStyle = dataGridViewCellStyle40;
             this.dataGridViewAdv.RowTemplate.Height = 30;
-            this.dataGridViewAdv.Size = new System.Drawing.Size(577, 290);
+            this.dataGridViewAdv.Size = new System.Drawing.Size(598, 290);
             this.dataGridViewAdv.TabIndex = 7;
             this.dataGridViewAdv.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAdv_RowEnter);
             // 
@@ -1265,8 +2610,8 @@
             // 
             this.tableLayoutPanel18.ColumnCount = 3;
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel18.Controls.Add(this.txtExplanationConj, 1, 0);
             this.tableLayoutPanel18.Controls.Add(this.label9, 0, 0);
             this.tableLayoutPanel18.Controls.Add(this.tableLayoutPanel19, 2, 0);
@@ -1285,7 +2630,7 @@
             this.txtExplanationConj.Location = new System.Drawing.Point(110, 3);
             this.txtExplanationConj.Multiline = true;
             this.txtExplanationConj.Name = "txtExplanationConj";
-            this.txtExplanationConj.Size = new System.Drawing.Size(531, 55);
+            this.txtExplanationConj.Size = new System.Drawing.Size(495, 55);
             this.txtExplanationConj.TabIndex = 37;
             // 
             // label9
@@ -1306,12 +2651,12 @@
             this.tableLayoutPanel19.Controls.Add(this.labelTotalWordsConj, 0, 1);
             this.tableLayoutPanel19.Controls.Add(this.label17, 0, 0);
             this.tableLayoutPanel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel19.Location = new System.Drawing.Point(647, 3);
+            this.tableLayoutPanel19.Location = new System.Drawing.Point(611, 3);
             this.tableLayoutPanel19.Name = "tableLayoutPanel19";
             this.tableLayoutPanel19.RowCount = 2;
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel19.Size = new System.Drawing.Size(67, 55);
+            this.tableLayoutPanel19.Size = new System.Drawing.Size(103, 55);
             this.tableLayoutPanel19.TabIndex = 3;
             // 
             // labelTotalWordsConj
@@ -1322,7 +2667,7 @@
             this.labelTotalWordsConj.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotalWordsConj.Location = new System.Drawing.Point(3, 27);
             this.labelTotalWordsConj.Name = "labelTotalWordsConj";
-            this.labelTotalWordsConj.Size = new System.Drawing.Size(61, 17);
+            this.labelTotalWordsConj.Size = new System.Drawing.Size(97, 17);
             this.labelTotalWordsConj.TabIndex = 0;
             this.labelTotalWordsConj.Text = "0";
             this.labelTotalWordsConj.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1334,7 +2679,7 @@
             this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(3, 5);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(61, 17);
+            this.label17.Size = new System.Drawing.Size(97, 17);
             this.label17.TabIndex = 0;
             this.label17.Text = "Total";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1342,8 +2687,8 @@
             // tableLayoutPanel20
             // 
             this.tableLayoutPanel20.ColumnCount = 2;
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel20.Controls.Add(this.tableLayoutPanel21, 0, 0);
             this.tableLayoutPanel20.Controls.Add(this.dataGridViewConj, 0, 0);
             this.tableLayoutPanel20.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1361,13 +2706,13 @@
             this.tableLayoutPanel21.Controls.Add(this.tableLayoutPanel22, 0, 2);
             this.tableLayoutPanel21.Controls.Add(this.tableLayoutPanel23, 0, 0);
             this.tableLayoutPanel21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel21.Location = new System.Drawing.Point(590, 3);
+            this.tableLayoutPanel21.Location = new System.Drawing.Point(612, 3);
             this.tableLayoutPanel21.Name = "tableLayoutPanel21";
             this.tableLayoutPanel21.RowCount = 3;
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
-            this.tableLayoutPanel21.Size = new System.Drawing.Size(124, 294);
+            this.tableLayoutPanel21.Size = new System.Drawing.Size(102, 294);
             this.tableLayoutPanel21.TabIndex = 8;
             // 
             // tableLayoutPanel22
@@ -1389,7 +2734,7 @@
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
-            this.tableLayoutPanel22.Size = new System.Drawing.Size(118, 156);
+            this.tableLayoutPanel22.Size = new System.Drawing.Size(96, 156);
             this.tableLayoutPanel22.TabIndex = 3;
             // 
             // iconThisMonthConj
@@ -1406,7 +2751,7 @@
             this.iconThisMonthConj.IconSize = 32;
             this.iconThisMonthConj.Location = new System.Drawing.Point(3, 3);
             this.iconThisMonthConj.Name = "iconThisMonthConj";
-            this.iconThisMonthConj.Size = new System.Drawing.Size(112, 30);
+            this.iconThisMonthConj.Size = new System.Drawing.Size(90, 30);
             this.iconThisMonthConj.TabIndex = 15;
             this.iconThisMonthConj.Text = "This Month";
             this.iconThisMonthConj.UseVisualStyleBackColor = false;
@@ -1426,7 +2771,7 @@
             this.iconLastMonthConj.IconSize = 32;
             this.iconLastMonthConj.Location = new System.Drawing.Point(3, 81);
             this.iconLastMonthConj.Name = "iconLastMonthConj";
-            this.iconLastMonthConj.Size = new System.Drawing.Size(112, 30);
+            this.iconLastMonthConj.Size = new System.Drawing.Size(90, 30);
             this.iconLastMonthConj.TabIndex = 15;
             this.iconLastMonthConj.Text = "Last Month";
             this.iconLastMonthConj.UseVisualStyleBackColor = false;
@@ -1445,7 +2790,7 @@
             this.iconEditPageConj.IconSize = 32;
             this.iconEditPageConj.Location = new System.Drawing.Point(3, 120);
             this.iconEditPageConj.Name = "iconEditPageConj";
-            this.iconEditPageConj.Size = new System.Drawing.Size(112, 33);
+            this.iconEditPageConj.Size = new System.Drawing.Size(90, 33);
             this.iconEditPageConj.TabIndex = 15;
             this.iconEditPageConj.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconEditPageConj.UseVisualStyleBackColor = true;
@@ -1465,7 +2810,7 @@
             this.iconAllConj.IconSize = 32;
             this.iconAllConj.Location = new System.Drawing.Point(3, 42);
             this.iconAllConj.Name = "iconAllConj";
-            this.iconAllConj.Size = new System.Drawing.Size(112, 30);
+            this.iconAllConj.Size = new System.Drawing.Size(90, 30);
             this.iconAllConj.TabIndex = 15;
             this.iconAllConj.Text = "All";
             this.iconAllConj.UseVisualStyleBackColor = false;
@@ -1484,7 +2829,7 @@
             this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
             this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
             this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
-            this.tableLayoutPanel23.Size = new System.Drawing.Size(118, 82);
+            this.tableLayoutPanel23.Size = new System.Drawing.Size(96, 82);
             this.tableLayoutPanel23.TabIndex = 3;
             // 
             // iconSearchPageConj
@@ -1500,7 +2845,7 @@
             this.iconSearchPageConj.IconSize = 32;
             this.iconSearchPageConj.Location = new System.Drawing.Point(3, 3);
             this.iconSearchPageConj.Name = "iconSearchPageConj";
-            this.iconSearchPageConj.Size = new System.Drawing.Size(112, 32);
+            this.iconSearchPageConj.Size = new System.Drawing.Size(90, 32);
             this.iconSearchPageConj.TabIndex = 15;
             this.iconSearchPageConj.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconSearchPageConj.UseVisualStyleBackColor = true;
@@ -1519,7 +2864,7 @@
             this.iconClearPageConj.IconSize = 32;
             this.iconClearPageConj.Location = new System.Drawing.Point(3, 45);
             this.iconClearPageConj.Name = "iconClearPageConj";
-            this.iconClearPageConj.Size = new System.Drawing.Size(112, 34);
+            this.iconClearPageConj.Size = new System.Drawing.Size(90, 34);
             this.iconClearPageConj.TabIndex = 15;
             this.iconClearPageConj.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconClearPageConj.UseVisualStyleBackColor = true;
@@ -1532,10 +2877,10 @@
             this.dataGridViewConj.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewConj.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewConj.Name = "dataGridViewConj";
-            dataGridViewCellStyle60.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewConj.RowsDefaultCellStyle = dataGridViewCellStyle60;
+            dataGridViewCellStyle41.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewConj.RowsDefaultCellStyle = dataGridViewCellStyle41;
             this.dataGridViewConj.RowTemplate.Height = 30;
-            this.dataGridViewConj.Size = new System.Drawing.Size(581, 294);
+            this.dataGridViewConj.Size = new System.Drawing.Size(603, 294);
             this.dataGridViewConj.TabIndex = 7;
             this.dataGridViewConj.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewConj_RowEnter);
             // 
@@ -1681,901 +3026,6 @@
             this.cmbGroupPageConj.Size = new System.Drawing.Size(209, 28);
             this.cmbGroupPageConj.TabIndex = 6;
             // 
-            // pageNouns
-            // 
-            this.pageNouns.Controls.Add(this.tableLayoutPanel25);
-            this.pageNouns.Location = new System.Drawing.Point(4, 30);
-            this.pageNouns.Name = "pageNouns";
-            this.pageNouns.Size = new System.Drawing.Size(723, 438);
-            this.pageNouns.TabIndex = 2;
-            this.pageNouns.Text = "Nomen";
-            this.pageNouns.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel25
-            // 
-            this.tableLayoutPanel25.ColumnCount = 1;
-            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel25.Controls.Add(this.tableLayoutPanel26, 0, 2);
-            this.tableLayoutPanel25.Controls.Add(this.tableLayoutPanel28, 0, 1);
-            this.tableLayoutPanel25.Controls.Add(this.tableLayoutPanel32, 0, 0);
-            this.tableLayoutPanel25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel25.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel25.Name = "tableLayoutPanel25";
-            this.tableLayoutPanel25.RowCount = 3;
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel25.Size = new System.Drawing.Size(723, 438);
-            this.tableLayoutPanel25.TabIndex = 4;
-            // 
-            // tableLayoutPanel26
-            // 
-            this.tableLayoutPanel26.ColumnCount = 3;
-            this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel26.Controls.Add(this.txtExplanationNoun, 1, 0);
-            this.tableLayoutPanel26.Controls.Add(this.label16, 0, 0);
-            this.tableLayoutPanel26.Controls.Add(this.tableLayoutPanel27, 2, 0);
-            this.tableLayoutPanel26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel26.Location = new System.Drawing.Point(3, 374);
-            this.tableLayoutPanel26.Name = "tableLayoutPanel26";
-            this.tableLayoutPanel26.RowCount = 1;
-            this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel26.Size = new System.Drawing.Size(717, 61);
-            this.tableLayoutPanel26.TabIndex = 10;
-            // 
-            // txtExplanationNoun
-            // 
-            this.txtExplanationNoun.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtExplanationNoun.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtExplanationNoun.Location = new System.Drawing.Point(110, 3);
-            this.txtExplanationNoun.Multiline = true;
-            this.txtExplanationNoun.Name = "txtExplanationNoun";
-            this.txtExplanationNoun.Size = new System.Drawing.Size(531, 55);
-            this.txtExplanationNoun.TabIndex = 37;
-            // 
-            // label16
-            // 
-            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(6, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(98, 21);
-            this.label16.TabIndex = 38;
-            this.label16.Text = "Bedeutung:";
-            // 
-            // tableLayoutPanel27
-            // 
-            this.tableLayoutPanel27.ColumnCount = 1;
-            this.tableLayoutPanel27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel27.Controls.Add(this.labelTotalWordsNoun, 0, 1);
-            this.tableLayoutPanel27.Controls.Add(this.label24, 0, 0);
-            this.tableLayoutPanel27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel27.Location = new System.Drawing.Point(647, 3);
-            this.tableLayoutPanel27.Name = "tableLayoutPanel27";
-            this.tableLayoutPanel27.RowCount = 2;
-            this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel27.Size = new System.Drawing.Size(67, 55);
-            this.tableLayoutPanel27.TabIndex = 3;
-            // 
-            // labelTotalWordsNoun
-            // 
-            this.labelTotalWordsNoun.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelTotalWordsNoun.AutoSize = true;
-            this.labelTotalWordsNoun.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotalWordsNoun.Location = new System.Drawing.Point(3, 27);
-            this.labelTotalWordsNoun.Name = "labelTotalWordsNoun";
-            this.labelTotalWordsNoun.Size = new System.Drawing.Size(61, 17);
-            this.labelTotalWordsNoun.TabIndex = 0;
-            this.labelTotalWordsNoun.Text = "0";
-            this.labelTotalWordsNoun.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label24
-            // 
-            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(3, 5);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(61, 17);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "Total";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tableLayoutPanel28
-            // 
-            this.tableLayoutPanel28.ColumnCount = 2;
-            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82F));
-            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18F));
-            this.tableLayoutPanel28.Controls.Add(this.tableLayoutPanel29, 0, 0);
-            this.tableLayoutPanel28.Controls.Add(this.dataGridViewNoun, 0, 0);
-            this.tableLayoutPanel28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel28.Location = new System.Drawing.Point(3, 68);
-            this.tableLayoutPanel28.Name = "tableLayoutPanel28";
-            this.tableLayoutPanel28.RowCount = 1;
-            this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel28.Size = new System.Drawing.Size(717, 300);
-            this.tableLayoutPanel28.TabIndex = 8;
-            // 
-            // tableLayoutPanel29
-            // 
-            this.tableLayoutPanel29.ColumnCount = 1;
-            this.tableLayoutPanel29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel29.Controls.Add(this.tableLayoutPanel30, 0, 2);
-            this.tableLayoutPanel29.Controls.Add(this.tableLayoutPanel31, 0, 0);
-            this.tableLayoutPanel29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel29.Location = new System.Drawing.Point(590, 3);
-            this.tableLayoutPanel29.Name = "tableLayoutPanel29";
-            this.tableLayoutPanel29.RowCount = 3;
-            this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
-            this.tableLayoutPanel29.Size = new System.Drawing.Size(124, 294);
-            this.tableLayoutPanel29.TabIndex = 8;
-            // 
-            // tableLayoutPanel30
-            // 
-            this.tableLayoutPanel30.ColumnCount = 1;
-            this.tableLayoutPanel30.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel30.Controls.Add(this.iconThisMonthNoun, 0, 0);
-            this.tableLayoutPanel30.Controls.Add(this.iconLastMonthNoun, 0, 4);
-            this.tableLayoutPanel30.Controls.Add(this.iconEditPageNoun, 0, 6);
-            this.tableLayoutPanel30.Controls.Add(this.iconAllNoun, 0, 2);
-            this.tableLayoutPanel30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel30.Location = new System.Drawing.Point(3, 135);
-            this.tableLayoutPanel30.Name = "tableLayoutPanel30";
-            this.tableLayoutPanel30.RowCount = 7;
-            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
-            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
-            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
-            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
-            this.tableLayoutPanel30.Size = new System.Drawing.Size(118, 156);
-            this.tableLayoutPanel30.TabIndex = 3;
-            // 
-            // iconThisMonthNoun
-            // 
-            this.iconThisMonthNoun.BackColor = System.Drawing.Color.MidnightBlue;
-            this.iconThisMonthNoun.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconThisMonthNoun.FlatAppearance.BorderSize = 0;
-            this.iconThisMonthNoun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconThisMonthNoun.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconThisMonthNoun.ForeColor = System.Drawing.Color.White;
-            this.iconThisMonthNoun.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconThisMonthNoun.IconColor = System.Drawing.Color.MidnightBlue;
-            this.iconThisMonthNoun.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconThisMonthNoun.IconSize = 32;
-            this.iconThisMonthNoun.Location = new System.Drawing.Point(3, 3);
-            this.iconThisMonthNoun.Name = "iconThisMonthNoun";
-            this.iconThisMonthNoun.Size = new System.Drawing.Size(112, 30);
-            this.iconThisMonthNoun.TabIndex = 15;
-            this.iconThisMonthNoun.Text = "This Month";
-            this.iconThisMonthNoun.UseVisualStyleBackColor = false;
-            this.iconThisMonthNoun.Click += new System.EventHandler(this.iconThisMonthNoun_Click);
-            // 
-            // iconLastMonthNoun
-            // 
-            this.iconLastMonthNoun.BackColor = System.Drawing.Color.MidnightBlue;
-            this.iconLastMonthNoun.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconLastMonthNoun.FlatAppearance.BorderSize = 0;
-            this.iconLastMonthNoun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconLastMonthNoun.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconLastMonthNoun.ForeColor = System.Drawing.Color.White;
-            this.iconLastMonthNoun.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconLastMonthNoun.IconColor = System.Drawing.Color.MidnightBlue;
-            this.iconLastMonthNoun.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconLastMonthNoun.IconSize = 32;
-            this.iconLastMonthNoun.Location = new System.Drawing.Point(3, 81);
-            this.iconLastMonthNoun.Name = "iconLastMonthNoun";
-            this.iconLastMonthNoun.Size = new System.Drawing.Size(112, 30);
-            this.iconLastMonthNoun.TabIndex = 15;
-            this.iconLastMonthNoun.Text = "Last Month";
-            this.iconLastMonthNoun.UseVisualStyleBackColor = false;
-            this.iconLastMonthNoun.Click += new System.EventHandler(this.iconLastMonthNoun_Click);
-            // 
-            // iconEditPageNoun
-            // 
-            this.iconEditPageNoun.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconEditPageNoun.FlatAppearance.BorderSize = 0;
-            this.iconEditPageNoun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconEditPageNoun.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconEditPageNoun.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconEditPageNoun.IconChar = FontAwesome.Sharp.IconChar.Pen;
-            this.iconEditPageNoun.IconColor = System.Drawing.Color.MidnightBlue;
-            this.iconEditPageNoun.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconEditPageNoun.IconSize = 32;
-            this.iconEditPageNoun.Location = new System.Drawing.Point(3, 120);
-            this.iconEditPageNoun.Name = "iconEditPageNoun";
-            this.iconEditPageNoun.Size = new System.Drawing.Size(112, 33);
-            this.iconEditPageNoun.TabIndex = 15;
-            this.iconEditPageNoun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconEditPageNoun.UseVisualStyleBackColor = true;
-            this.iconEditPageNoun.Click += new System.EventHandler(this.iconEditPageNoun_Click);
-            // 
-            // iconAllNoun
-            // 
-            this.iconAllNoun.BackColor = System.Drawing.Color.MidnightBlue;
-            this.iconAllNoun.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconAllNoun.FlatAppearance.BorderSize = 0;
-            this.iconAllNoun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconAllNoun.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconAllNoun.ForeColor = System.Drawing.Color.White;
-            this.iconAllNoun.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconAllNoun.IconColor = System.Drawing.Color.MidnightBlue;
-            this.iconAllNoun.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconAllNoun.IconSize = 32;
-            this.iconAllNoun.Location = new System.Drawing.Point(3, 42);
-            this.iconAllNoun.Name = "iconAllNoun";
-            this.iconAllNoun.Size = new System.Drawing.Size(112, 30);
-            this.iconAllNoun.TabIndex = 15;
-            this.iconAllNoun.Text = "All";
-            this.iconAllNoun.UseVisualStyleBackColor = false;
-            this.iconAllNoun.Click += new System.EventHandler(this.iconAllNoun_Click);
-            // 
-            // tableLayoutPanel31
-            // 
-            this.tableLayoutPanel31.ColumnCount = 1;
-            this.tableLayoutPanel31.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel31.Controls.Add(this.iconSearchPageNoun, 0, 0);
-            this.tableLayoutPanel31.Controls.Add(this.iconClearPageNoun, 0, 2);
-            this.tableLayoutPanel31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel31.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel31.Name = "tableLayoutPanel31";
-            this.tableLayoutPanel31.RowCount = 3;
-            this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
-            this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
-            this.tableLayoutPanel31.Size = new System.Drawing.Size(118, 82);
-            this.tableLayoutPanel31.TabIndex = 3;
-            // 
-            // iconSearchPageNoun
-            // 
-            this.iconSearchPageNoun.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconSearchPageNoun.FlatAppearance.BorderSize = 0;
-            this.iconSearchPageNoun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconSearchPageNoun.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconSearchPageNoun.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconSearchPageNoun.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.iconSearchPageNoun.IconColor = System.Drawing.Color.MidnightBlue;
-            this.iconSearchPageNoun.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconSearchPageNoun.IconSize = 32;
-            this.iconSearchPageNoun.Location = new System.Drawing.Point(3, 3);
-            this.iconSearchPageNoun.Name = "iconSearchPageNoun";
-            this.iconSearchPageNoun.Size = new System.Drawing.Size(112, 32);
-            this.iconSearchPageNoun.TabIndex = 15;
-            this.iconSearchPageNoun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconSearchPageNoun.UseVisualStyleBackColor = true;
-            this.iconSearchPageNoun.Click += new System.EventHandler(this.iconSearchPageNoun_Click);
-            // 
-            // iconClearPageNoun
-            // 
-            this.iconClearPageNoun.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconClearPageNoun.FlatAppearance.BorderSize = 0;
-            this.iconClearPageNoun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconClearPageNoun.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconClearPageNoun.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconClearPageNoun.IconChar = FontAwesome.Sharp.IconChar.Broom;
-            this.iconClearPageNoun.IconColor = System.Drawing.Color.Crimson;
-            this.iconClearPageNoun.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconClearPageNoun.IconSize = 32;
-            this.iconClearPageNoun.Location = new System.Drawing.Point(3, 45);
-            this.iconClearPageNoun.Name = "iconClearPageNoun";
-            this.iconClearPageNoun.Size = new System.Drawing.Size(112, 34);
-            this.iconClearPageNoun.TabIndex = 15;
-            this.iconClearPageNoun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconClearPageNoun.UseVisualStyleBackColor = true;
-            this.iconClearPageNoun.Click += new System.EventHandler(this.iconClearPageNoun_Click);
-            // 
-            // dataGridViewNoun
-            // 
-            this.dataGridViewNoun.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewNoun.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewNoun.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewNoun.Location = new System.Drawing.Point(3, 3);
-            this.dataGridViewNoun.Name = "dataGridViewNoun";
-            dataGridViewCellStyle61.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewNoun.RowsDefaultCellStyle = dataGridViewCellStyle61;
-            this.dataGridViewNoun.RowTemplate.Height = 30;
-            this.dataGridViewNoun.Size = new System.Drawing.Size(581, 294);
-            this.dataGridViewNoun.TabIndex = 7;
-            this.dataGridViewNoun.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewNoun_RowEnter);
-            // 
-            // tableLayoutPanel32
-            // 
-            this.tableLayoutPanel32.ColumnCount = 5;
-            this.tableLayoutPanel32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel32.Controls.Add(this.label25, 0, 0);
-            this.tableLayoutPanel32.Controls.Add(this.label26, 1, 0);
-            this.tableLayoutPanel32.Controls.Add(this.cmbCasesPageNoun, 1, 1);
-            this.tableLayoutPanel32.Controls.Add(this.txtWordPageNoun, 0, 1);
-            this.tableLayoutPanel32.Controls.Add(this.txtYearPageNoun, 4, 1);
-            this.tableLayoutPanel32.Controls.Add(this.label27, 4, 0);
-            this.tableLayoutPanel32.Controls.Add(this.cmbMonthPageNoun, 3, 1);
-            this.tableLayoutPanel32.Controls.Add(this.label28, 3, 0);
-            this.tableLayoutPanel32.Controls.Add(this.label29, 2, 0);
-            this.tableLayoutPanel32.Controls.Add(this.cmbGroupPageNoun, 2, 1);
-            this.tableLayoutPanel32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel32.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel32.Name = "tableLayoutPanel32";
-            this.tableLayoutPanel32.RowCount = 2;
-            this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel32.Size = new System.Drawing.Size(717, 59);
-            this.tableLayoutPanel32.TabIndex = 9;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label25.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(3, 3);
-            this.label25.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(137, 26);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "Wörter";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label26.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(146, 3);
-            this.label26.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(173, 26);
-            this.label26.TabIndex = 0;
-            this.label26.Text = "Kasus";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // cmbCasesPageNoun
-            // 
-            this.cmbCasesPageNoun.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbCasesPageNoun.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbCasesPageNoun.FormattingEnabled = true;
-            this.cmbCasesPageNoun.Location = new System.Drawing.Point(146, 32);
-            this.cmbCasesPageNoun.Name = "cmbCasesPageNoun";
-            this.cmbCasesPageNoun.Size = new System.Drawing.Size(173, 28);
-            this.cmbCasesPageNoun.TabIndex = 6;
-            // 
-            // txtWordPageNoun
-            // 
-            this.txtWordPageNoun.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtWordPageNoun.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWordPageNoun.Location = new System.Drawing.Point(3, 32);
-            this.txtWordPageNoun.Name = "txtWordPageNoun";
-            this.txtWordPageNoun.Size = new System.Drawing.Size(137, 27);
-            this.txtWordPageNoun.TabIndex = 2;
-            this.txtWordPageNoun.TextChanged += new System.EventHandler(this.txtWordPageNoun_TextChanged);
-            // 
-            // txtYearPageNoun
-            // 
-            this.txtYearPageNoun.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtYearPageNoun.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtYearPageNoun.Location = new System.Drawing.Point(647, 32);
-            this.txtYearPageNoun.Name = "txtYearPageNoun";
-            this.txtYearPageNoun.Size = new System.Drawing.Size(67, 27);
-            this.txtYearPageNoun.TabIndex = 2;
-            this.txtYearPageNoun.TextChanged += new System.EventHandler(this.txtYearPageNoun_TextChanged);
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label27.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(647, 3);
-            this.label27.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(67, 26);
-            this.label27.TabIndex = 0;
-            this.label27.Text = "Jahr";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // cmbMonthPageNoun
-            // 
-            this.cmbMonthPageNoun.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbMonthPageNoun.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbMonthPageNoun.FormattingEnabled = true;
-            this.cmbMonthPageNoun.Location = new System.Drawing.Point(540, 32);
-            this.cmbMonthPageNoun.Name = "cmbMonthPageNoun";
-            this.cmbMonthPageNoun.Size = new System.Drawing.Size(101, 28);
-            this.cmbMonthPageNoun.TabIndex = 6;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label28.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(540, 3);
-            this.label28.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(101, 26);
-            this.label28.TabIndex = 0;
-            this.label28.Text = "Monat";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label29.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(325, 3);
-            this.label29.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(209, 26);
-            this.label29.TabIndex = 0;
-            this.label29.Text = "Gruppen";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // cmbGroupPageNoun
-            // 
-            this.cmbGroupPageNoun.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbGroupPageNoun.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbGroupPageNoun.FormattingEnabled = true;
-            this.cmbGroupPageNoun.Location = new System.Drawing.Point(325, 32);
-            this.cmbGroupPageNoun.Name = "cmbGroupPageNoun";
-            this.cmbGroupPageNoun.Size = new System.Drawing.Size(209, 28);
-            this.cmbGroupPageNoun.TabIndex = 6;
-            // 
-            // pagePhrases
-            // 
-            this.pagePhrases.Controls.Add(this.tableLayoutPanel33);
-            this.pagePhrases.Location = new System.Drawing.Point(4, 30);
-            this.pagePhrases.Name = "pagePhrases";
-            this.pagePhrases.Size = new System.Drawing.Size(723, 438);
-            this.pagePhrases.TabIndex = 5;
-            this.pagePhrases.Text = "Phrasen & Idioms";
-            this.pagePhrases.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel33
-            // 
-            this.tableLayoutPanel33.ColumnCount = 1;
-            this.tableLayoutPanel33.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel33.Controls.Add(this.tableLayoutPanel34, 0, 2);
-            this.tableLayoutPanel33.Controls.Add(this.tableLayoutPanel36, 0, 1);
-            this.tableLayoutPanel33.Controls.Add(this.tableLayoutPanel40, 0, 0);
-            this.tableLayoutPanel33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel33.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel33.Name = "tableLayoutPanel33";
-            this.tableLayoutPanel33.RowCount = 3;
-            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel33.Size = new System.Drawing.Size(723, 438);
-            this.tableLayoutPanel33.TabIndex = 5;
-            // 
-            // tableLayoutPanel34
-            // 
-            this.tableLayoutPanel34.ColumnCount = 3;
-            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel34.Controls.Add(this.txtExplanationPhrase, 1, 0);
-            this.tableLayoutPanel34.Controls.Add(this.label23, 0, 0);
-            this.tableLayoutPanel34.Controls.Add(this.tableLayoutPanel35, 2, 0);
-            this.tableLayoutPanel34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel34.Location = new System.Drawing.Point(3, 374);
-            this.tableLayoutPanel34.Name = "tableLayoutPanel34";
-            this.tableLayoutPanel34.RowCount = 1;
-            this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel34.Size = new System.Drawing.Size(717, 61);
-            this.tableLayoutPanel34.TabIndex = 10;
-            // 
-            // txtExplanationPhrase
-            // 
-            this.txtExplanationPhrase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtExplanationPhrase.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtExplanationPhrase.Location = new System.Drawing.Point(110, 3);
-            this.txtExplanationPhrase.Multiline = true;
-            this.txtExplanationPhrase.Name = "txtExplanationPhrase";
-            this.txtExplanationPhrase.Size = new System.Drawing.Size(531, 55);
-            this.txtExplanationPhrase.TabIndex = 37;
-            // 
-            // label23
-            // 
-            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(6, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(98, 21);
-            this.label23.TabIndex = 38;
-            this.label23.Text = "Bedeutung:";
-            // 
-            // tableLayoutPanel35
-            // 
-            this.tableLayoutPanel35.ColumnCount = 1;
-            this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel35.Controls.Add(this.labelTotalWordsPhrase, 0, 1);
-            this.tableLayoutPanel35.Controls.Add(this.label31, 0, 0);
-            this.tableLayoutPanel35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel35.Location = new System.Drawing.Point(647, 3);
-            this.tableLayoutPanel35.Name = "tableLayoutPanel35";
-            this.tableLayoutPanel35.RowCount = 2;
-            this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel35.Size = new System.Drawing.Size(67, 55);
-            this.tableLayoutPanel35.TabIndex = 3;
-            // 
-            // labelTotalWordsPhrase
-            // 
-            this.labelTotalWordsPhrase.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelTotalWordsPhrase.AutoSize = true;
-            this.labelTotalWordsPhrase.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotalWordsPhrase.Location = new System.Drawing.Point(3, 27);
-            this.labelTotalWordsPhrase.Name = "labelTotalWordsPhrase";
-            this.labelTotalWordsPhrase.Size = new System.Drawing.Size(61, 17);
-            this.labelTotalWordsPhrase.TabIndex = 0;
-            this.labelTotalWordsPhrase.Text = "0";
-            this.labelTotalWordsPhrase.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label31
-            // 
-            this.label31.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(3, 5);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(61, 17);
-            this.label31.TabIndex = 0;
-            this.label31.Text = "Total";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tableLayoutPanel36
-            // 
-            this.tableLayoutPanel36.ColumnCount = 2;
-            this.tableLayoutPanel36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82F));
-            this.tableLayoutPanel36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18F));
-            this.tableLayoutPanel36.Controls.Add(this.tableLayoutPanel37, 0, 0);
-            this.tableLayoutPanel36.Controls.Add(this.dataGridViewPhrase, 0, 0);
-            this.tableLayoutPanel36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel36.Location = new System.Drawing.Point(3, 68);
-            this.tableLayoutPanel36.Name = "tableLayoutPanel36";
-            this.tableLayoutPanel36.RowCount = 1;
-            this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel36.Size = new System.Drawing.Size(717, 300);
-            this.tableLayoutPanel36.TabIndex = 8;
-            // 
-            // tableLayoutPanel37
-            // 
-            this.tableLayoutPanel37.ColumnCount = 1;
-            this.tableLayoutPanel37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel37.Controls.Add(this.tableLayoutPanel38, 0, 2);
-            this.tableLayoutPanel37.Controls.Add(this.tableLayoutPanel39, 0, 0);
-            this.tableLayoutPanel37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel37.Location = new System.Drawing.Point(590, 3);
-            this.tableLayoutPanel37.Name = "tableLayoutPanel37";
-            this.tableLayoutPanel37.RowCount = 3;
-            this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
-            this.tableLayoutPanel37.Size = new System.Drawing.Size(124, 294);
-            this.tableLayoutPanel37.TabIndex = 8;
-            // 
-            // tableLayoutPanel38
-            // 
-            this.tableLayoutPanel38.ColumnCount = 1;
-            this.tableLayoutPanel38.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel38.Controls.Add(this.iconThisMonthPhrase, 0, 0);
-            this.tableLayoutPanel38.Controls.Add(this.iconLastMonthPhrase, 0, 4);
-            this.tableLayoutPanel38.Controls.Add(this.iconEditPagePhrase, 0, 6);
-            this.tableLayoutPanel38.Controls.Add(this.iconAllPhrase, 0, 2);
-            this.tableLayoutPanel38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel38.Location = new System.Drawing.Point(3, 135);
-            this.tableLayoutPanel38.Name = "tableLayoutPanel38";
-            this.tableLayoutPanel38.RowCount = 7;
-            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
-            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
-            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
-            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
-            this.tableLayoutPanel38.Size = new System.Drawing.Size(118, 156);
-            this.tableLayoutPanel38.TabIndex = 3;
-            // 
-            // iconThisMonthPhrase
-            // 
-            this.iconThisMonthPhrase.BackColor = System.Drawing.Color.MidnightBlue;
-            this.iconThisMonthPhrase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconThisMonthPhrase.FlatAppearance.BorderSize = 0;
-            this.iconThisMonthPhrase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconThisMonthPhrase.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconThisMonthPhrase.ForeColor = System.Drawing.Color.White;
-            this.iconThisMonthPhrase.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconThisMonthPhrase.IconColor = System.Drawing.Color.MidnightBlue;
-            this.iconThisMonthPhrase.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconThisMonthPhrase.IconSize = 32;
-            this.iconThisMonthPhrase.Location = new System.Drawing.Point(3, 3);
-            this.iconThisMonthPhrase.Name = "iconThisMonthPhrase";
-            this.iconThisMonthPhrase.Size = new System.Drawing.Size(112, 30);
-            this.iconThisMonthPhrase.TabIndex = 15;
-            this.iconThisMonthPhrase.Text = "This Month";
-            this.iconThisMonthPhrase.UseVisualStyleBackColor = false;
-            this.iconThisMonthPhrase.Click += new System.EventHandler(this.iconThisMonthPhrase_Click);
-            // 
-            // iconLastMonthPhrase
-            // 
-            this.iconLastMonthPhrase.BackColor = System.Drawing.Color.MidnightBlue;
-            this.iconLastMonthPhrase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconLastMonthPhrase.FlatAppearance.BorderSize = 0;
-            this.iconLastMonthPhrase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconLastMonthPhrase.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconLastMonthPhrase.ForeColor = System.Drawing.Color.White;
-            this.iconLastMonthPhrase.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconLastMonthPhrase.IconColor = System.Drawing.Color.MidnightBlue;
-            this.iconLastMonthPhrase.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconLastMonthPhrase.IconSize = 32;
-            this.iconLastMonthPhrase.Location = new System.Drawing.Point(3, 81);
-            this.iconLastMonthPhrase.Name = "iconLastMonthPhrase";
-            this.iconLastMonthPhrase.Size = new System.Drawing.Size(112, 30);
-            this.iconLastMonthPhrase.TabIndex = 15;
-            this.iconLastMonthPhrase.Text = "Last Month";
-            this.iconLastMonthPhrase.UseVisualStyleBackColor = false;
-            this.iconLastMonthPhrase.Click += new System.EventHandler(this.iconLastMonthPhrase_Click);
-            // 
-            // iconEditPagePhrase
-            // 
-            this.iconEditPagePhrase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconEditPagePhrase.FlatAppearance.BorderSize = 0;
-            this.iconEditPagePhrase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconEditPagePhrase.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconEditPagePhrase.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconEditPagePhrase.IconChar = FontAwesome.Sharp.IconChar.Pen;
-            this.iconEditPagePhrase.IconColor = System.Drawing.Color.MidnightBlue;
-            this.iconEditPagePhrase.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconEditPagePhrase.IconSize = 32;
-            this.iconEditPagePhrase.Location = new System.Drawing.Point(3, 120);
-            this.iconEditPagePhrase.Name = "iconEditPagePhrase";
-            this.iconEditPagePhrase.Size = new System.Drawing.Size(112, 33);
-            this.iconEditPagePhrase.TabIndex = 15;
-            this.iconEditPagePhrase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconEditPagePhrase.UseVisualStyleBackColor = true;
-            this.iconEditPagePhrase.Click += new System.EventHandler(this.iconEditPagePhrase_Click);
-            // 
-            // iconAllPhrase
-            // 
-            this.iconAllPhrase.BackColor = System.Drawing.Color.MidnightBlue;
-            this.iconAllPhrase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconAllPhrase.FlatAppearance.BorderSize = 0;
-            this.iconAllPhrase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconAllPhrase.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconAllPhrase.ForeColor = System.Drawing.Color.White;
-            this.iconAllPhrase.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconAllPhrase.IconColor = System.Drawing.Color.MidnightBlue;
-            this.iconAllPhrase.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconAllPhrase.IconSize = 32;
-            this.iconAllPhrase.Location = new System.Drawing.Point(3, 42);
-            this.iconAllPhrase.Name = "iconAllPhrase";
-            this.iconAllPhrase.Size = new System.Drawing.Size(112, 30);
-            this.iconAllPhrase.TabIndex = 15;
-            this.iconAllPhrase.Text = "All";
-            this.iconAllPhrase.UseVisualStyleBackColor = false;
-            this.iconAllPhrase.Click += new System.EventHandler(this.iconAllPhrase_Click);
-            // 
-            // tableLayoutPanel39
-            // 
-            this.tableLayoutPanel39.ColumnCount = 1;
-            this.tableLayoutPanel39.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel39.Controls.Add(this.iconSearchPagePhrase, 0, 0);
-            this.tableLayoutPanel39.Controls.Add(this.iconClearPagePhrase, 0, 2);
-            this.tableLayoutPanel39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel39.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel39.Name = "tableLayoutPanel39";
-            this.tableLayoutPanel39.RowCount = 3;
-            this.tableLayoutPanel39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
-            this.tableLayoutPanel39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
-            this.tableLayoutPanel39.Size = new System.Drawing.Size(118, 82);
-            this.tableLayoutPanel39.TabIndex = 3;
-            // 
-            // iconSearchPagePhrase
-            // 
-            this.iconSearchPagePhrase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconSearchPagePhrase.FlatAppearance.BorderSize = 0;
-            this.iconSearchPagePhrase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconSearchPagePhrase.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconSearchPagePhrase.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconSearchPagePhrase.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.iconSearchPagePhrase.IconColor = System.Drawing.Color.MidnightBlue;
-            this.iconSearchPagePhrase.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconSearchPagePhrase.IconSize = 32;
-            this.iconSearchPagePhrase.Location = new System.Drawing.Point(3, 3);
-            this.iconSearchPagePhrase.Name = "iconSearchPagePhrase";
-            this.iconSearchPagePhrase.Size = new System.Drawing.Size(112, 32);
-            this.iconSearchPagePhrase.TabIndex = 15;
-            this.iconSearchPagePhrase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconSearchPagePhrase.UseVisualStyleBackColor = true;
-            this.iconSearchPagePhrase.Click += new System.EventHandler(this.iconSearchPagePhrase_Click);
-            // 
-            // iconClearPagePhrase
-            // 
-            this.iconClearPagePhrase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconClearPagePhrase.FlatAppearance.BorderSize = 0;
-            this.iconClearPagePhrase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconClearPagePhrase.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconClearPagePhrase.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconClearPagePhrase.IconChar = FontAwesome.Sharp.IconChar.Broom;
-            this.iconClearPagePhrase.IconColor = System.Drawing.Color.Crimson;
-            this.iconClearPagePhrase.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconClearPagePhrase.IconSize = 32;
-            this.iconClearPagePhrase.Location = new System.Drawing.Point(3, 45);
-            this.iconClearPagePhrase.Name = "iconClearPagePhrase";
-            this.iconClearPagePhrase.Size = new System.Drawing.Size(112, 34);
-            this.iconClearPagePhrase.TabIndex = 15;
-            this.iconClearPagePhrase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconClearPagePhrase.UseVisualStyleBackColor = true;
-            this.iconClearPagePhrase.Click += new System.EventHandler(this.iconClearPagePhrase_Click);
-            // 
-            // dataGridViewPhrase
-            // 
-            this.dataGridViewPhrase.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewPhrase.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPhrase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewPhrase.Location = new System.Drawing.Point(3, 3);
-            this.dataGridViewPhrase.Name = "dataGridViewPhrase";
-            dataGridViewCellStyle62.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewPhrase.RowsDefaultCellStyle = dataGridViewCellStyle62;
-            this.dataGridViewPhrase.RowTemplate.Height = 30;
-            this.dataGridViewPhrase.Size = new System.Drawing.Size(581, 294);
-            this.dataGridViewPhrase.TabIndex = 7;
-            this.dataGridViewPhrase.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPhrase_RowEnter);
-            // 
-            // tableLayoutPanel40
-            // 
-            this.tableLayoutPanel40.ColumnCount = 5;
-            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel40.Controls.Add(this.label32, 0, 0);
-            this.tableLayoutPanel40.Controls.Add(this.label33, 1, 0);
-            this.tableLayoutPanel40.Controls.Add(this.cmbCasesPagePhrase, 1, 1);
-            this.tableLayoutPanel40.Controls.Add(this.txtWordPagePhrase, 0, 1);
-            this.tableLayoutPanel40.Controls.Add(this.txtYearPagePhrase, 4, 1);
-            this.tableLayoutPanel40.Controls.Add(this.label34, 4, 0);
-            this.tableLayoutPanel40.Controls.Add(this.cmbMonthPagePhrase, 3, 1);
-            this.tableLayoutPanel40.Controls.Add(this.label35, 3, 0);
-            this.tableLayoutPanel40.Controls.Add(this.label36, 2, 0);
-            this.tableLayoutPanel40.Controls.Add(this.cmbGroupPagePhrase, 2, 1);
-            this.tableLayoutPanel40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel40.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel40.Name = "tableLayoutPanel40";
-            this.tableLayoutPanel40.RowCount = 2;
-            this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel40.Size = new System.Drawing.Size(717, 59);
-            this.tableLayoutPanel40.TabIndex = 9;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label32.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(3, 3);
-            this.label32.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(137, 26);
-            this.label32.TabIndex = 0;
-            this.label32.Text = "Wörter";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label33.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(146, 3);
-            this.label33.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(173, 26);
-            this.label33.TabIndex = 0;
-            this.label33.Text = "Kasus";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // cmbCasesPagePhrase
-            // 
-            this.cmbCasesPagePhrase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbCasesPagePhrase.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbCasesPagePhrase.FormattingEnabled = true;
-            this.cmbCasesPagePhrase.Location = new System.Drawing.Point(146, 32);
-            this.cmbCasesPagePhrase.Name = "cmbCasesPagePhrase";
-            this.cmbCasesPagePhrase.Size = new System.Drawing.Size(173, 28);
-            this.cmbCasesPagePhrase.TabIndex = 6;
-            // 
-            // txtWordPagePhrase
-            // 
-            this.txtWordPagePhrase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtWordPagePhrase.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWordPagePhrase.Location = new System.Drawing.Point(3, 32);
-            this.txtWordPagePhrase.Name = "txtWordPagePhrase";
-            this.txtWordPagePhrase.Size = new System.Drawing.Size(137, 27);
-            this.txtWordPagePhrase.TabIndex = 2;
-            this.txtWordPagePhrase.TextChanged += new System.EventHandler(this.txtWordPagePhrase_TextChanged);
-            // 
-            // txtYearPagePhrase
-            // 
-            this.txtYearPagePhrase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtYearPagePhrase.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtYearPagePhrase.Location = new System.Drawing.Point(647, 32);
-            this.txtYearPagePhrase.Name = "txtYearPagePhrase";
-            this.txtYearPagePhrase.Size = new System.Drawing.Size(67, 27);
-            this.txtYearPagePhrase.TabIndex = 2;
-            this.txtYearPagePhrase.TextChanged += new System.EventHandler(this.txtYearPagePhrase_TextChanged);
-            this.txtYearPagePhrase.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtYearPagePhrase_KeyPress);
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label34.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(647, 3);
-            this.label34.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(67, 26);
-            this.label34.TabIndex = 0;
-            this.label34.Text = "Jahr";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // cmbMonthPagePhrase
-            // 
-            this.cmbMonthPagePhrase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbMonthPagePhrase.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbMonthPagePhrase.FormattingEnabled = true;
-            this.cmbMonthPagePhrase.Location = new System.Drawing.Point(540, 32);
-            this.cmbMonthPagePhrase.Name = "cmbMonthPagePhrase";
-            this.cmbMonthPagePhrase.Size = new System.Drawing.Size(101, 28);
-            this.cmbMonthPagePhrase.TabIndex = 6;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label35.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(540, 3);
-            this.label35.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(101, 26);
-            this.label35.TabIndex = 0;
-            this.label35.Text = "Monat";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label36.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(325, 3);
-            this.label36.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(209, 26);
-            this.label36.TabIndex = 0;
-            this.label36.Text = "Gruppen";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // cmbGroupPagePhrase
-            // 
-            this.cmbGroupPagePhrase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbGroupPagePhrase.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbGroupPagePhrase.FormattingEnabled = true;
-            this.cmbGroupPagePhrase.Location = new System.Drawing.Point(325, 32);
-            this.cmbGroupPagePhrase.Name = "cmbGroupPagePhrase";
-            this.cmbGroupPagePhrase.Size = new System.Drawing.Size(209, 28);
-            this.cmbGroupPagePhrase.TabIndex = 6;
-            // 
             // pageSentences
             // 
             this.pageSentences.Controls.Add(this.tableLayoutPanel41);
@@ -2607,8 +3057,8 @@
             // 
             this.tableLayoutPanel42.ColumnCount = 3;
             this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel42.Controls.Add(this.txtExplanationSentence, 1, 0);
             this.tableLayoutPanel42.Controls.Add(this.label30, 0, 0);
             this.tableLayoutPanel42.Controls.Add(this.tableLayoutPanel43, 2, 0);
@@ -2627,7 +3077,7 @@
             this.txtExplanationSentence.Location = new System.Drawing.Point(110, 3);
             this.txtExplanationSentence.Multiline = true;
             this.txtExplanationSentence.Name = "txtExplanationSentence";
-            this.txtExplanationSentence.Size = new System.Drawing.Size(531, 55);
+            this.txtExplanationSentence.Size = new System.Drawing.Size(495, 55);
             this.txtExplanationSentence.TabIndex = 37;
             // 
             // label30
@@ -2648,12 +3098,12 @@
             this.tableLayoutPanel43.Controls.Add(this.labelTotalWordsSentence, 0, 1);
             this.tableLayoutPanel43.Controls.Add(this.label38, 0, 0);
             this.tableLayoutPanel43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel43.Location = new System.Drawing.Point(647, 3);
+            this.tableLayoutPanel43.Location = new System.Drawing.Point(611, 3);
             this.tableLayoutPanel43.Name = "tableLayoutPanel43";
             this.tableLayoutPanel43.RowCount = 2;
             this.tableLayoutPanel43.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel43.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel43.Size = new System.Drawing.Size(67, 55);
+            this.tableLayoutPanel43.Size = new System.Drawing.Size(103, 55);
             this.tableLayoutPanel43.TabIndex = 3;
             // 
             // labelTotalWordsSentence
@@ -2664,7 +3114,7 @@
             this.labelTotalWordsSentence.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotalWordsSentence.Location = new System.Drawing.Point(3, 27);
             this.labelTotalWordsSentence.Name = "labelTotalWordsSentence";
-            this.labelTotalWordsSentence.Size = new System.Drawing.Size(61, 17);
+            this.labelTotalWordsSentence.Size = new System.Drawing.Size(97, 17);
             this.labelTotalWordsSentence.TabIndex = 0;
             this.labelTotalWordsSentence.Text = "0";
             this.labelTotalWordsSentence.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2676,7 +3126,7 @@
             this.label38.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.Location = new System.Drawing.Point(3, 5);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(61, 17);
+            this.label38.Size = new System.Drawing.Size(97, 17);
             this.label38.TabIndex = 0;
             this.label38.Text = "Total";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2684,8 +3134,8 @@
             // tableLayoutPanel44
             // 
             this.tableLayoutPanel44.ColumnCount = 2;
-            this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82F));
-            this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18F));
+            this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
+            this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel44.Controls.Add(this.tableLayoutPanel45, 0, 0);
             this.tableLayoutPanel44.Controls.Add(this.dataGridViewSentence, 0, 0);
             this.tableLayoutPanel44.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -2703,13 +3153,13 @@
             this.tableLayoutPanel45.Controls.Add(this.tableLayoutPanel46, 0, 2);
             this.tableLayoutPanel45.Controls.Add(this.tableLayoutPanel47, 0, 0);
             this.tableLayoutPanel45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel45.Location = new System.Drawing.Point(590, 3);
+            this.tableLayoutPanel45.Location = new System.Drawing.Point(612, 3);
             this.tableLayoutPanel45.Name = "tableLayoutPanel45";
             this.tableLayoutPanel45.RowCount = 3;
             this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
-            this.tableLayoutPanel45.Size = new System.Drawing.Size(124, 294);
+            this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
+            this.tableLayoutPanel45.Size = new System.Drawing.Size(102, 294);
             this.tableLayoutPanel45.TabIndex = 8;
             // 
             // tableLayoutPanel46
@@ -2720,18 +3170,21 @@
             this.tableLayoutPanel46.Controls.Add(this.iconLastMonthSentence, 0, 4);
             this.tableLayoutPanel46.Controls.Add(this.iconEditPageSentence, 0, 6);
             this.tableLayoutPanel46.Controls.Add(this.iconAllSentence, 0, 2);
+            this.tableLayoutPanel46.Controls.Add(this.iconViewPageSentence, 0, 8);
             this.tableLayoutPanel46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel46.Location = new System.Drawing.Point(3, 135);
+            this.tableLayoutPanel46.Location = new System.Drawing.Point(3, 105);
             this.tableLayoutPanel46.Name = "tableLayoutPanel46";
-            this.tableLayoutPanel46.RowCount = 7;
-            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
-            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
-            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
-            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
-            this.tableLayoutPanel46.Size = new System.Drawing.Size(118, 156);
+            this.tableLayoutPanel46.RowCount = 9;
+            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19F));
+            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.25F));
+            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19F));
+            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.25F));
+            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19F));
+            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.25F));
+            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19F));
+            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.25F));
+            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19F));
+            this.tableLayoutPanel46.Size = new System.Drawing.Size(96, 186);
             this.tableLayoutPanel46.TabIndex = 3;
             // 
             // iconThisMonthSentence
@@ -2748,7 +3201,7 @@
             this.iconThisMonthSentence.IconSize = 32;
             this.iconThisMonthSentence.Location = new System.Drawing.Point(3, 3);
             this.iconThisMonthSentence.Name = "iconThisMonthSentence";
-            this.iconThisMonthSentence.Size = new System.Drawing.Size(112, 30);
+            this.iconThisMonthSentence.Size = new System.Drawing.Size(90, 29);
             this.iconThisMonthSentence.TabIndex = 15;
             this.iconThisMonthSentence.Text = "This Month";
             this.iconThisMonthSentence.UseVisualStyleBackColor = false;
@@ -2766,9 +3219,9 @@
             this.iconLastMonthSentence.IconColor = System.Drawing.Color.MidnightBlue;
             this.iconLastMonthSentence.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconLastMonthSentence.IconSize = 32;
-            this.iconLastMonthSentence.Location = new System.Drawing.Point(3, 81);
+            this.iconLastMonthSentence.Location = new System.Drawing.Point(3, 77);
             this.iconLastMonthSentence.Name = "iconLastMonthSentence";
-            this.iconLastMonthSentence.Size = new System.Drawing.Size(112, 30);
+            this.iconLastMonthSentence.Size = new System.Drawing.Size(90, 29);
             this.iconLastMonthSentence.TabIndex = 15;
             this.iconLastMonthSentence.Text = "Last Month";
             this.iconLastMonthSentence.UseVisualStyleBackColor = false;
@@ -2785,9 +3238,9 @@
             this.iconEditPageSentence.IconColor = System.Drawing.Color.MidnightBlue;
             this.iconEditPageSentence.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconEditPageSentence.IconSize = 32;
-            this.iconEditPageSentence.Location = new System.Drawing.Point(3, 120);
+            this.iconEditPageSentence.Location = new System.Drawing.Point(3, 114);
             this.iconEditPageSentence.Name = "iconEditPageSentence";
-            this.iconEditPageSentence.Size = new System.Drawing.Size(112, 33);
+            this.iconEditPageSentence.Size = new System.Drawing.Size(90, 29);
             this.iconEditPageSentence.TabIndex = 15;
             this.iconEditPageSentence.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconEditPageSentence.UseVisualStyleBackColor = true;
@@ -2805,13 +3258,32 @@
             this.iconAllSentence.IconColor = System.Drawing.Color.MidnightBlue;
             this.iconAllSentence.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconAllSentence.IconSize = 32;
-            this.iconAllSentence.Location = new System.Drawing.Point(3, 42);
+            this.iconAllSentence.Location = new System.Drawing.Point(3, 40);
             this.iconAllSentence.Name = "iconAllSentence";
-            this.iconAllSentence.Size = new System.Drawing.Size(112, 30);
+            this.iconAllSentence.Size = new System.Drawing.Size(90, 29);
             this.iconAllSentence.TabIndex = 15;
             this.iconAllSentence.Text = "All";
             this.iconAllSentence.UseVisualStyleBackColor = false;
             this.iconAllSentence.Click += new System.EventHandler(this.iconAllSentence_Click);
+            // 
+            // iconViewPageSentence
+            // 
+            this.iconViewPageSentence.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconViewPageSentence.FlatAppearance.BorderSize = 0;
+            this.iconViewPageSentence.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconViewPageSentence.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconViewPageSentence.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconViewPageSentence.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.iconViewPageSentence.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconViewPageSentence.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconViewPageSentence.IconSize = 32;
+            this.iconViewPageSentence.Location = new System.Drawing.Point(3, 151);
+            this.iconViewPageSentence.Name = "iconViewPageSentence";
+            this.iconViewPageSentence.Size = new System.Drawing.Size(90, 32);
+            this.iconViewPageSentence.TabIndex = 15;
+            this.iconViewPageSentence.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconViewPageSentence.UseVisualStyleBackColor = true;
+            this.iconViewPageSentence.Click += new System.EventHandler(this.iconViewPageSentence_Click);
             // 
             // tableLayoutPanel47
             // 
@@ -2826,7 +3298,7 @@
             this.tableLayoutPanel47.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
             this.tableLayoutPanel47.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
             this.tableLayoutPanel47.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
-            this.tableLayoutPanel47.Size = new System.Drawing.Size(118, 82);
+            this.tableLayoutPanel47.Size = new System.Drawing.Size(96, 82);
             this.tableLayoutPanel47.TabIndex = 3;
             // 
             // iconSearchPageSentence
@@ -2842,7 +3314,7 @@
             this.iconSearchPageSentence.IconSize = 32;
             this.iconSearchPageSentence.Location = new System.Drawing.Point(3, 3);
             this.iconSearchPageSentence.Name = "iconSearchPageSentence";
-            this.iconSearchPageSentence.Size = new System.Drawing.Size(112, 32);
+            this.iconSearchPageSentence.Size = new System.Drawing.Size(90, 32);
             this.iconSearchPageSentence.TabIndex = 15;
             this.iconSearchPageSentence.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconSearchPageSentence.UseVisualStyleBackColor = true;
@@ -2861,7 +3333,7 @@
             this.iconClearPageSentence.IconSize = 32;
             this.iconClearPageSentence.Location = new System.Drawing.Point(3, 45);
             this.iconClearPageSentence.Name = "iconClearPageSentence";
-            this.iconClearPageSentence.Size = new System.Drawing.Size(112, 34);
+            this.iconClearPageSentence.Size = new System.Drawing.Size(90, 34);
             this.iconClearPageSentence.TabIndex = 15;
             this.iconClearPageSentence.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconClearPageSentence.UseVisualStyleBackColor = true;
@@ -2874,10 +3346,10 @@
             this.dataGridViewSentence.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewSentence.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewSentence.Name = "dataGridViewSentence";
-            dataGridViewCellStyle63.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewSentence.RowsDefaultCellStyle = dataGridViewCellStyle63;
+            dataGridViewCellStyle42.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewSentence.RowsDefaultCellStyle = dataGridViewCellStyle42;
             this.dataGridViewSentence.RowTemplate.Height = 30;
-            this.dataGridViewSentence.Size = new System.Drawing.Size(581, 294);
+            this.dataGridViewSentence.Size = new System.Drawing.Size(603, 294);
             this.dataGridViewSentence.TabIndex = 7;
             this.dataGridViewSentence.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSentence_RowEnter);
             // 
@@ -3023,453 +3495,6 @@
             this.cmbGroupPageSentence.Size = new System.Drawing.Size(209, 28);
             this.cmbGroupPageSentence.TabIndex = 6;
             // 
-            // pageVerbs
-            // 
-            this.pageVerbs.Controls.Add(this.tableLayoutPanel49);
-            this.pageVerbs.Location = new System.Drawing.Point(4, 30);
-            this.pageVerbs.Name = "pageVerbs";
-            this.pageVerbs.Size = new System.Drawing.Size(723, 438);
-            this.pageVerbs.TabIndex = 6;
-            this.pageVerbs.Text = "Verben";
-            this.pageVerbs.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel49
-            // 
-            this.tableLayoutPanel49.ColumnCount = 1;
-            this.tableLayoutPanel49.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel49.Controls.Add(this.tableLayoutPanel50, 0, 2);
-            this.tableLayoutPanel49.Controls.Add(this.tableLayoutPanel52, 0, 1);
-            this.tableLayoutPanel49.Controls.Add(this.tableLayoutPanel56, 0, 0);
-            this.tableLayoutPanel49.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel49.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel49.Name = "tableLayoutPanel49";
-            this.tableLayoutPanel49.RowCount = 3;
-            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel49.Size = new System.Drawing.Size(723, 438);
-            this.tableLayoutPanel49.TabIndex = 7;
-            // 
-            // tableLayoutPanel50
-            // 
-            this.tableLayoutPanel50.ColumnCount = 3;
-            this.tableLayoutPanel50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.tableLayoutPanel50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel50.Controls.Add(this.txtExplanationVerb, 1, 0);
-            this.tableLayoutPanel50.Controls.Add(this.label37, 0, 0);
-            this.tableLayoutPanel50.Controls.Add(this.tableLayoutPanel51, 2, 0);
-            this.tableLayoutPanel50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel50.Location = new System.Drawing.Point(3, 374);
-            this.tableLayoutPanel50.Name = "tableLayoutPanel50";
-            this.tableLayoutPanel50.RowCount = 1;
-            this.tableLayoutPanel50.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel50.Size = new System.Drawing.Size(717, 61);
-            this.tableLayoutPanel50.TabIndex = 10;
-            // 
-            // txtExplanationVerb
-            // 
-            this.txtExplanationVerb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtExplanationVerb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtExplanationVerb.Location = new System.Drawing.Point(110, 3);
-            this.txtExplanationVerb.Multiline = true;
-            this.txtExplanationVerb.Name = "txtExplanationVerb";
-            this.txtExplanationVerb.Size = new System.Drawing.Size(531, 55);
-            this.txtExplanationVerb.TabIndex = 37;
-            // 
-            // label37
-            // 
-            this.label37.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(6, 0);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(98, 21);
-            this.label37.TabIndex = 38;
-            this.label37.Text = "Bedeutung:";
-            // 
-            // tableLayoutPanel51
-            // 
-            this.tableLayoutPanel51.ColumnCount = 1;
-            this.tableLayoutPanel51.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel51.Controls.Add(this.labelTotalWordsVerb, 0, 1);
-            this.tableLayoutPanel51.Controls.Add(this.label45, 0, 0);
-            this.tableLayoutPanel51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel51.Location = new System.Drawing.Point(647, 3);
-            this.tableLayoutPanel51.Name = "tableLayoutPanel51";
-            this.tableLayoutPanel51.RowCount = 2;
-            this.tableLayoutPanel51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel51.Size = new System.Drawing.Size(67, 55);
-            this.tableLayoutPanel51.TabIndex = 3;
-            // 
-            // labelTotalWordsVerb
-            // 
-            this.labelTotalWordsVerb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelTotalWordsVerb.AutoSize = true;
-            this.labelTotalWordsVerb.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotalWordsVerb.Location = new System.Drawing.Point(3, 27);
-            this.labelTotalWordsVerb.Name = "labelTotalWordsVerb";
-            this.labelTotalWordsVerb.Size = new System.Drawing.Size(61, 17);
-            this.labelTotalWordsVerb.TabIndex = 0;
-            this.labelTotalWordsVerb.Text = "0";
-            this.labelTotalWordsVerb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label45
-            // 
-            this.label45.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(3, 5);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(61, 17);
-            this.label45.TabIndex = 0;
-            this.label45.Text = "Total";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tableLayoutPanel52
-            // 
-            this.tableLayoutPanel52.ColumnCount = 2;
-            this.tableLayoutPanel52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82F));
-            this.tableLayoutPanel52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18F));
-            this.tableLayoutPanel52.Controls.Add(this.tableLayoutPanel53, 0, 0);
-            this.tableLayoutPanel52.Controls.Add(this.dataGridViewVerb, 0, 0);
-            this.tableLayoutPanel52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel52.Location = new System.Drawing.Point(3, 68);
-            this.tableLayoutPanel52.Name = "tableLayoutPanel52";
-            this.tableLayoutPanel52.RowCount = 1;
-            this.tableLayoutPanel52.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel52.Size = new System.Drawing.Size(717, 300);
-            this.tableLayoutPanel52.TabIndex = 8;
-            // 
-            // tableLayoutPanel53
-            // 
-            this.tableLayoutPanel53.ColumnCount = 1;
-            this.tableLayoutPanel53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel53.Controls.Add(this.tableLayoutPanel54, 0, 2);
-            this.tableLayoutPanel53.Controls.Add(this.tableLayoutPanel55, 0, 0);
-            this.tableLayoutPanel53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel53.Location = new System.Drawing.Point(590, 3);
-            this.tableLayoutPanel53.Name = "tableLayoutPanel53";
-            this.tableLayoutPanel53.RowCount = 3;
-            this.tableLayoutPanel53.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel53.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel53.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
-            this.tableLayoutPanel53.Size = new System.Drawing.Size(124, 294);
-            this.tableLayoutPanel53.TabIndex = 8;
-            // 
-            // tableLayoutPanel54
-            // 
-            this.tableLayoutPanel54.ColumnCount = 1;
-            this.tableLayoutPanel54.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel54.Controls.Add(this.iconThisMonthVerb, 0, 0);
-            this.tableLayoutPanel54.Controls.Add(this.iconLastMonthVerb, 0, 4);
-            this.tableLayoutPanel54.Controls.Add(this.iconEditPageVerb, 0, 6);
-            this.tableLayoutPanel54.Controls.Add(this.iconAllVerb, 0, 2);
-            this.tableLayoutPanel54.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel54.Location = new System.Drawing.Point(3, 135);
-            this.tableLayoutPanel54.Name = "tableLayoutPanel54";
-            this.tableLayoutPanel54.RowCount = 7;
-            this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
-            this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
-            this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
-            this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.5F));
-            this.tableLayoutPanel54.Size = new System.Drawing.Size(118, 156);
-            this.tableLayoutPanel54.TabIndex = 3;
-            // 
-            // iconThisMonthVerb
-            // 
-            this.iconThisMonthVerb.BackColor = System.Drawing.Color.MidnightBlue;
-            this.iconThisMonthVerb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconThisMonthVerb.FlatAppearance.BorderSize = 0;
-            this.iconThisMonthVerb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconThisMonthVerb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconThisMonthVerb.ForeColor = System.Drawing.Color.White;
-            this.iconThisMonthVerb.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconThisMonthVerb.IconColor = System.Drawing.Color.MidnightBlue;
-            this.iconThisMonthVerb.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconThisMonthVerb.IconSize = 32;
-            this.iconThisMonthVerb.Location = new System.Drawing.Point(3, 3);
-            this.iconThisMonthVerb.Name = "iconThisMonthVerb";
-            this.iconThisMonthVerb.Size = new System.Drawing.Size(112, 30);
-            this.iconThisMonthVerb.TabIndex = 15;
-            this.iconThisMonthVerb.Text = "This Month";
-            this.iconThisMonthVerb.UseVisualStyleBackColor = false;
-            this.iconThisMonthVerb.Click += new System.EventHandler(this.iconThisMonthVerb_Click);
-            // 
-            // iconLastMonthVerb
-            // 
-            this.iconLastMonthVerb.BackColor = System.Drawing.Color.MidnightBlue;
-            this.iconLastMonthVerb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconLastMonthVerb.FlatAppearance.BorderSize = 0;
-            this.iconLastMonthVerb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconLastMonthVerb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconLastMonthVerb.ForeColor = System.Drawing.Color.White;
-            this.iconLastMonthVerb.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconLastMonthVerb.IconColor = System.Drawing.Color.MidnightBlue;
-            this.iconLastMonthVerb.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconLastMonthVerb.IconSize = 32;
-            this.iconLastMonthVerb.Location = new System.Drawing.Point(3, 81);
-            this.iconLastMonthVerb.Name = "iconLastMonthVerb";
-            this.iconLastMonthVerb.Size = new System.Drawing.Size(112, 30);
-            this.iconLastMonthVerb.TabIndex = 15;
-            this.iconLastMonthVerb.Text = "Last Month";
-            this.iconLastMonthVerb.UseVisualStyleBackColor = false;
-            this.iconLastMonthVerb.Click += new System.EventHandler(this.iconLastMonthVerb_Click);
-            // 
-            // iconEditPageVerb
-            // 
-            this.iconEditPageVerb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconEditPageVerb.FlatAppearance.BorderSize = 0;
-            this.iconEditPageVerb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconEditPageVerb.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconEditPageVerb.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconEditPageVerb.IconChar = FontAwesome.Sharp.IconChar.Pen;
-            this.iconEditPageVerb.IconColor = System.Drawing.Color.MidnightBlue;
-            this.iconEditPageVerb.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconEditPageVerb.IconSize = 32;
-            this.iconEditPageVerb.Location = new System.Drawing.Point(3, 120);
-            this.iconEditPageVerb.Name = "iconEditPageVerb";
-            this.iconEditPageVerb.Size = new System.Drawing.Size(112, 33);
-            this.iconEditPageVerb.TabIndex = 15;
-            this.iconEditPageVerb.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconEditPageVerb.UseVisualStyleBackColor = true;
-            this.iconEditPageVerb.Click += new System.EventHandler(this.iconEditPageVerb_Click);
-            // 
-            // iconAllVerb
-            // 
-            this.iconAllVerb.BackColor = System.Drawing.Color.MidnightBlue;
-            this.iconAllVerb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconAllVerb.FlatAppearance.BorderSize = 0;
-            this.iconAllVerb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconAllVerb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconAllVerb.ForeColor = System.Drawing.Color.White;
-            this.iconAllVerb.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconAllVerb.IconColor = System.Drawing.Color.MidnightBlue;
-            this.iconAllVerb.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconAllVerb.IconSize = 32;
-            this.iconAllVerb.Location = new System.Drawing.Point(3, 42);
-            this.iconAllVerb.Name = "iconAllVerb";
-            this.iconAllVerb.Size = new System.Drawing.Size(112, 30);
-            this.iconAllVerb.TabIndex = 15;
-            this.iconAllVerb.Text = "All";
-            this.iconAllVerb.UseVisualStyleBackColor = false;
-            this.iconAllVerb.Click += new System.EventHandler(this.iconAllVerb_Click);
-            // 
-            // tableLayoutPanel55
-            // 
-            this.tableLayoutPanel55.ColumnCount = 1;
-            this.tableLayoutPanel55.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel55.Controls.Add(this.iconSearchPageVerb, 0, 0);
-            this.tableLayoutPanel55.Controls.Add(this.iconClearPageVerb, 0, 2);
-            this.tableLayoutPanel55.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel55.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel55.Name = "tableLayoutPanel55";
-            this.tableLayoutPanel55.RowCount = 3;
-            this.tableLayoutPanel55.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
-            this.tableLayoutPanel55.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel55.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
-            this.tableLayoutPanel55.Size = new System.Drawing.Size(118, 82);
-            this.tableLayoutPanel55.TabIndex = 3;
-            // 
-            // iconSearchPageVerb
-            // 
-            this.iconSearchPageVerb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconSearchPageVerb.FlatAppearance.BorderSize = 0;
-            this.iconSearchPageVerb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconSearchPageVerb.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconSearchPageVerb.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconSearchPageVerb.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.iconSearchPageVerb.IconColor = System.Drawing.Color.MidnightBlue;
-            this.iconSearchPageVerb.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconSearchPageVerb.IconSize = 32;
-            this.iconSearchPageVerb.Location = new System.Drawing.Point(3, 3);
-            this.iconSearchPageVerb.Name = "iconSearchPageVerb";
-            this.iconSearchPageVerb.Size = new System.Drawing.Size(112, 32);
-            this.iconSearchPageVerb.TabIndex = 15;
-            this.iconSearchPageVerb.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconSearchPageVerb.UseVisualStyleBackColor = true;
-            this.iconSearchPageVerb.Click += new System.EventHandler(this.iconSearchPageVerb_Click);
-            // 
-            // iconClearPageVerb
-            // 
-            this.iconClearPageVerb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconClearPageVerb.FlatAppearance.BorderSize = 0;
-            this.iconClearPageVerb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconClearPageVerb.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconClearPageVerb.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconClearPageVerb.IconChar = FontAwesome.Sharp.IconChar.Broom;
-            this.iconClearPageVerb.IconColor = System.Drawing.Color.Crimson;
-            this.iconClearPageVerb.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconClearPageVerb.IconSize = 32;
-            this.iconClearPageVerb.Location = new System.Drawing.Point(3, 45);
-            this.iconClearPageVerb.Name = "iconClearPageVerb";
-            this.iconClearPageVerb.Size = new System.Drawing.Size(112, 34);
-            this.iconClearPageVerb.TabIndex = 15;
-            this.iconClearPageVerb.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconClearPageVerb.UseVisualStyleBackColor = true;
-            this.iconClearPageVerb.Click += new System.EventHandler(this.iconClearPageVerb_Click);
-            // 
-            // dataGridViewVerb
-            // 
-            this.dataGridViewVerb.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewVerb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewVerb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewVerb.Location = new System.Drawing.Point(3, 3);
-            this.dataGridViewVerb.Name = "dataGridViewVerb";
-            dataGridViewCellStyle57.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewVerb.RowsDefaultCellStyle = dataGridViewCellStyle57;
-            this.dataGridViewVerb.RowTemplate.Height = 30;
-            this.dataGridViewVerb.Size = new System.Drawing.Size(581, 294);
-            this.dataGridViewVerb.TabIndex = 7;
-            this.dataGridViewVerb.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewVerb_RowEnter);
-            // 
-            // tableLayoutPanel56
-            // 
-            this.tableLayoutPanel56.ColumnCount = 5;
-            this.tableLayoutPanel56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel56.Controls.Add(this.label46, 0, 0);
-            this.tableLayoutPanel56.Controls.Add(this.label47, 1, 0);
-            this.tableLayoutPanel56.Controls.Add(this.cmbCasesPageVerb, 1, 1);
-            this.tableLayoutPanel56.Controls.Add(this.txtWordPageVerb, 0, 1);
-            this.tableLayoutPanel56.Controls.Add(this.txtYearPageVerb, 4, 1);
-            this.tableLayoutPanel56.Controls.Add(this.label48, 4, 0);
-            this.tableLayoutPanel56.Controls.Add(this.cmbMonthPageVerb, 3, 1);
-            this.tableLayoutPanel56.Controls.Add(this.label49, 3, 0);
-            this.tableLayoutPanel56.Controls.Add(this.label50, 2, 0);
-            this.tableLayoutPanel56.Controls.Add(this.cmbGroupPageVerb, 2, 1);
-            this.tableLayoutPanel56.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel56.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel56.Name = "tableLayoutPanel56";
-            this.tableLayoutPanel56.RowCount = 2;
-            this.tableLayoutPanel56.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel56.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel56.Size = new System.Drawing.Size(717, 59);
-            this.tableLayoutPanel56.TabIndex = 9;
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label46.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(3, 3);
-            this.label46.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(137, 26);
-            this.label46.TabIndex = 0;
-            this.label46.Text = "Wörter";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label47.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(146, 3);
-            this.label47.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(173, 26);
-            this.label47.TabIndex = 0;
-            this.label47.Text = "Kasus";
-            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // cmbCasesPageVerb
-            // 
-            this.cmbCasesPageVerb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbCasesPageVerb.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbCasesPageVerb.FormattingEnabled = true;
-            this.cmbCasesPageVerb.Location = new System.Drawing.Point(146, 32);
-            this.cmbCasesPageVerb.Name = "cmbCasesPageVerb";
-            this.cmbCasesPageVerb.Size = new System.Drawing.Size(173, 28);
-            this.cmbCasesPageVerb.TabIndex = 6;
-            // 
-            // txtWordPageVerb
-            // 
-            this.txtWordPageVerb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtWordPageVerb.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWordPageVerb.Location = new System.Drawing.Point(3, 32);
-            this.txtWordPageVerb.Name = "txtWordPageVerb";
-            this.txtWordPageVerb.Size = new System.Drawing.Size(137, 27);
-            this.txtWordPageVerb.TabIndex = 2;
-            this.txtWordPageVerb.TextChanged += new System.EventHandler(this.txtWordPageVerb_TextChanged);
-            // 
-            // txtYearPageVerb
-            // 
-            this.txtYearPageVerb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtYearPageVerb.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtYearPageVerb.Location = new System.Drawing.Point(647, 32);
-            this.txtYearPageVerb.Name = "txtYearPageVerb";
-            this.txtYearPageVerb.Size = new System.Drawing.Size(67, 27);
-            this.txtYearPageVerb.TabIndex = 2;
-            this.txtYearPageVerb.TextChanged += new System.EventHandler(this.txtYearPageVerb_TextChanged);
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label48.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(647, 3);
-            this.label48.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(67, 26);
-            this.label48.TabIndex = 0;
-            this.label48.Text = "Jahr";
-            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // cmbMonthPageVerb
-            // 
-            this.cmbMonthPageVerb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbMonthPageVerb.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbMonthPageVerb.FormattingEnabled = true;
-            this.cmbMonthPageVerb.Location = new System.Drawing.Point(540, 32);
-            this.cmbMonthPageVerb.Name = "cmbMonthPageVerb";
-            this.cmbMonthPageVerb.Size = new System.Drawing.Size(101, 28);
-            this.cmbMonthPageVerb.TabIndex = 6;
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label49.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(540, 3);
-            this.label49.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(101, 26);
-            this.label49.TabIndex = 0;
-            this.label49.Text = "Monat";
-            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label50.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(325, 3);
-            this.label50.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(209, 26);
-            this.label50.TabIndex = 0;
-            this.label50.Text = "Gruppen";
-            this.label50.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // cmbGroupPageVerb
-            // 
-            this.cmbGroupPageVerb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbGroupPageVerb.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbGroupPageVerb.FormattingEnabled = true;
-            this.cmbGroupPageVerb.Location = new System.Drawing.Point(325, 32);
-            this.cmbGroupPageVerb.Name = "cmbGroupPageVerb";
-            this.cmbGroupPageVerb.Size = new System.Drawing.Size(209, 28);
-            this.cmbGroupPageVerb.TabIndex = 6;
-            // 
             // FormPartsOfSpeech
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3480,6 +3505,19 @@
             this.Text = "Teilen des Vortrags";
             this.Load += new System.EventHandler(this.FormPartsOfSpeech_Load);
             this.tabControlPartsOfSpeech.ResumeLayout(false);
+            this.pageVerbs.ResumeLayout(false);
+            this.tableLayoutPanel49.ResumeLayout(false);
+            this.tableLayoutPanel50.ResumeLayout(false);
+            this.tableLayoutPanel50.PerformLayout();
+            this.tableLayoutPanel51.ResumeLayout(false);
+            this.tableLayoutPanel51.PerformLayout();
+            this.tableLayoutPanel52.ResumeLayout(false);
+            this.tableLayoutPanel53.ResumeLayout(false);
+            this.tableLayoutPanel54.ResumeLayout(false);
+            this.tableLayoutPanel55.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVerb)).EndInit();
+            this.tableLayoutPanel56.ResumeLayout(false);
+            this.tableLayoutPanel56.PerformLayout();
             this.pageAdjectives.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel9.ResumeLayout(false);
@@ -3493,32 +3531,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdj)).EndInit();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
-            this.pageAdverbs.ResumeLayout(false);
-            this.tableLayoutPanel7.ResumeLayout(false);
-            this.tableLayoutPanel8.ResumeLayout(false);
-            this.tableLayoutPanel8.PerformLayout();
-            this.tableLayoutPanel11.ResumeLayout(false);
-            this.tableLayoutPanel11.PerformLayout();
-            this.tableLayoutPanel12.ResumeLayout(false);
-            this.tableLayoutPanel13.ResumeLayout(false);
-            this.tableLayoutPanel14.ResumeLayout(false);
-            this.tableLayoutPanel15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdv)).EndInit();
-            this.tableLayoutPanel16.ResumeLayout(false);
-            this.tableLayoutPanel16.PerformLayout();
-            this.pageConjunctions.ResumeLayout(false);
-            this.tableLayoutPanel17.ResumeLayout(false);
-            this.tableLayoutPanel18.ResumeLayout(false);
-            this.tableLayoutPanel18.PerformLayout();
-            this.tableLayoutPanel19.ResumeLayout(false);
-            this.tableLayoutPanel19.PerformLayout();
-            this.tableLayoutPanel20.ResumeLayout(false);
-            this.tableLayoutPanel21.ResumeLayout(false);
-            this.tableLayoutPanel22.ResumeLayout(false);
-            this.tableLayoutPanel23.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConj)).EndInit();
-            this.tableLayoutPanel24.ResumeLayout(false);
-            this.tableLayoutPanel24.PerformLayout();
             this.pageNouns.ResumeLayout(false);
             this.tableLayoutPanel25.ResumeLayout(false);
             this.tableLayoutPanel26.ResumeLayout(false);
@@ -3545,6 +3557,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhrase)).EndInit();
             this.tableLayoutPanel40.ResumeLayout(false);
             this.tableLayoutPanel40.PerformLayout();
+            this.pageAdverbs.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel8.ResumeLayout(false);
+            this.tableLayoutPanel8.PerformLayout();
+            this.tableLayoutPanel11.ResumeLayout(false);
+            this.tableLayoutPanel11.PerformLayout();
+            this.tableLayoutPanel12.ResumeLayout(false);
+            this.tableLayoutPanel13.ResumeLayout(false);
+            this.tableLayoutPanel14.ResumeLayout(false);
+            this.tableLayoutPanel15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdv)).EndInit();
+            this.tableLayoutPanel16.ResumeLayout(false);
+            this.tableLayoutPanel16.PerformLayout();
+            this.pageConjunctions.ResumeLayout(false);
+            this.tableLayoutPanel17.ResumeLayout(false);
+            this.tableLayoutPanel18.ResumeLayout(false);
+            this.tableLayoutPanel18.PerformLayout();
+            this.tableLayoutPanel19.ResumeLayout(false);
+            this.tableLayoutPanel19.PerformLayout();
+            this.tableLayoutPanel20.ResumeLayout(false);
+            this.tableLayoutPanel21.ResumeLayout(false);
+            this.tableLayoutPanel22.ResumeLayout(false);
+            this.tableLayoutPanel23.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConj)).EndInit();
+            this.tableLayoutPanel24.ResumeLayout(false);
+            this.tableLayoutPanel24.PerformLayout();
             this.pageSentences.ResumeLayout(false);
             this.tableLayoutPanel41.ResumeLayout(false);
             this.tableLayoutPanel42.ResumeLayout(false);
@@ -3558,19 +3596,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSentence)).EndInit();
             this.tableLayoutPanel48.ResumeLayout(false);
             this.tableLayoutPanel48.PerformLayout();
-            this.pageVerbs.ResumeLayout(false);
-            this.tableLayoutPanel49.ResumeLayout(false);
-            this.tableLayoutPanel50.ResumeLayout(false);
-            this.tableLayoutPanel50.PerformLayout();
-            this.tableLayoutPanel51.ResumeLayout(false);
-            this.tableLayoutPanel51.PerformLayout();
-            this.tableLayoutPanel52.ResumeLayout(false);
-            this.tableLayoutPanel53.ResumeLayout(false);
-            this.tableLayoutPanel54.ResumeLayout(false);
-            this.tableLayoutPanel55.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVerb)).EndInit();
-            this.tableLayoutPanel56.ResumeLayout(false);
-            this.tableLayoutPanel56.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -3709,15 +3734,6 @@
         private System.Windows.Forms.Label labelTotalWordsPhrase;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel36;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel37;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel38;
-        private FontAwesome.Sharp.IconButton iconThisMonthPhrase;
-        private FontAwesome.Sharp.IconButton iconLastMonthPhrase;
-        private FontAwesome.Sharp.IconButton iconEditPagePhrase;
-        private FontAwesome.Sharp.IconButton iconAllPhrase;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel39;
-        private FontAwesome.Sharp.IconButton iconSearchPagePhrase;
-        private FontAwesome.Sharp.IconButton iconClearPagePhrase;
         private System.Windows.Forms.DataGridView dataGridViewPhrase;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel40;
         private System.Windows.Forms.Label label32;
@@ -3788,5 +3804,15 @@
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.ComboBox cmbGroupPageVerb;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel37;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel38;
+        private FontAwesome.Sharp.IconButton iconThisMonthPhrase;
+        private FontAwesome.Sharp.IconButton iconLastMonthPhrase;
+        private FontAwesome.Sharp.IconButton iconEditPagePhrase;
+        private FontAwesome.Sharp.IconButton iconAllPhrase;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel39;
+        private FontAwesome.Sharp.IconButton iconSearchPagePhrase;
+        private FontAwesome.Sharp.IconButton iconClearPagePhrase;
+        private FontAwesome.Sharp.IconButton iconViewPageSentence;
     }
 }

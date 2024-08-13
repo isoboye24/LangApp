@@ -651,7 +651,7 @@ namespace LangApp.AllForms
         private void txtWordPageAdj_TextChanged(object sender, EventArgs e)
         {
             List<WordDetailDTO> list = dto.Adjectives;
-            list = list.Where(x => x.Word.ToString().Contains(txtWordPageAdj.Text.Trim())).ToList();
+            list = list.Where(x => x.Word.Contains(txtWordPageAdj.Text.Trim()) || x.Explanation.Contains(txtWordPageAdj.Text.Trim())).ToList();
             dataGridViewAdj.DataSource = list;
             RefreshCounts();
         }
@@ -796,7 +796,7 @@ namespace LangApp.AllForms
         private void txtWordPageAdv_TextChanged(object sender, EventArgs e)
         {
             List<WordDetailDTO> list = dto.Adverbs;
-            list = list.Where(x => x.Word.ToString().Contains(txtWordPageAdv.Text.Trim())).ToList();
+            list = list.Where(x => x.Word.Contains(txtWordPageAdv.Text.Trim()) || x.Explanation.Contains(txtWordPageAdv.Text.Trim())).ToList();
             dataGridViewAdv.DataSource = list;
             RefreshCounts();
         }
@@ -962,7 +962,7 @@ namespace LangApp.AllForms
         private void txtWordPageConj_TextChanged(object sender, EventArgs e)
         {
             List<WordDetailDTO> list = dto.Conjunction;
-            list = list.Where(x => x.Word.ToString().Contains(txtWordPageConj.Text.Trim())).ToList();
+            list = list.Where(x => x.Word.Contains(txtWordPageConj.Text.Trim()) || x.Explanation.Contains(txtWordPageConj.Text.Trim())).ToList();
             dataGridViewConj.DataSource = list;
             RefreshCounts();
         }
@@ -1077,7 +1077,7 @@ namespace LangApp.AllForms
         private void txtWordPageNoun_TextChanged(object sender, EventArgs e)
         {
             List<WordDetailDTO> list = dto.Nouns;
-            list = list.Where(x => x.Word.ToString().Contains(txtWordPageNoun.Text.Trim())).ToList();
+            list = list.Where(x => x.Word.Contains(txtWordPageNoun.Text.Trim()) || x.Explanation.Contains(txtWordPageNoun.Text.Trim())).ToList();
             dataGridViewNoun.DataSource = list;
             RefreshCounts();
         }
@@ -1235,7 +1235,7 @@ namespace LangApp.AllForms
         private void txtWordPagePhrase_TextChanged(object sender, EventArgs e)
         {
             List<WordDetailDTO> list = dto.PhraseWords;
-            list = list.Where(x => x.Word.ToString().Contains(txtWordPagePhrase.Text.Trim())).ToList();
+            list = list.Where(x => x.Word.Contains(txtWordPagePhrase.Text.Trim()) || x.Explanation.Contains(txtWordPagePhrase.Text.Trim())).ToList();
             dataGridViewPhrase.DataSource = list;
             RefreshCounts();
         }
@@ -1514,7 +1514,7 @@ namespace LangApp.AllForms
         private void txtWordPageVerb_TextChanged(object sender, EventArgs e)
         {
             List<WordDetailDTO> list = dto.Verbs;
-            list = list.Where(x => x.Word.ToString().Contains(txtWordPageVerb.Text.Trim())).ToList();
+            list = list.Where(x => x.Word.Contains(txtWordPageVerb.Text.Trim()) || x.Explanation.Contains(txtWordPageVerb.Text.Trim())).ToList();
             dataGridViewVerb.DataSource = list;
             RefreshCounts();
         }
@@ -1620,6 +1620,22 @@ namespace LangApp.AllForms
                 FormWord open = new FormWord();
                 open.detail = detailVerb;
                 open.isUpdate = true;
+                this.Close();
+                open.ShowDialog();
+                this.Visible = true;
+            }
+        }
+
+        private void iconViewPageSentence_Click(object sender, EventArgs e)
+        {
+            if (detailSentence.WordID == 0)
+            {
+                MessageBox.Show("Please select a sentence from the table");
+            }
+            else
+            {
+                FormViewSentence open = new FormViewSentence();
+                open.detail = detailSentence;
                 this.Close();
                 open.ShowDialog();
                 this.Visible = true;

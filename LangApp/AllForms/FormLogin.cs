@@ -32,7 +32,7 @@ namespace LangApp
             label4.Font = new Font("Segoe UI", 11, FontStyle.Italic);
             txtUsername.Font = new Font("Segoe UI", 12, FontStyle.Regular);
             txtPassword.Font = new Font("Segoe UI", 12, FontStyle.Regular);
-            btnClose.Font = new Font("Segoe UI", 12, FontStyle.Bold);
+            iconBtnClose.Font = new Font("Segoe UI", 12, FontStyle.Bold);
             btnEnter.Font = new Font("Segoe UI", 12, FontStyle.Bold);
             linkRegister.Font = new Font("Segoe UI", 11, FontStyle.Italic);
         }
@@ -80,11 +80,6 @@ namespace LangApp
             }            
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void linkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             FormRegister open = new FormRegister();
@@ -95,7 +90,12 @@ namespace LangApp
 
         private void iconClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
+        }
+
+        private void iconBtnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

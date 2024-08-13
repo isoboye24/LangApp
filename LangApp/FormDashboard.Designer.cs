@@ -35,6 +35,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnGraphs = new FontAwesome.Sharp.IconButton();
+            this.btnSettings = new FontAwesome.Sharp.IconButton();
             this.btnReports = new FontAwesome.Sharp.IconButton();
             this.btnPartsOfSpeech = new FontAwesome.Sharp.IconButton();
             this.btnWords = new FontAwesome.Sharp.IconButton();
@@ -46,7 +47,6 @@
             this.iconMinimize = new FontAwesome.Sharp.IconPictureBox();
             this.iconMaximize = new FontAwesome.Sharp.IconPictureBox();
             this.iconClose = new FontAwesome.Sharp.IconPictureBox();
-            this.btnSettings = new FontAwesome.Sharp.IconButton();
             this.labelTitleChildForm = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -124,7 +124,6 @@
             this.panelSidebar.Controls.Add(this.label17);
             this.panelSidebar.Controls.Add(this.label3);
             this.panelSidebar.Controls.Add(this.btnGraphs);
-            this.panelSidebar.Controls.Add(this.btnSettings);
             this.panelSidebar.Controls.Add(this.btnReports);
             this.panelSidebar.Controls.Add(this.btnPartsOfSpeech);
             this.panelSidebar.Controls.Add(this.btnWords);
@@ -138,10 +137,11 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.btnDeletedData);
+            this.panel1.Controls.Add(this.btnSettings);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 542);
+            this.panel1.Location = new System.Drawing.Point(0, 493);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(210, 58);
+            this.panel1.Size = new System.Drawing.Size(210, 107);
             this.panel1.TabIndex = 16;
             // 
             // btnDeletedData
@@ -156,7 +156,7 @@
             this.btnDeletedData.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDeletedData.IconSize = 24;
             this.btnDeletedData.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDeletedData.Location = new System.Drawing.Point(0, 0);
+            this.btnDeletedData.Location = new System.Drawing.Point(0, 44);
             this.btnDeletedData.Name = "btnDeletedData";
             this.btnDeletedData.Size = new System.Drawing.Size(210, 44);
             this.btnDeletedData.TabIndex = 14;
@@ -170,7 +170,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.DarkGray;
-            this.label17.Location = new System.Drawing.Point(0, 84);
+            this.label17.Location = new System.Drawing.Point(0, 93);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(175, 17);
             this.label17.TabIndex = 15;
@@ -181,7 +181,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkGray;
-            this.label3.Location = new System.Drawing.Point(0, 238);
+            this.label3.Location = new System.Drawing.Point(0, 219);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(125, 17);
             this.label3.TabIndex = 15;
@@ -198,7 +198,7 @@
             this.btnGraphs.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnGraphs.IconSize = 24;
             this.btnGraphs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGraphs.Location = new System.Drawing.Point(0, 308);
+            this.btnGraphs.Location = new System.Drawing.Point(0, 289);
             this.btnGraphs.Name = "btnGraphs";
             this.btnGraphs.Size = new System.Drawing.Size(210, 44);
             this.btnGraphs.TabIndex = 14;
@@ -207,6 +207,28 @@
             this.btnGraphs.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGraphs.UseVisualStyleBackColor = true;
             this.btnGraphs.Click += new System.EventHandler(this.btnGraphs_Click);
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettings.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnSettings.IconChar = FontAwesome.Sharp.IconChar.ChartPie;
+            this.btnSettings.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnSettings.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSettings.IconSize = 24;
+            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.Location = new System.Drawing.Point(0, 0);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(210, 44);
+            this.btnSettings.TabIndex = 14;
+            this.btnSettings.Text = "Settings";
+            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnReports
             // 
@@ -219,7 +241,7 @@
             this.btnReports.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnReports.IconSize = 24;
             this.btnReports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReports.Location = new System.Drawing.Point(0, 258);
+            this.btnReports.Location = new System.Drawing.Point(0, 239);
             this.btnReports.Name = "btnReports";
             this.btnReports.Size = new System.Drawing.Size(210, 44);
             this.btnReports.TabIndex = 14;
@@ -240,7 +262,7 @@
             this.btnPartsOfSpeech.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnPartsOfSpeech.IconSize = 24;
             this.btnPartsOfSpeech.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPartsOfSpeech.Location = new System.Drawing.Point(0, 154);
+            this.btnPartsOfSpeech.Location = new System.Drawing.Point(0, 163);
             this.btnPartsOfSpeech.Name = "btnPartsOfSpeech";
             this.btnPartsOfSpeech.Size = new System.Drawing.Size(210, 44);
             this.btnPartsOfSpeech.TabIndex = 14;
@@ -261,7 +283,7 @@
             this.btnWords.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnWords.IconSize = 24;
             this.btnWords.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnWords.Location = new System.Drawing.Point(0, 104);
+            this.btnWords.Location = new System.Drawing.Point(0, 113);
             this.btnWords.Name = "btnWords";
             this.btnWords.Size = new System.Drawing.Size(210, 44);
             this.btnWords.TabIndex = 14;
@@ -372,27 +394,6 @@
             this.iconClose.TabIndex = 15;
             this.iconClose.TabStop = false;
             this.iconClose.Click += new System.EventHandler(this.iconClose_Click);
-            // 
-            // btnSettings
-            // 
-            this.btnSettings.FlatAppearance.BorderSize = 0;
-            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettings.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSettings.IconChar = FontAwesome.Sharp.IconChar.ChartPie;
-            this.btnSettings.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnSettings.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSettings.IconSize = 24;
-            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(0, 390);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(210, 44);
-            this.btnSettings.TabIndex = 14;
-            this.btnSettings.Text = "Settings";
-            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSettings.UseVisualStyleBackColor = true;
-            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // labelTitleChildForm
             // 

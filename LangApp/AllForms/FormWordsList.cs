@@ -97,7 +97,7 @@ namespace LangApp.AllForms
         private void txtWord_TextChanged(object sender, EventArgs e)
         {
             List<WordDetailDTO> list = dto.Words;
-            list = list.Where(x => x.Word.Contains(txtWord.Text.Trim())).ToList();
+            list = list.Where(x => x.Word.Contains(txtWord.Text.Trim()) || x.Explanation.Contains(txtWord.Text.Trim())).ToList();
             dataGridView1.DataSource = list;
             RefreshCounts();
         }

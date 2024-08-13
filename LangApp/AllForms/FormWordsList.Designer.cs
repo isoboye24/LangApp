@@ -28,20 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.txtExplanation = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.iconAdd = new FontAwesome.Sharp.IconButton();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.labelTotalWords = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.iconEdit = new FontAwesome.Sharp.IconButton();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.iconAdd = new FontAwesome.Sharp.IconButton();
             this.iconDelete = new FontAwesome.Sharp.IconButton();
+            this.iconEdit = new FontAwesome.Sharp.IconButton();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.iconSearch = new FontAwesome.Sharp.IconButton();
+            this.iconClear = new FontAwesome.Sharp.IconButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.txtYear = new System.Windows.Forms.TextBox();
@@ -52,18 +55,15 @@
             this.cmbPartsOfSpeech = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtWord = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.iconClear = new FontAwesome.Sharp.IconButton();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel5.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -121,58 +121,6 @@
             this.label3.TabIndex = 38;
             this.label3.Text = "Bedeutung:";
             // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel10, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.dataGridView1, 0, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 73);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(725, 324);
-            this.tableLayoutPanel3.TabIndex = 8;
-            // 
-            // tableLayoutPanel10
-            // 
-            this.tableLayoutPanel10.ColumnCount = 1;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel10.Controls.Add(this.tableLayoutPanel6, 0, 2);
-            this.tableLayoutPanel10.Controls.Add(this.tableLayoutPanel4, 0, 0);
-            this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(655, 3);
-            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
-            this.tableLayoutPanel10.RowCount = 3;
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(67, 318);
-            this.tableLayoutPanel10.TabIndex = 8;
-            // 
-            // iconAdd
-            // 
-            this.iconAdd.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconAdd.FlatAppearance.BorderSize = 0;
-            this.iconAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconAdd.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconAdd.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.iconAdd.IconColor = System.Drawing.Color.MidnightBlue;
-            this.iconAdd.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconAdd.IconSize = 32;
-            this.iconAdd.Location = new System.Drawing.Point(3, 3);
-            this.iconAdd.Name = "iconAdd";
-            this.iconAdd.Size = new System.Drawing.Size(55, 36);
-            this.iconAdd.TabIndex = 15;
-            this.iconAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconAdd.UseVisualStyleBackColor = true;
-            this.iconAdd.Click += new System.EventHandler(this.iconAdd_Click);
-            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
@@ -213,24 +161,76 @@
             this.label6.Text = "Total";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // iconEdit
+            // tableLayoutPanel3
             // 
-            this.iconEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconEdit.FlatAppearance.BorderSize = 0;
-            this.iconEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconEdit.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconEdit.IconChar = FontAwesome.Sharp.IconChar.Pen;
-            this.iconEdit.IconColor = System.Drawing.Color.MidnightBlue;
-            this.iconEdit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconEdit.IconSize = 32;
-            this.iconEdit.Location = new System.Drawing.Point(3, 49);
-            this.iconEdit.Name = "iconEdit";
-            this.iconEdit.Size = new System.Drawing.Size(55, 36);
-            this.iconEdit.TabIndex = 15;
-            this.iconEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconEdit.UseVisualStyleBackColor = true;
-            this.iconEdit.Click += new System.EventHandler(this.iconEdit_Click);
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel10, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.dataGridView1, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 73);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(725, 324);
+            this.tableLayoutPanel3.TabIndex = 8;
+            // 
+            // tableLayoutPanel10
+            // 
+            this.tableLayoutPanel10.ColumnCount = 1;
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel10.Controls.Add(this.tableLayoutPanel6, 0, 2);
+            this.tableLayoutPanel10.Controls.Add(this.tableLayoutPanel4, 0, 0);
+            this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(655, 3);
+            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
+            this.tableLayoutPanel10.RowCount = 3;
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(67, 318);
+            this.tableLayoutPanel10.TabIndex = 8;
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 1;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel6.Controls.Add(this.iconAdd, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.iconDelete, 0, 4);
+            this.tableLayoutPanel6.Controls.Add(this.iconEdit, 0, 2);
+            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 177);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 5;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.5F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.5F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(61, 138);
+            this.tableLayoutPanel6.TabIndex = 3;
+            // 
+            // iconAdd
+            // 
+            this.iconAdd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconAdd.FlatAppearance.BorderSize = 0;
+            this.iconAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconAdd.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconAdd.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.iconAdd.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconAdd.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconAdd.IconSize = 32;
+            this.iconAdd.Location = new System.Drawing.Point(3, 3);
+            this.iconAdd.Name = "iconAdd";
+            this.iconAdd.Size = new System.Drawing.Size(55, 36);
+            this.iconAdd.TabIndex = 15;
+            this.iconAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconAdd.UseVisualStyleBackColor = true;
+            this.iconAdd.Click += new System.EventHandler(this.iconAdd_Click);
             // 
             // iconDelete
             // 
@@ -251,6 +251,41 @@
             this.iconDelete.UseVisualStyleBackColor = true;
             this.iconDelete.Click += new System.EventHandler(this.iconDelete_Click);
             // 
+            // iconEdit
+            // 
+            this.iconEdit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconEdit.FlatAppearance.BorderSize = 0;
+            this.iconEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconEdit.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconEdit.IconChar = FontAwesome.Sharp.IconChar.Pen;
+            this.iconEdit.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconEdit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconEdit.IconSize = 32;
+            this.iconEdit.Location = new System.Drawing.Point(3, 49);
+            this.iconEdit.Name = "iconEdit";
+            this.iconEdit.Size = new System.Drawing.Size(55, 36);
+            this.iconEdit.TabIndex = 15;
+            this.iconEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconEdit.UseVisualStyleBackColor = true;
+            this.iconEdit.Click += new System.EventHandler(this.iconEdit_Click);
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Controls.Add(this.iconSearch, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.iconClear, 0, 2);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 3;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(61, 73);
+            this.tableLayoutPanel4.TabIndex = 3;
+            // 
             // iconSearch
             // 
             this.iconSearch.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -270,6 +305,25 @@
             this.iconSearch.UseVisualStyleBackColor = true;
             this.iconSearch.Click += new System.EventHandler(this.iconSearch_Click);
             // 
+            // iconClear
+            // 
+            this.iconClear.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconClear.FlatAppearance.BorderSize = 0;
+            this.iconClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconClear.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconClear.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconClear.IconChar = FontAwesome.Sharp.IconChar.Broom;
+            this.iconClear.IconColor = System.Drawing.Color.Crimson;
+            this.iconClear.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconClear.IconSize = 32;
+            this.iconClear.Location = new System.Drawing.Point(3, 41);
+            this.iconClear.Name = "iconClear";
+            this.iconClear.Size = new System.Drawing.Size(55, 29);
+            this.iconClear.TabIndex = 15;
+            this.iconClear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconClear.UseVisualStyleBackColor = true;
+            this.iconClear.Click += new System.EventHandler(this.iconClear_Click);
+            // 
             // dataGridView1
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -277,8 +331,8 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.RowTemplate.Height = 30;
             this.dataGridView1.Size = new System.Drawing.Size(646, 318);
             this.dataGridView1.TabIndex = 7;
@@ -398,60 +452,6 @@
             this.txtWord.TabIndex = 2;
             this.txtWord.TextChanged += new System.EventHandler(this.txtWord_TextChanged);
             // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Controls.Add(this.iconSearch, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.iconClear, 0, 2);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 3;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(61, 73);
-            this.tableLayoutPanel4.TabIndex = 3;
-            // 
-            // iconClear
-            // 
-            this.iconClear.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconClear.FlatAppearance.BorderSize = 0;
-            this.iconClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconClear.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconClear.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconClear.IconChar = FontAwesome.Sharp.IconChar.Broom;
-            this.iconClear.IconColor = System.Drawing.Color.Crimson;
-            this.iconClear.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconClear.IconSize = 32;
-            this.iconClear.Location = new System.Drawing.Point(3, 41);
-            this.iconClear.Name = "iconClear";
-            this.iconClear.Size = new System.Drawing.Size(55, 29);
-            this.iconClear.TabIndex = 15;
-            this.iconClear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconClear.UseVisualStyleBackColor = true;
-            this.iconClear.Click += new System.EventHandler(this.iconClear_Click);
-            // 
-            // tableLayoutPanel6
-            // 
-            this.tableLayoutPanel6.ColumnCount = 1;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Controls.Add(this.iconAdd, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.iconDelete, 0, 4);
-            this.tableLayoutPanel6.Controls.Add(this.iconEdit, 0, 2);
-            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 177);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 5;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.5F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.5F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(61, 138);
-            this.tableLayoutPanel6.TabIndex = 3;
-            // 
             // FormWordsList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -464,15 +464,15 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel10.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel10.ResumeLayout(false);
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
