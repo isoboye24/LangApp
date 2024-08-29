@@ -257,7 +257,9 @@ namespace LangApp
 
         private void btnGraphs_Click(object sender, EventArgs e)
         {
-
+            buttonWasClicked = true;
+            ActivateButton(sender, RBGColors.color2);
+            OpenChildForm(new FormGraphs());
         }
     }
 }

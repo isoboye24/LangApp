@@ -55,6 +55,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -110,6 +111,7 @@
     <Compile Include="AllForms\FormWordsList.Designer.cs">
       <DependentUpon>FormWordsList.cs</DependentUpon>
     </Compile>
+    <Compile Include="BLL\GraphBLL.cs" />
     <Compile Include="BLL\PartOfSpeechBLL.cs" />
     <Compile Include="BLL\IBLL.cs" />
     <Compile Include="BLL\LanguageBLL.cs" />
@@ -122,6 +124,7 @@
     <Compile Include="DAL\COLOR.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="DAL\DAO\GraphDAO.cs" />
     <Compile Include="DAL\DAO\PartOfSpeechDAO.cs" />
     <Compile Include="DAL\DAO\LanguageDAO.cs" />
     <Compile Include="DAL\DAO\LanguagesDAO.cs" />
@@ -130,6 +133,7 @@
     <Compile Include="DAL\DAO\WordCaseDAO.cs" />
     <Compile Include="DAL\DAO\WordDAO.cs" />
     <Compile Include="DAL\DAO\WordGroupDAO.cs" />
+    <Compile Include="DAL\DAO\YearDAO.cs" />
     <Compile Include="DAL\DataModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -145,6 +149,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="DAL\DTO\GraphDetailDTO.cs" />
+    <Compile Include="DAL\DTO\GraphDTO.cs" />
     <Compile Include="DAL\DTO\PartOfSpeechDetailDTO.cs" />
     <Compile Include="DAL\DTO\PartOfSpeechDTO.cs" />
     <Compile Include="DAL\DTO\LanguageDetailDTO.cs" />
@@ -161,6 +167,7 @@
     <Compile Include="DAL\DTO\WordDTO.cs" />
     <Compile Include="DAL\DTO\WordGroupDetailDTO.cs" />
     <Compile Include="DAL\DTO\WordGroupDTO.cs" />
+    <Compile Include="DAL\DTO\YearDetailDTO.cs" />
     <Compile Include="DAL\LANGUAGE.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
