@@ -53,95 +53,17 @@ namespace LangApp.AllForms
         int currYear = DateTime.Today.Year;
         int currMonth = DateTime.Today.Month;
 
-        private string getAllPartsOfSpeechQueryYearly(int year)
-        {
-            string allPartsOfSpeechQueryYearly = "SELECT PARTS_OF_SPEECH.partsOfSpeechName, COUNT(WORD)\r\n" +
-            "FROM WORD \r\n" +
-            "JOIN PARTS_OF_SPEECH ON WORD.partOfSpeechID = PARTS_OF_SPEECH.partOfSpeechID \r\n" +
-            "WHERE WORD.year = @year AND WORD.isDeleted = 0 \r\n" +
-            "GROUP BY PARTS_OF_SPEECH.partsOfSpeechName\r\n" +
-            "ORDER BY PARTS_OF_SPEECH.partsOfSpeechName ASC";
-            return allPartsOfSpeechQueryYearly.Replace("@year", year.ToString());
-        }
-
-        private string getAllPartsOfSpeechQueryMonthly(int month, int year)
-        {
-            string allPartsOfSpeechQueryMonthly = "SELECT PARTS_OF_SPEECH.partsOfSpeechName, COUNT(WORD)\r\n" +
-            "FROM WORD \r\n" +
-            "JOIN PARTS_OF_SPEECH ON WORD.partOfSpeechID = PARTS_OF_SPEECH.partOfSpeechID \r\n" +
-            "WHERE WORD.year = @year AND WORD.MonthID = @month AND WORD.isDeleted = 0 \r\n" +
-            "GROUP BY PARTS_OF_SPEECH.partsOfSpeechName\r\n" +
-            "ORDER BY PARTS_OF_SPEECH.partsOfSpeechName ASC";
-
-            return allPartsOfSpeechQueryMonthly.Replace("@year", year.ToString())
-                                               .Replace("@month", month.ToString());
-        }
-
-        private string getSinglePartsOfSpeechQuery(int year)
-        {
-            string singlePartsOfSpeechQuery = "SELECT MONTH.monthID, COUNT(WORD) \r\n" +
-            "FROM WORD \r\n" +
-            "JOIN PARTS_OF_SPEECH ON WORD.partOfSpeechID = PARTS_OF_SPEECH.partOfSpeechID \r\n" +
-            "JOIN MONTH ON WORD.monthID = MONTH.monthID \r\n" +
-            "WHERE WORD.year = @year AND WORD.isDeleted = 0 AND PARTS_OF_SPEECH.partsOfSpeechName = @partOfSpeech \r\n" +
-            "GROUP BY MONTH.monthID\r\n" +
-            "ORDER BY MONTH.monthID ASC";
-            return singlePartsOfSpeechQuery.Replace("@year", year.ToString());
-        }
-
-        private void ShowAllPartsOfSpeechYearly(int newYear)
-        {
-            string allPartOfSpeechQueryYearly = getAllPartsOfSpeechQueryYearly(newYear);
-            SqlParameter[] allPartOfSpeechQueryYearlyParameters = new SqlParameter[]
-            {
-                new SqlParameter("@year", SqlDbType.VarChar) { Value = newYear}
-            };
-            General.CreateChart(chartAllPartsYearly, allPartOfSpeechQueryYearly, allPartOfSpeechQueryYearlyParameters, SeriesChartType.Column, "Hours", "");
-            labelGraphTitleAllPartsYearly.Text = newYear + " Berichten";
-        }
-
-        private void ShowAllPartsOfSpeechMonthly(int month, int year)
-        {
-            string allPartOfSpeechQueryMonthly = getAllPartsOfSpeechQueryMonthly(month, year);
-            SqlParameter[] allPartOfSpeechQueryMonthlyParameters = new SqlParameter[]
-            {
-                    new SqlParameter("@year", SqlDbType.VarChar) { Value = year },
-                    new SqlParameter("@month", SqlDbType.VarChar) { Value = month}
-            };
-            labelGraphTitleAllPartsMonthly.Text = General.ConventIntToMonthGerman(Convert.ToInt32(month)) + " " + year + " Berichten";
-            General.CreateChart(chartAllPartsMonthly, allPartOfSpeechQueryMonthly, allPartOfSpeechQueryMonthlyParameters, SeriesChartType.Column, "Hours", "");
-
-        }
-
-        private void ShowSinglePartsOfSpeechYearly(int newYear, int PartOfSpeechID)
-        {
-            string singlePartOfSpeechQuery = getSinglePartsOfSpeechQuery(newYear);
-            string newPartOfSpeech;
-
-            newPartOfSpeech = General.ConventIntToPartsOfSpeech(PartOfSpeechID);
-
-            SqlParameter[] singlePartsOfSpeechParameters = new SqlParameter[]
-            {
-                    new SqlParameter("@year", SqlDbType.VarChar) { Value = newYear},
-                    new SqlParameter("@partOfSpeech", SqlDbType.VarChar) { Value = newPartOfSpeech }
-            };
-            newPartOfSpeech = General.ConventEngToGerman(newPartOfSpeech);
-            labelTitleSingleParts.Text = newPartOfSpeech + " " + newYear + " Berichten";
-            General.CreateChart(chartSingleParts, singlePartOfSpeechQuery, singlePartsOfSpeechParameters, SeriesChartType.Column, "Hours", "");
-        }
-
         private void getUpdate()
         {
-            ShowAllPartsOfSpeechYearly(currYear);
-            ShowAllPartsOfSpeechMonthly(currMonth, currYear);
-            ShowSinglePartsOfSpeechYearly(currYear, 2);            
+            bll.ShowAllPartsOfSpeechYearly(currYear, chartAllPartsYearly, labelGraphTitleAllPartsYearly);
+            bll.ShowAllPartsOfSpeechMonthly(currMonth, currYear, chartAllPartsMonthly, labelGraphTitleAllPartsMonthly);
+            bll.ShowSinglePartsOfSpeechYearly(currYear, 2, chartSingleParts, labelTitleSingleParts);            
         }
 
         private void btnClearAllPartsYearly_Click(object sender, EventArgs e)
         {
-            labelGraphTitleAllPartsYearly.Text = currYear + " Berichten";
             txtYearAllPartsYearly.Clear();
-            ShowAllPartsOfSpeechYearly(currYear);
+            getUpdate();
         }
 
         private void FormGraphs_Load(object sender, EventArgs e)
@@ -160,17 +82,25 @@ namespace LangApp.AllForms
         {
             if (cmbPartOfSpeechSingle.SelectedIndex != -1 && txtYearSingleParts.Text.Trim() != "")
             {
-                ShowSinglePartsOfSpeechYearly(Convert.ToInt32(txtYearSingleParts.Text.Trim()), Convert.ToInt32(cmbPartOfSpeechSingle.SelectedValue));
+                bll.ShowSinglePartsOfSpeechYearly(Convert.ToInt32(txtYearSingleParts.Text.Trim()), Convert.ToInt32(cmbPartOfSpeechSingle.SelectedValue), chartSingleParts, labelTitleSingleParts);
             }
             else
             {
-                MessageBox.Show("Please select a part of speech from the dropdown.");
+                MessageBox.Show("Please enter year and select a part of speech from the dropdown.");
             }
         }
 
         private void btnShowAllPartsYearly_Click(object sender, EventArgs e)
         {
-            ShowAllPartsOfSpeechYearly(Convert.ToInt32(txtYearAllPartsYearly.Text.Trim()));
+            if (txtYearAllPartsYearly.Text.Trim() != "")
+            {
+                bll.ShowAllPartsOfSpeechYearly(Convert.ToInt32(txtYearAllPartsYearly.Text.Trim()), chartAllPartsYearly, labelGraphTitleAllPartsYearly);
+            }
+            else
+            {
+                MessageBox.Show("Please enter year.");
+            }
+            
         }
 
         private void btnShowAllPartsMonthly_Click(object sender, EventArgs e)
@@ -178,11 +108,11 @@ namespace LangApp.AllForms
 
             if (cmbMonthAllPartsMonthly.SelectedIndex != -1 && txtYearAllPartsMonthly.Text.Trim() != "")
             {
-                ShowAllPartsOfSpeechMonthly(Convert.ToInt32(cmbMonthAllPartsMonthly.SelectedValue), Convert.ToInt32(txtYearAllPartsMonthly.Text.Trim()));
+                bll.ShowAllPartsOfSpeechMonthly(Convert.ToInt32(cmbMonthAllPartsMonthly.SelectedValue), Convert.ToInt32(txtYearAllPartsMonthly.Text.Trim()), chartAllPartsMonthly, labelGraphTitleAllPartsMonthly);
             }
             else
             {
-                MessageBox.Show("Please select month and year from the dropdowns.");
+                MessageBox.Show("Please enter year and select month from the dropdowns.");
             }
         }
 
