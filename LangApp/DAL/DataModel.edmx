@@ -42,7 +42,10 @@
             <PropertyRef Name="partOfSpeechID" />
           </Key>
           <Property Name="partOfSpeechID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="partsOfSpeechName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="partsOfSpeechName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="LanguageID" Type="int" Nullable="false" />
+          <Property Name="isDeleted" Type="bit" Nullable="false" />
+          <Property Name="deletedDate" Type="date" />
         </EntityType>
         <EntityType Name="REGISTER">
           <Key>
@@ -70,7 +73,7 @@
           <Property Name="languageID" Type="int" Nullable="false" />
           <Property Name="partOfSpeechID" Type="int" Nullable="false" />
           <Property Name="monthID" Type="int" Nullable="false" />
-          <Property Name="word" Type="varchar(max)" Nullable="false" />
+          <Property Name="word" Type="nvarchar(max)" Nullable="false" />
           <Property Name="day" Type="int" Nullable="false" />
           <Property Name="year" Type="int" Nullable="false" />
           <Property Name="explanation" Type="text" />
@@ -84,7 +87,7 @@
             <PropertyRef Name="caseID" />
           </Key>
           <Property Name="caseID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="caseName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="caseName" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="languageID" Type="int" Nullable="false" />
           <Property Name="isDeleted" Type="bit" Nullable="false" />
           <Property Name="deletedDate" Type="date" />
@@ -94,7 +97,7 @@
             <PropertyRef Name="wordGroupID" />
           </Key>
           <Property Name="wordGroupID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="wordGroupName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="wordGroupName" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="partOfSpeechID" Type="int" Nullable="false" />
           <Property Name="languageID" Type="int" Nullable="false" />
           <Property Name="isDeleted" Type="bit" Nullable="false" />
@@ -153,7 +156,10 @@
             <PropertyRef Name="partOfSpeechID" />
           </Key>
           <Property Name="partOfSpeechID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="partsOfSpeechName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="partsOfSpeechName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LanguageID" Type="Int32" Nullable="false" />
+          <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="deletedDate" Type="DateTime" Precision="0" />
         </EntityType>
         <EntityType Name="REGISTER">
           <Key>
@@ -181,7 +187,7 @@
           <Property Name="languageID" Type="Int32" Nullable="false" />
           <Property Name="partOfSpeechID" Type="Int32" Nullable="false" />
           <Property Name="monthID" Type="Int32" Nullable="false" />
-          <Property Name="word1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="word1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="day" Type="Int32" Nullable="false" />
           <Property Name="year" Type="Int32" Nullable="false" />
           <Property Name="explanation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
@@ -195,7 +201,7 @@
             <PropertyRef Name="caseID" />
           </Key>
           <Property Name="caseID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="caseName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="caseName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="languageID" Type="Int32" Nullable="false" />
           <Property Name="isDeleted" Type="Boolean" Nullable="false" />
           <Property Name="deletedDate" Type="DateTime" Precision="0" />
@@ -205,7 +211,7 @@
             <PropertyRef Name="wordGroupID" />
           </Key>
           <Property Name="wordGroupID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="wordGroupName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="wordGroupName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="partOfSpeechID" Type="Int32" Nullable="false" />
           <Property Name="languageID" Type="Int32" Nullable="false" />
           <Property Name="isDeleted" Type="Boolean" Nullable="false" />
@@ -269,6 +275,9 @@
               <MappingFragment StoreEntitySet="PARTS_OF_SPEECH">
                 <ScalarProperty Name="partOfSpeechID" ColumnName="partOfSpeechID" />
                 <ScalarProperty Name="partsOfSpeechName" ColumnName="partsOfSpeechName" />
+                <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+                <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

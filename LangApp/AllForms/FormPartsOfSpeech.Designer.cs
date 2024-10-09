@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControlPartsOfSpeech = new System.Windows.Forms.TabControl();
             this.pageVerbs = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel49 = new System.Windows.Forms.TableLayoutPanel();
@@ -247,6 +248,37 @@
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.cmbGroupPageSentence = new System.Windows.Forms.ComboBox();
+            this.pageRedemittel = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel57 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel58 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtExplanationRedemittel = new System.Windows.Forms.TextBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel59 = new System.Windows.Forms.TableLayoutPanel();
+            this.labelTotalRedemittel = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel60 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel61 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel62 = new System.Windows.Forms.TableLayoutPanel();
+            this.iconThisMonthRedemittel = new FontAwesome.Sharp.IconButton();
+            this.iconLastMonthRedemittel = new FontAwesome.Sharp.IconButton();
+            this.iconEditRedemittel = new FontAwesome.Sharp.IconButton();
+            this.iconAllRedemittel = new FontAwesome.Sharp.IconButton();
+            this.iconViewPageRedemittel = new FontAwesome.Sharp.IconButton();
+            this.tableLayoutPanel63 = new System.Windows.Forms.TableLayoutPanel();
+            this.iconSearchPageRedemittel = new FontAwesome.Sharp.IconButton();
+            this.iconClearPageRedemittel = new FontAwesome.Sharp.IconButton();
+            this.dataGridViewRedemittel = new System.Windows.Forms.DataGridView();
+            this.tableLayoutPanel64 = new System.Windows.Forms.TableLayoutPanel();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.cmbCasesPageRedemittel = new System.Windows.Forms.ComboBox();
+            this.txtWordPageRedemittel = new System.Windows.Forms.TextBox();
+            this.txtYearPageRedemittel = new System.Windows.Forms.TextBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.cmbMonthPageRedemittel = new System.Windows.Forms.ComboBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.cmbGroupPageRedemittel = new System.Windows.Forms.ComboBox();
             this.tabControlPartsOfSpeech.SuspendLayout();
             this.pageVerbs.SuspendLayout();
             this.tableLayoutPanel49.SuspendLayout();
@@ -318,6 +350,16 @@
             this.tableLayoutPanel47.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSentence)).BeginInit();
             this.tableLayoutPanel48.SuspendLayout();
+            this.pageRedemittel.SuspendLayout();
+            this.tableLayoutPanel57.SuspendLayout();
+            this.tableLayoutPanel58.SuspendLayout();
+            this.tableLayoutPanel59.SuspendLayout();
+            this.tableLayoutPanel60.SuspendLayout();
+            this.tableLayoutPanel61.SuspendLayout();
+            this.tableLayoutPanel62.SuspendLayout();
+            this.tableLayoutPanel63.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRedemittel)).BeginInit();
+            this.tableLayoutPanel64.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlPartsOfSpeech
@@ -329,6 +371,7 @@
             this.tabControlPartsOfSpeech.Controls.Add(this.pageAdverbs);
             this.tabControlPartsOfSpeech.Controls.Add(this.pageConjunctions);
             this.tabControlPartsOfSpeech.Controls.Add(this.pageSentences);
+            this.tabControlPartsOfSpeech.Controls.Add(this.pageRedemittel);
             this.tabControlPartsOfSpeech.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlPartsOfSpeech.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControlPartsOfSpeech.Location = new System.Drawing.Point(0, 0);
@@ -635,8 +678,8 @@
             this.dataGridViewVerb.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewVerb.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewVerb.Name = "dataGridViewVerb";
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewVerb.RowsDefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle57.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewVerb.RowsDefaultCellStyle = dataGridViewCellStyle57;
             this.dataGridViewVerb.RowTemplate.Height = 30;
             this.dataGridViewVerb.Size = new System.Drawing.Size(603, 294);
             this.dataGridViewVerb.TabIndex = 7;
@@ -1083,8 +1126,8 @@
             this.dataGridViewAdj.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewAdj.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewAdj.Name = "dataGridViewAdj";
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewAdj.RowsDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle58.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewAdj.RowsDefaultCellStyle = dataGridViewCellStyle58;
             this.dataGridViewAdj.RowTemplate.Height = 30;
             this.dataGridViewAdj.Size = new System.Drawing.Size(598, 290);
             this.dataGridViewAdj.TabIndex = 7;
@@ -1531,8 +1574,8 @@
             this.dataGridViewNoun.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewNoun.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewNoun.Name = "dataGridViewNoun";
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewNoun.RowsDefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle59.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewNoun.RowsDefaultCellStyle = dataGridViewCellStyle59;
             this.dataGridViewNoun.RowTemplate.Height = 30;
             this.dataGridViewNoun.Size = new System.Drawing.Size(603, 294);
             this.dataGridViewNoun.TabIndex = 7;
@@ -1980,8 +2023,8 @@
             this.dataGridViewPhrase.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewPhrase.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewPhrase.Name = "dataGridViewPhrase";
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewPhrase.RowsDefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle60.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewPhrase.RowsDefaultCellStyle = dataGridViewCellStyle60;
             this.dataGridViewPhrase.RowTemplate.Height = 30;
             this.dataGridViewPhrase.Size = new System.Drawing.Size(603, 294);
             this.dataGridViewPhrase.TabIndex = 7;
@@ -2429,8 +2472,8 @@
             this.dataGridViewAdv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewAdv.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewAdv.Name = "dataGridViewAdv";
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewAdv.RowsDefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle61.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewAdv.RowsDefaultCellStyle = dataGridViewCellStyle61;
             this.dataGridViewAdv.RowTemplate.Height = 30;
             this.dataGridViewAdv.Size = new System.Drawing.Size(598, 290);
             this.dataGridViewAdv.TabIndex = 7;
@@ -2877,8 +2920,8 @@
             this.dataGridViewConj.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewConj.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewConj.Name = "dataGridViewConj";
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewConj.RowsDefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle62.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewConj.RowsDefaultCellStyle = dataGridViewCellStyle62;
             this.dataGridViewConj.RowTemplate.Height = 30;
             this.dataGridViewConj.Size = new System.Drawing.Size(603, 294);
             this.dataGridViewConj.TabIndex = 7;
@@ -3346,8 +3389,8 @@
             this.dataGridViewSentence.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewSentence.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewSentence.Name = "dataGridViewSentence";
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewSentence.RowsDefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle63.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewSentence.RowsDefaultCellStyle = dataGridViewCellStyle63;
             this.dataGridViewSentence.RowTemplate.Height = 30;
             this.dataGridViewSentence.Size = new System.Drawing.Size(603, 294);
             this.dataGridViewSentence.TabIndex = 7;
@@ -3495,6 +3538,475 @@
             this.cmbGroupPageSentence.Size = new System.Drawing.Size(209, 28);
             this.cmbGroupPageSentence.TabIndex = 6;
             // 
+            // pageRedemittel
+            // 
+            this.pageRedemittel.Controls.Add(this.tableLayoutPanel57);
+            this.pageRedemittel.Location = new System.Drawing.Point(4, 30);
+            this.pageRedemittel.Name = "pageRedemittel";
+            this.pageRedemittel.Size = new System.Drawing.Size(723, 438);
+            this.pageRedemittel.TabIndex = 7;
+            this.pageRedemittel.Text = "Redemittel";
+            this.pageRedemittel.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel57
+            // 
+            this.tableLayoutPanel57.ColumnCount = 1;
+            this.tableLayoutPanel57.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel57.Controls.Add(this.tableLayoutPanel58, 0, 2);
+            this.tableLayoutPanel57.Controls.Add(this.tableLayoutPanel60, 0, 1);
+            this.tableLayoutPanel57.Controls.Add(this.tableLayoutPanel64, 0, 0);
+            this.tableLayoutPanel57.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel57.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel57.Name = "tableLayoutPanel57";
+            this.tableLayoutPanel57.RowCount = 3;
+            this.tableLayoutPanel57.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel57.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel57.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel57.Size = new System.Drawing.Size(723, 438);
+            this.tableLayoutPanel57.TabIndex = 7;
+            // 
+            // tableLayoutPanel58
+            // 
+            this.tableLayoutPanel58.ColumnCount = 3;
+            this.tableLayoutPanel58.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel58.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel58.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel58.Controls.Add(this.txtExplanationRedemittel, 1, 0);
+            this.tableLayoutPanel58.Controls.Add(this.label44, 0, 0);
+            this.tableLayoutPanel58.Controls.Add(this.tableLayoutPanel59, 2, 0);
+            this.tableLayoutPanel58.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel58.Location = new System.Drawing.Point(3, 374);
+            this.tableLayoutPanel58.Name = "tableLayoutPanel58";
+            this.tableLayoutPanel58.RowCount = 1;
+            this.tableLayoutPanel58.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel58.Size = new System.Drawing.Size(717, 61);
+            this.tableLayoutPanel58.TabIndex = 10;
+            // 
+            // txtExplanationRedemittel
+            // 
+            this.txtExplanationRedemittel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtExplanationRedemittel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtExplanationRedemittel.Location = new System.Drawing.Point(110, 3);
+            this.txtExplanationRedemittel.Multiline = true;
+            this.txtExplanationRedemittel.Name = "txtExplanationRedemittel";
+            this.txtExplanationRedemittel.Size = new System.Drawing.Size(495, 55);
+            this.txtExplanationRedemittel.TabIndex = 37;
+            // 
+            // label44
+            // 
+            this.label44.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(6, 0);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(98, 21);
+            this.label44.TabIndex = 38;
+            this.label44.Text = "Bedeutung:";
+            // 
+            // tableLayoutPanel59
+            // 
+            this.tableLayoutPanel59.ColumnCount = 1;
+            this.tableLayoutPanel59.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel59.Controls.Add(this.labelTotalRedemittel, 0, 1);
+            this.tableLayoutPanel59.Controls.Add(this.label52, 0, 0);
+            this.tableLayoutPanel59.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel59.Location = new System.Drawing.Point(611, 3);
+            this.tableLayoutPanel59.Name = "tableLayoutPanel59";
+            this.tableLayoutPanel59.RowCount = 2;
+            this.tableLayoutPanel59.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel59.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel59.Size = new System.Drawing.Size(103, 55);
+            this.tableLayoutPanel59.TabIndex = 3;
+            // 
+            // labelTotalRedemittel
+            // 
+            this.labelTotalRedemittel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTotalRedemittel.AutoSize = true;
+            this.labelTotalRedemittel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalRedemittel.Location = new System.Drawing.Point(3, 27);
+            this.labelTotalRedemittel.Name = "labelTotalRedemittel";
+            this.labelTotalRedemittel.Size = new System.Drawing.Size(97, 17);
+            this.labelTotalRedemittel.TabIndex = 0;
+            this.labelTotalRedemittel.Text = "0";
+            this.labelTotalRedemittel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label52
+            // 
+            this.label52.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(3, 5);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(97, 17);
+            this.label52.TabIndex = 0;
+            this.label52.Text = "Total";
+            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel60
+            // 
+            this.tableLayoutPanel60.ColumnCount = 2;
+            this.tableLayoutPanel60.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
+            this.tableLayoutPanel60.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel60.Controls.Add(this.tableLayoutPanel61, 0, 0);
+            this.tableLayoutPanel60.Controls.Add(this.dataGridViewRedemittel, 0, 0);
+            this.tableLayoutPanel60.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel60.Location = new System.Drawing.Point(3, 68);
+            this.tableLayoutPanel60.Name = "tableLayoutPanel60";
+            this.tableLayoutPanel60.RowCount = 1;
+            this.tableLayoutPanel60.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel60.Size = new System.Drawing.Size(717, 300);
+            this.tableLayoutPanel60.TabIndex = 8;
+            // 
+            // tableLayoutPanel61
+            // 
+            this.tableLayoutPanel61.ColumnCount = 1;
+            this.tableLayoutPanel61.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel61.Controls.Add(this.tableLayoutPanel62, 0, 2);
+            this.tableLayoutPanel61.Controls.Add(this.tableLayoutPanel63, 0, 0);
+            this.tableLayoutPanel61.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel61.Location = new System.Drawing.Point(612, 3);
+            this.tableLayoutPanel61.Name = "tableLayoutPanel61";
+            this.tableLayoutPanel61.RowCount = 3;
+            this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
+            this.tableLayoutPanel61.Size = new System.Drawing.Size(102, 294);
+            this.tableLayoutPanel61.TabIndex = 8;
+            // 
+            // tableLayoutPanel62
+            // 
+            this.tableLayoutPanel62.ColumnCount = 1;
+            this.tableLayoutPanel62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel62.Controls.Add(this.iconThisMonthRedemittel, 0, 0);
+            this.tableLayoutPanel62.Controls.Add(this.iconLastMonthRedemittel, 0, 4);
+            this.tableLayoutPanel62.Controls.Add(this.iconEditRedemittel, 0, 6);
+            this.tableLayoutPanel62.Controls.Add(this.iconAllRedemittel, 0, 2);
+            this.tableLayoutPanel62.Controls.Add(this.iconViewPageRedemittel, 0, 8);
+            this.tableLayoutPanel62.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel62.Location = new System.Drawing.Point(3, 105);
+            this.tableLayoutPanel62.Name = "tableLayoutPanel62";
+            this.tableLayoutPanel62.RowCount = 9;
+            this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19F));
+            this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.25F));
+            this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19F));
+            this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.25F));
+            this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19F));
+            this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.25F));
+            this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19F));
+            this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.25F));
+            this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19F));
+            this.tableLayoutPanel62.Size = new System.Drawing.Size(96, 186);
+            this.tableLayoutPanel62.TabIndex = 3;
+            // 
+            // iconThisMonthRedemittel
+            // 
+            this.iconThisMonthRedemittel.BackColor = System.Drawing.Color.MidnightBlue;
+            this.iconThisMonthRedemittel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconThisMonthRedemittel.FlatAppearance.BorderSize = 0;
+            this.iconThisMonthRedemittel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconThisMonthRedemittel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconThisMonthRedemittel.ForeColor = System.Drawing.Color.White;
+            this.iconThisMonthRedemittel.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconThisMonthRedemittel.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconThisMonthRedemittel.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconThisMonthRedemittel.IconSize = 32;
+            this.iconThisMonthRedemittel.Location = new System.Drawing.Point(3, 3);
+            this.iconThisMonthRedemittel.Name = "iconThisMonthRedemittel";
+            this.iconThisMonthRedemittel.Size = new System.Drawing.Size(90, 29);
+            this.iconThisMonthRedemittel.TabIndex = 15;
+            this.iconThisMonthRedemittel.Text = "This Month";
+            this.iconThisMonthRedemittel.UseVisualStyleBackColor = false;
+            this.iconThisMonthRedemittel.Click += new System.EventHandler(this.iconThisMonthRedemittel_Click);
+            // 
+            // iconLastMonthRedemittel
+            // 
+            this.iconLastMonthRedemittel.BackColor = System.Drawing.Color.MidnightBlue;
+            this.iconLastMonthRedemittel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconLastMonthRedemittel.FlatAppearance.BorderSize = 0;
+            this.iconLastMonthRedemittel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconLastMonthRedemittel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconLastMonthRedemittel.ForeColor = System.Drawing.Color.White;
+            this.iconLastMonthRedemittel.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconLastMonthRedemittel.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconLastMonthRedemittel.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconLastMonthRedemittel.IconSize = 32;
+            this.iconLastMonthRedemittel.Location = new System.Drawing.Point(3, 77);
+            this.iconLastMonthRedemittel.Name = "iconLastMonthRedemittel";
+            this.iconLastMonthRedemittel.Size = new System.Drawing.Size(90, 29);
+            this.iconLastMonthRedemittel.TabIndex = 15;
+            this.iconLastMonthRedemittel.Text = "Last Month";
+            this.iconLastMonthRedemittel.UseVisualStyleBackColor = false;
+            this.iconLastMonthRedemittel.Click += new System.EventHandler(this.iconLastMonthRedemittel_Click);
+            // 
+            // iconEditRedemittel
+            // 
+            this.iconEditRedemittel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconEditRedemittel.FlatAppearance.BorderSize = 0;
+            this.iconEditRedemittel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconEditRedemittel.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconEditRedemittel.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconEditRedemittel.IconChar = FontAwesome.Sharp.IconChar.Pen;
+            this.iconEditRedemittel.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconEditRedemittel.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconEditRedemittel.IconSize = 32;
+            this.iconEditRedemittel.Location = new System.Drawing.Point(3, 114);
+            this.iconEditRedemittel.Name = "iconEditRedemittel";
+            this.iconEditRedemittel.Size = new System.Drawing.Size(90, 29);
+            this.iconEditRedemittel.TabIndex = 15;
+            this.iconEditRedemittel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconEditRedemittel.UseVisualStyleBackColor = true;
+            this.iconEditRedemittel.Click += new System.EventHandler(this.iconEditRedemittel_Click);
+            // 
+            // iconAllRedemittel
+            // 
+            this.iconAllRedemittel.BackColor = System.Drawing.Color.MidnightBlue;
+            this.iconAllRedemittel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconAllRedemittel.FlatAppearance.BorderSize = 0;
+            this.iconAllRedemittel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconAllRedemittel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconAllRedemittel.ForeColor = System.Drawing.Color.White;
+            this.iconAllRedemittel.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconAllRedemittel.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconAllRedemittel.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconAllRedemittel.IconSize = 32;
+            this.iconAllRedemittel.Location = new System.Drawing.Point(3, 40);
+            this.iconAllRedemittel.Name = "iconAllRedemittel";
+            this.iconAllRedemittel.Size = new System.Drawing.Size(90, 29);
+            this.iconAllRedemittel.TabIndex = 15;
+            this.iconAllRedemittel.Text = "All";
+            this.iconAllRedemittel.UseVisualStyleBackColor = false;
+            this.iconAllRedemittel.Click += new System.EventHandler(this.iconAllRedemittel_Click);
+            // 
+            // iconViewPageRedemittel
+            // 
+            this.iconViewPageRedemittel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconViewPageRedemittel.FlatAppearance.BorderSize = 0;
+            this.iconViewPageRedemittel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconViewPageRedemittel.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconViewPageRedemittel.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconViewPageRedemittel.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.iconViewPageRedemittel.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconViewPageRedemittel.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconViewPageRedemittel.IconSize = 32;
+            this.iconViewPageRedemittel.Location = new System.Drawing.Point(3, 151);
+            this.iconViewPageRedemittel.Name = "iconViewPageRedemittel";
+            this.iconViewPageRedemittel.Size = new System.Drawing.Size(90, 32);
+            this.iconViewPageRedemittel.TabIndex = 15;
+            this.iconViewPageRedemittel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconViewPageRedemittel.UseVisualStyleBackColor = true;
+            this.iconViewPageRedemittel.Click += new System.EventHandler(this.iconViewPageRedemittel_Click);
+            // 
+            // tableLayoutPanel63
+            // 
+            this.tableLayoutPanel63.ColumnCount = 1;
+            this.tableLayoutPanel63.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel63.Controls.Add(this.iconSearchPageRedemittel, 0, 0);
+            this.tableLayoutPanel63.Controls.Add(this.iconClearPageRedemittel, 0, 2);
+            this.tableLayoutPanel63.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel63.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel63.Name = "tableLayoutPanel63";
+            this.tableLayoutPanel63.RowCount = 3;
+            this.tableLayoutPanel63.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
+            this.tableLayoutPanel63.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel63.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
+            this.tableLayoutPanel63.Size = new System.Drawing.Size(96, 82);
+            this.tableLayoutPanel63.TabIndex = 3;
+            // 
+            // iconSearchPageRedemittel
+            // 
+            this.iconSearchPageRedemittel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconSearchPageRedemittel.FlatAppearance.BorderSize = 0;
+            this.iconSearchPageRedemittel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconSearchPageRedemittel.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconSearchPageRedemittel.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconSearchPageRedemittel.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.iconSearchPageRedemittel.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconSearchPageRedemittel.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconSearchPageRedemittel.IconSize = 32;
+            this.iconSearchPageRedemittel.Location = new System.Drawing.Point(3, 3);
+            this.iconSearchPageRedemittel.Name = "iconSearchPageRedemittel";
+            this.iconSearchPageRedemittel.Size = new System.Drawing.Size(90, 32);
+            this.iconSearchPageRedemittel.TabIndex = 15;
+            this.iconSearchPageRedemittel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconSearchPageRedemittel.UseVisualStyleBackColor = true;
+            this.iconSearchPageRedemittel.Click += new System.EventHandler(this.iconSearchPageRedemittel_Click);
+            // 
+            // iconClearPageRedemittel
+            // 
+            this.iconClearPageRedemittel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconClearPageRedemittel.FlatAppearance.BorderSize = 0;
+            this.iconClearPageRedemittel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconClearPageRedemittel.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconClearPageRedemittel.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconClearPageRedemittel.IconChar = FontAwesome.Sharp.IconChar.Broom;
+            this.iconClearPageRedemittel.IconColor = System.Drawing.Color.Crimson;
+            this.iconClearPageRedemittel.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconClearPageRedemittel.IconSize = 32;
+            this.iconClearPageRedemittel.Location = new System.Drawing.Point(3, 45);
+            this.iconClearPageRedemittel.Name = "iconClearPageRedemittel";
+            this.iconClearPageRedemittel.Size = new System.Drawing.Size(90, 34);
+            this.iconClearPageRedemittel.TabIndex = 15;
+            this.iconClearPageRedemittel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconClearPageRedemittel.UseVisualStyleBackColor = true;
+            this.iconClearPageRedemittel.Click += new System.EventHandler(this.iconClearPageRedemittel_Click);
+            // 
+            // dataGridViewRedemittel
+            // 
+            this.dataGridViewRedemittel.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewRedemittel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewRedemittel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewRedemittel.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewRedemittel.Name = "dataGridViewRedemittel";
+            dataGridViewCellStyle64.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewRedemittel.RowsDefaultCellStyle = dataGridViewCellStyle64;
+            this.dataGridViewRedemittel.RowTemplate.Height = 30;
+            this.dataGridViewRedemittel.Size = new System.Drawing.Size(603, 294);
+            this.dataGridViewRedemittel.TabIndex = 7;
+            this.dataGridViewRedemittel.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewRedemittel_RowEnter);
+            // 
+            // tableLayoutPanel64
+            // 
+            this.tableLayoutPanel64.ColumnCount = 5;
+            this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel64.Controls.Add(this.label53, 0, 0);
+            this.tableLayoutPanel64.Controls.Add(this.label54, 1, 0);
+            this.tableLayoutPanel64.Controls.Add(this.cmbCasesPageRedemittel, 1, 1);
+            this.tableLayoutPanel64.Controls.Add(this.txtWordPageRedemittel, 0, 1);
+            this.tableLayoutPanel64.Controls.Add(this.txtYearPageRedemittel, 4, 1);
+            this.tableLayoutPanel64.Controls.Add(this.label55, 4, 0);
+            this.tableLayoutPanel64.Controls.Add(this.cmbMonthPageRedemittel, 3, 1);
+            this.tableLayoutPanel64.Controls.Add(this.label56, 3, 0);
+            this.tableLayoutPanel64.Controls.Add(this.label57, 2, 0);
+            this.tableLayoutPanel64.Controls.Add(this.cmbGroupPageRedemittel, 2, 1);
+            this.tableLayoutPanel64.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel64.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel64.Name = "tableLayoutPanel64";
+            this.tableLayoutPanel64.RowCount = 2;
+            this.tableLayoutPanel64.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel64.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel64.Size = new System.Drawing.Size(717, 59);
+            this.tableLayoutPanel64.TabIndex = 9;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label53.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(3, 3);
+            this.label53.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(137, 26);
+            this.label53.TabIndex = 0;
+            this.label53.Text = "Wörter";
+            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label54.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(146, 3);
+            this.label54.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(173, 26);
+            this.label54.TabIndex = 0;
+            this.label54.Text = "Kasus";
+            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cmbCasesPageRedemittel
+            // 
+            this.cmbCasesPageRedemittel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbCasesPageRedemittel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCasesPageRedemittel.FormattingEnabled = true;
+            this.cmbCasesPageRedemittel.Location = new System.Drawing.Point(146, 32);
+            this.cmbCasesPageRedemittel.Name = "cmbCasesPageRedemittel";
+            this.cmbCasesPageRedemittel.Size = new System.Drawing.Size(173, 28);
+            this.cmbCasesPageRedemittel.TabIndex = 6;
+            // 
+            // txtWordPageRedemittel
+            // 
+            this.txtWordPageRedemittel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtWordPageRedemittel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWordPageRedemittel.Location = new System.Drawing.Point(3, 32);
+            this.txtWordPageRedemittel.Name = "txtWordPageRedemittel";
+            this.txtWordPageRedemittel.Size = new System.Drawing.Size(137, 27);
+            this.txtWordPageRedemittel.TabIndex = 2;
+            this.txtWordPageRedemittel.TextChanged += new System.EventHandler(this.txtWordPageRedemittel_TextChanged);
+            // 
+            // txtYearPageRedemittel
+            // 
+            this.txtYearPageRedemittel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtYearPageRedemittel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtYearPageRedemittel.Location = new System.Drawing.Point(647, 32);
+            this.txtYearPageRedemittel.Name = "txtYearPageRedemittel";
+            this.txtYearPageRedemittel.Size = new System.Drawing.Size(67, 27);
+            this.txtYearPageRedemittel.TabIndex = 2;
+            this.txtYearPageRedemittel.TextChanged += new System.EventHandler(this.txtYearPageRedemittel_TextChanged);
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label55.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(647, 3);
+            this.label55.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(67, 26);
+            this.label55.TabIndex = 0;
+            this.label55.Text = "Jahr";
+            this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cmbMonthPageRedemittel
+            // 
+            this.cmbMonthPageRedemittel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbMonthPageRedemittel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMonthPageRedemittel.FormattingEnabled = true;
+            this.cmbMonthPageRedemittel.Location = new System.Drawing.Point(540, 32);
+            this.cmbMonthPageRedemittel.Name = "cmbMonthPageRedemittel";
+            this.cmbMonthPageRedemittel.Size = new System.Drawing.Size(101, 28);
+            this.cmbMonthPageRedemittel.TabIndex = 6;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label56.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Location = new System.Drawing.Point(540, 3);
+            this.label56.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(101, 26);
+            this.label56.TabIndex = 0;
+            this.label56.Text = "Monat";
+            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label57.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.Location = new System.Drawing.Point(325, 3);
+            this.label57.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(209, 26);
+            this.label57.TabIndex = 0;
+            this.label57.Text = "Gruppen";
+            this.label57.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // cmbGroupPageRedemittel
+            // 
+            this.cmbGroupPageRedemittel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbGroupPageRedemittel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbGroupPageRedemittel.FormattingEnabled = true;
+            this.cmbGroupPageRedemittel.Location = new System.Drawing.Point(325, 32);
+            this.cmbGroupPageRedemittel.Name = "cmbGroupPageRedemittel";
+            this.cmbGroupPageRedemittel.Size = new System.Drawing.Size(209, 28);
+            this.cmbGroupPageRedemittel.TabIndex = 6;
+            // 
             // FormPartsOfSpeech
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3596,6 +4108,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSentence)).EndInit();
             this.tableLayoutPanel48.ResumeLayout(false);
             this.tableLayoutPanel48.PerformLayout();
+            this.pageRedemittel.ResumeLayout(false);
+            this.tableLayoutPanel57.ResumeLayout(false);
+            this.tableLayoutPanel58.ResumeLayout(false);
+            this.tableLayoutPanel58.PerformLayout();
+            this.tableLayoutPanel59.ResumeLayout(false);
+            this.tableLayoutPanel59.PerformLayout();
+            this.tableLayoutPanel60.ResumeLayout(false);
+            this.tableLayoutPanel61.ResumeLayout(false);
+            this.tableLayoutPanel62.ResumeLayout(false);
+            this.tableLayoutPanel63.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRedemittel)).EndInit();
+            this.tableLayoutPanel64.ResumeLayout(false);
+            this.tableLayoutPanel64.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -3814,5 +4339,36 @@
         private FontAwesome.Sharp.IconButton iconSearchPagePhrase;
         private FontAwesome.Sharp.IconButton iconClearPagePhrase;
         private FontAwesome.Sharp.IconButton iconViewPageSentence;
+        private System.Windows.Forms.TabPage pageRedemittel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel57;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel58;
+        private System.Windows.Forms.TextBox txtExplanationRedemittel;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel59;
+        private System.Windows.Forms.Label labelTotalRedemittel;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel60;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel61;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel62;
+        private FontAwesome.Sharp.IconButton iconThisMonthRedemittel;
+        private FontAwesome.Sharp.IconButton iconLastMonthRedemittel;
+        private FontAwesome.Sharp.IconButton iconEditRedemittel;
+        private FontAwesome.Sharp.IconButton iconAllRedemittel;
+        private FontAwesome.Sharp.IconButton iconViewPageRedemittel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel63;
+        private FontAwesome.Sharp.IconButton iconSearchPageRedemittel;
+        private FontAwesome.Sharp.IconButton iconClearPageRedemittel;
+        private System.Windows.Forms.DataGridView dataGridViewRedemittel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel64;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.ComboBox cmbCasesPageRedemittel;
+        private System.Windows.Forms.TextBox txtWordPageRedemittel;
+        private System.Windows.Forms.TextBox txtYearPageRedemittel;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.ComboBox cmbMonthPageRedemittel;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.ComboBox cmbGroupPageRedemittel;
     }
 }

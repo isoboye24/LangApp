@@ -24,6 +24,7 @@ namespace LangApp.AllForms
         }
         WordBLL bll = new WordBLL();
         WordDTO dto = new WordDTO();
+        int subtractThisMonthBy = 1;
         private void FormPartsOfSpeech_Load(object sender, EventArgs e)
         {
             dto = bll.Select(StaticUser.UserID, StaticUser.LanguageID);
@@ -77,6 +78,13 @@ namespace LangApp.AllForms
             General.ComboBoxProps(cmbMonthPageVerb, "MonthName", "MonthID");
             cmbGroupPageVerb.DataSource = dto.WordGroups;
             General.ComboBoxProps(cmbGroupPageVerb, "WordGroupName", "WordGroupID");
+
+            cmbCasesPageRedemittel.DataSource = dto.WordCases;
+            General.ComboBoxProps(cmbCasesPageRedemittel, "WordCaseName", "WordCaseID");
+            cmbMonthPageRedemittel.DataSource = dto.Months;
+            General.ComboBoxProps(cmbMonthPageRedemittel, "MonthName", "MonthID");
+            cmbGroupPageRedemittel.DataSource = dto.WordGroups;
+            General.ComboBoxProps(cmbGroupPageRedemittel, "WordGroupName", "WordGroupID");
             #endregion
 
             // lists
@@ -290,24 +298,55 @@ namespace LangApp.AllForms
             }
             #endregion
 
+            #region
+            List<WordDetailDTO> listUsefulPhrase = dto.UsefulPhrases;
+            listUsefulPhrase = listUsefulPhrase.Where(x => x.Year == DateTime.Today.Year && x.MonthID == DateTime.Today.Month).ToList();
+            dataGridViewRedemittel.DataSource = listUsefulPhrase;
+            dataGridViewRedemittel.Columns[0].HeaderText = "No.";
+            dataGridViewRedemittel.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewRedemittel.Columns[1].Visible = false;
+            dataGridViewRedemittel.Columns[2].Visible = false;
+            dataGridViewRedemittel.Columns[3].Visible = false;
+            dataGridViewRedemittel.Columns[4].Visible = false;
+            dataGridViewRedemittel.Columns[5].Visible = false;
+            dataGridViewRedemittel.Columns[6].Visible = false;
+            dataGridViewRedemittel.Columns[7].Visible = false;
+            dataGridViewRedemittel.Columns[8].HeaderText = "Hilfreiche Phrasen";
+            dataGridViewRedemittel.Columns[9].Visible = false;
+            dataGridViewRedemittel.Columns[10].Visible = false;
+            dataGridViewRedemittel.Columns[11].Visible = false;
+            dataGridViewRedemittel.Columns[12].Visible = false;
+            dataGridViewRedemittel.Columns[13].HeaderText = "Monat";
+            dataGridViewRedemittel.Columns[13].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewRedemittel.Columns[14].HeaderText = "Jahr";
+            dataGridViewRedemittel.Columns[14].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewRedemittel.Columns[15].Visible = false;
+            foreach (DataGridViewColumn column in dataGridViewRedemittel.Columns)
+            {
+                column.HeaderCell.Style.Font = new Font("Segoe UI", 14, FontStyle.Bold);
+            }
+            #endregion
+
             RefreshCounts();
 
             // Monthly filters
             #region
-            iconLastMonthAdj.Text = General.ConventIntToMonthGerman(DateTime.Today.Month - StaticUser.LanguageID);
+            iconLastMonthAdj.Text = General.ConventIntToMonthGerman(DateTime.Today.Month - subtractThisMonthBy);
             iconThisMonthAdj.Text = General.ConventIntToMonthGerman(DateTime.Today.Month);
-            iconLastMonthAdv.Text = General.ConventIntToMonthGerman(DateTime.Today.Month - StaticUser.LanguageID);
+            iconLastMonthAdv.Text = General.ConventIntToMonthGerman(DateTime.Today.Month - subtractThisMonthBy);
             iconThisMonthAdv.Text = General.ConventIntToMonthGerman(DateTime.Today.Month);
-            iconLastMonthConj.Text = General.ConventIntToMonthGerman(DateTime.Today.Month - StaticUser.LanguageID);
+            iconLastMonthConj.Text = General.ConventIntToMonthGerman(DateTime.Today.Month - subtractThisMonthBy);
             iconThisMonthConj.Text = General.ConventIntToMonthGerman(DateTime.Today.Month);
-            iconLastMonthNoun.Text = General.ConventIntToMonthGerman(DateTime.Today.Month - StaticUser.LanguageID);
+            iconLastMonthNoun.Text = General.ConventIntToMonthGerman(DateTime.Today.Month - subtractThisMonthBy);
             iconThisMonthNoun.Text = General.ConventIntToMonthGerman(DateTime.Today.Month);
-            iconLastMonthPhrase.Text = General.ConventIntToMonthGerman(DateTime.Today.Month - StaticUser.LanguageID);
+            iconLastMonthPhrase.Text = General.ConventIntToMonthGerman(DateTime.Today.Month - subtractThisMonthBy);
             iconThisMonthPhrase.Text = General.ConventIntToMonthGerman(DateTime.Today.Month);
-            iconLastMonthSentence.Text = General.ConventIntToMonthGerman(DateTime.Today.Month - StaticUser.LanguageID);
+            iconLastMonthSentence.Text = General.ConventIntToMonthGerman(DateTime.Today.Month - subtractThisMonthBy);
             iconThisMonthSentence.Text = General.ConventIntToMonthGerman(DateTime.Today.Month);
-            iconLastMonthVerb.Text = General.ConventIntToMonthGerman(DateTime.Today.Month - StaticUser.LanguageID);
+            iconLastMonthVerb.Text = General.ConventIntToMonthGerman(DateTime.Today.Month - subtractThisMonthBy);
             iconThisMonthVerb.Text = General.ConventIntToMonthGerman(DateTime.Today.Month);
+            iconLastMonthRedemittel.Text = General.ConventIntToMonthGerman(DateTime.Today.Month - subtractThisMonthBy);
+            iconThisMonthRedemittel.Text = General.ConventIntToMonthGerman(DateTime.Today.Month);
             #endregion
         }
         private void RefreshCounts()
@@ -319,6 +358,7 @@ namespace LangApp.AllForms
             labelTotalWordsPhrase.Text = dataGridViewPhrase.RowCount.ToString();
             labelTotalWordsSentence.Text = dataGridViewSentence.RowCount.ToString();
             labelTotalWordsVerb.Text = dataGridViewVerb.RowCount.ToString();
+            labelTotalRedemittel.Text = dataGridViewRedemittel.RowCount.ToString();
         }
         WordDetailDTO detailAdj = new WordDetailDTO();
         private void dataGridViewAdj_RowEnter(object sender, DataGridViewCellEventArgs e)
@@ -354,6 +394,7 @@ namespace LangApp.AllForms
         string phrase = "Phrases";
         string sentence = "Sentences";
         string verb = "Verbs";
+        string usefulPhrase = "Useful Phrase";
         private void ClearFilters(string partOfSpeech)
         {
             if (partOfSpeech == "Adjectives")
@@ -364,8 +405,9 @@ namespace LangApp.AllForms
                 {
                     int month = DateTime.Today.Month - 1;
                     int year = DateTime.Today.Year;
-                    if (month == 12)
+                    if (month == 0)
                     {
+                        month = 12;
                         list = list.Where(x => x.MonthID == month && x.Year == DateTime.Today.Year - 1).ToList();
                     }
                     else
@@ -406,8 +448,9 @@ namespace LangApp.AllForms
                 {
                     int month = DateTime.Today.Month - 1;
                     int year = DateTime.Today.Year;
-                    if (month == 12)
+                    if (month == 0)
                     {
+                        month = 12;
                         listAdv = listAdv.Where(x => x.MonthID == month && x.Year == DateTime.Today.Year - 1).ToList();
                     }
                     else
@@ -447,8 +490,9 @@ namespace LangApp.AllForms
                 {
                     int month = DateTime.Today.Month - 1;
                     int year = DateTime.Today.Year;
-                    if (month == 12)
+                    if (month == 0)
                     {
+                        month = 12;
                         listConj = listConj.Where(x => x.MonthID == month && x.Year == DateTime.Today.Year - 1).ToList();
                     }
                     else
@@ -488,8 +532,9 @@ namespace LangApp.AllForms
                 {
                     int month = DateTime.Today.Month - 1;
                     int year = DateTime.Today.Year;
-                    if (month == 12)
+                    if (month == 0)
                     {
+                        month = 12;
                         listNouns = listNouns.Where(x => x.MonthID == month && x.Year == DateTime.Today.Year - 1).ToList();
                     }
                     else
@@ -528,8 +573,9 @@ namespace LangApp.AllForms
                 {
                     int month = DateTime.Today.Month - 1;
                     int year = DateTime.Today.Year;
-                    if (month == 12)
+                    if (month == 0)
                     {
+                        month = 12;
                         listPhrase = listPhrase.Where(x => x.MonthID == month && x.Year == DateTime.Today.Year - 1).ToList();
                     }
                     else
@@ -568,8 +614,9 @@ namespace LangApp.AllForms
                 {
                     int month = DateTime.Today.Month - 1;
                     int year = DateTime.Today.Year;
-                    if (month == 12)
+                    if (month == 0)
                     {
+                        month = 12;
                         listSentence = listSentence.Where(x => x.MonthID == month && x.Year == DateTime.Today.Year - 1).ToList();
                     }
                     else
@@ -608,8 +655,9 @@ namespace LangApp.AllForms
                 {
                     int month = DateTime.Today.Month - 1;
                     int year = DateTime.Today.Year;
-                    if (month == 12)
+                    if (month == 0)
                     {
+                        month = 12;
                         listVerb = listVerb.Where(x => x.MonthID == month && x.Year == DateTime.Today.Year - 1).ToList();
                     }
                     else
@@ -640,6 +688,47 @@ namespace LangApp.AllForms
                 cmbCasesPageVerb.SelectedIndex = -1;
                 cmbMonthPageVerb.SelectedIndex = -1;
                 cmbGroupPageVerb.SelectedIndex = -1;
+            }
+            else if (partOfSpeech == "Useful Phrase")
+            {
+                List<WordDetailDTO> listUsefulPhrase = dto.UsefulPhrases;
+                if (isLastMonth)
+                {
+                    int month = DateTime.Today.Month - 1;
+                    int year = DateTime.Today.Year;
+                    if (month == 0)
+                    {
+                        month = 12;
+                        listUsefulPhrase = listUsefulPhrase.Where(x => x.MonthID == month && x.Year == DateTime.Today.Year - 1).ToList();
+                    }
+                    else
+                    {
+                        listUsefulPhrase = listUsefulPhrase.Where(x => x.MonthID == month && x.Year == year).ToList();
+                    }
+                    dataGridViewRedemittel.DataSource = listUsefulPhrase;
+                    isLastMonth = false;
+                }
+                else if (isThisMonth)
+                {
+                    listUsefulPhrase = listUsefulPhrase.Where(x => x.MonthID == DateTime.Today.Month && x.Year == DateTime.Today.Year).ToList();
+                    dataGridViewRedemittel.DataSource = listUsefulPhrase;
+                    isThisMonth = false;
+                }
+                else if (isAll)
+                {
+                    dataGridViewRedemittel.DataSource = listUsefulPhrase;
+                    isAll = false;
+                }
+                else
+                {
+                    listUsefulPhrase = listUsefulPhrase.Where(x => x.MonthID == DateTime.Today.Month && x.Year == DateTime.Today.Year).ToList();
+                    dataGridViewRedemittel.DataSource = listUsefulPhrase;
+                }
+                txtExplanationRedemittel.Clear();
+                txtYearPageRedemittel.Clear();
+                cmbCasesPageRedemittel.SelectedIndex = -1;
+                cmbMonthPageRedemittel.SelectedIndex = -1;
+                cmbGroupPageRedemittel.SelectedIndex = -1;
             }
             else
             {
@@ -1635,11 +1724,166 @@ namespace LangApp.AllForms
             else
             {
                 FormViewSentence open = new FormViewSentence();
+                open.isSentence = true;
                 open.detail = detailSentence;
                 this.Close();
                 open.ShowDialog();
                 this.Visible = true;
             }
+        }
+
+        private void txtWordPageRedemittel_TextChanged(object sender, EventArgs e)
+        {
+            List<WordDetailDTO> list = dto.UsefulPhrases;
+            list = list.Where(x => x.Word.Contains(txtWordPageRedemittel.Text.Trim()) || x.Explanation.Contains(txtWordPageRedemittel.Text.Trim())).ToList();
+            dataGridViewRedemittel.DataSource = list;
+            RefreshCounts();
+        }
+
+        private void iconEditRedemittel_Click(object sender, EventArgs e)
+        {
+            if (detailUsefulPhrase.WordID == 0)
+            {
+                MessageBox.Show("Please select a useful phrase from the table");
+            }
+            else
+            {
+                FormWord open = new FormWord();
+                open.isUpdate = true;
+                open.detail = detailUsefulPhrase;
+                this.Close();
+                open.ShowDialog();
+                this.Visible = true;
+            }
+        }
+        WordDetailDTO detailUsefulPhrase = new WordDetailDTO();
+        private void dataGridViewRedemittel_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            detailUsefulPhrase = new WordDetailDTO();
+            detailUsefulPhrase.WordsCount = Convert.ToInt32(dataGridViewRedemittel.Rows[e.RowIndex].Cells[0].Value);
+            detailUsefulPhrase.WordID = Convert.ToInt32(dataGridViewRedemittel.Rows[e.RowIndex].Cells[1].Value);
+            detailUsefulPhrase.UserID = Convert.ToInt32(dataGridViewRedemittel.Rows[e.RowIndex].Cells[2].Value);
+            detailUsefulPhrase.LanguageID = Convert.ToInt32(dataGridViewRedemittel.Rows[e.RowIndex].Cells[3].Value);
+            detailUsefulPhrase.MonthID = Convert.ToInt32(dataGridViewRedemittel.Rows[e.RowIndex].Cells[4].Value);
+            detailUsefulPhrase.PartOfSpeechID = Convert.ToInt32(dataGridViewRedemittel.Rows[e.RowIndex].Cells[5].Value);
+            detailUsefulPhrase.WordCaseID = Convert.ToInt32(dataGridViewRedemittel.Rows[e.RowIndex].Cells[6].Value);
+            detailUsefulPhrase.WordGroupID = Convert.ToInt32(dataGridViewRedemittel.Rows[e.RowIndex].Cells[7].Value);
+            detailUsefulPhrase.Word = dataGridViewRedemittel.Rows[e.RowIndex].Cells[8].Value.ToString();
+            detailUsefulPhrase.WordGroupName = dataGridViewRedemittel.Rows[e.RowIndex].Cells[9].Value.ToString();
+            detailUsefulPhrase.PartOfSpeechName = dataGridViewRedemittel.Rows[e.RowIndex].Cells[10].Value.ToString();
+            detailUsefulPhrase.WordCaseName = dataGridViewRedemittel.Rows[e.RowIndex].Cells[11].Value.ToString();
+            detailUsefulPhrase.Day = Convert.ToInt32(dataGridViewRedemittel.Rows[e.RowIndex].Cells[12].Value);
+            detailUsefulPhrase.MonthName = dataGridViewRedemittel.Rows[e.RowIndex].Cells[13].Value.ToString();
+            detailUsefulPhrase.Year = Convert.ToInt32(dataGridViewRedemittel.Rows[e.RowIndex].Cells[14].Value);
+            detailUsefulPhrase.Explanation = dataGridViewRedemittel.Rows[e.RowIndex].Cells[15].Value.ToString();
+            txtExplanationRedemittel.Text = dataGridViewRedemittel.Rows[e.RowIndex].Cells[15].Value.ToString();
+        }
+
+        private void iconViewPageRedemittel_Click(object sender, EventArgs e)
+        {
+            if (detailUsefulPhrase.WordID == 0)
+            {
+                MessageBox.Show("Please select a useful phrase from the table");
+            }
+            else
+            {
+                FormViewSentence open = new FormViewSentence();
+                open.detail = detailUsefulPhrase;
+                open.isUsefulPhrase = true;
+                this.Close();
+                open.ShowDialog();
+                this.Visible = true;
+            }
+        }
+
+        private void iconClearPageRedemittel_Click(object sender, EventArgs e)
+        {
+            ClearFilters(usefulPhrase);
+        }
+
+        private void iconSearchPageRedemittel_Click(object sender, EventArgs e)
+        {
+            dto = bll.Select(StaticUser.UserID, StaticUser.LanguageID);
+            List<WordDetailDTO> list = dto.UsefulPhrases;
+            if (cmbMonthPageRedemittel.SelectedIndex != -1)
+            {
+                list = list.Where(x => x.MonthID == Convert.ToInt32(cmbMonthPageRedemittel.SelectedValue)).ToList();
+            }
+            else if (cmbCasesPageRedemittel.SelectedIndex != -1)
+            {
+                if (isLastMonth)
+                {
+                    int month = DateTime.Today.Month - 1;
+                    int year = DateTime.Today.Year;
+                    if (month == 12)
+                    {
+                        year -= 1;
+                        list = list.Where(x => x.MonthID == month && x.Year == year && x.WordCaseID == Convert.ToInt32(cmbCasesPageRedemittel.SelectedValue)).ToList();
+                    }
+                    else
+                    {
+                        list = list.Where(x => x.MonthID == month && x.Year == year && x.WordCaseID == Convert.ToInt32(cmbCasesPageRedemittel.SelectedValue)).ToList();
+                    }
+                }
+                else if (isThisMonth)
+                {
+                    list = list.Where(x => x.MonthID == DateTime.Today.Month && x.Year == DateTime.Today.Year && x.WordCaseID == Convert.ToInt32(cmbCasesPageRedemittel.SelectedValue)).ToList();
+                }
+                else
+                {
+                    list = list.Where(x => x.WordCaseID == Convert.ToInt32(cmbCasesPageRedemittel.SelectedValue)).ToList();
+                }
+            }
+            else if (cmbGroupPageRedemittel.SelectedIndex != -1)
+            {
+                if (isLastMonth)
+                {
+                    int month = DateTime.Today.Month - 1;
+                    int year = DateTime.Today.Year;
+                    if (month == 12)
+                    {
+                        year -= 1;
+                        list = list.Where(x => x.MonthID == month && x.Year == year && x.WordGroupID == Convert.ToInt32(cmbGroupPageRedemittel.SelectedValue)).ToList();
+                    }
+                    else
+                    {
+                        list = list.Where(x => x.MonthID == month && x.Year == year && x.WordGroupID == Convert.ToInt32(cmbGroupPageRedemittel.SelectedValue)).ToList();
+                    }
+                }
+                else if (isThisMonth)
+                {
+                    list = list.Where(x => x.MonthID == DateTime.Today.Month && x.Year == DateTime.Today.Year && x.WordGroupID == Convert.ToInt32(cmbGroupPageRedemittel.SelectedValue)).ToList();
+                }
+                else
+                {
+                    list = list.Where(x => x.WordGroupID == Convert.ToInt32(cmbGroupPageRedemittel.SelectedValue)).ToList();
+                }
+            }
+            dataGridViewRedemittel.DataSource = list;
+            RefreshCounts();
+        }
+
+        private void txtYearPageRedemittel_TextChanged(object sender, EventArgs e)
+        {
+            List<WordDetailDTO> list = dto.UsefulPhrases;
+            list = list.Where(x => x.Year.ToString().Contains(txtYearPageRedemittel.Text.Trim())).ToList();
+            dataGridViewRedemittel.DataSource = list;
+            RefreshCounts();
+        }
+
+        private void iconThisMonthRedemittel_Click(object sender, EventArgs e)
+        {
+            ThisMonth(usefulPhrase);
+        }
+
+        private void iconAllRedemittel_Click(object sender, EventArgs e)
+        {
+            AllMonths(usefulPhrase);
+        }
+
+        private void iconLastMonthRedemittel_Click(object sender, EventArgs e)
+        {
+            LastMonth(usefulPhrase);
         }
     }
 }

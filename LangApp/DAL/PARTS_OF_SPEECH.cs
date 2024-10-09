@@ -16,5 +16,8 @@ namespace LangApp.DAL
     {
         public int partOfSpeechID { get; set; }
         public string partsOfSpeechName { get; set; }
+        public int LanguageID { get; set; }
+        public bool isDeleted { get; set; }
+        public Nullable<System.DateTime> deletedDate { get; set; }
     }
 }

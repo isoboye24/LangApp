@@ -10,6 +10,7 @@ namespace LangApp.DAL.DTO
     {
         public List<WordDetailDTO> Words { get; set; }
         public List<WordDetailDTO> PhraseWords { get; set; }
+        public List<WordDetailDTO> UsefulPhrases { get; set; }
         public List<WordDetailDTO> Sentences { get; set; }
         public List<WordDetailDTO> Nouns { get; set; }
         public List<WordDetailDTO> Adjectives { get; set; }

@@ -14,6 +14,8 @@ namespace LangApp.AllForms
 {
     public partial class FormViewSentence : Form
     {
+        public bool isSentence = false;
+        public bool isUsefulPhrase = false;
         public FormViewSentence()
         {
             InitializeComponent();
@@ -31,9 +33,20 @@ namespace LangApp.AllForms
         public WordDetailDTO detail = new WordDetailDTO();
         private void FormViewSentence_Load(object sender, EventArgs e)
         {
-            label1.Text = "Sentence on " + detail.Day +"." + detail.MonthID + "." + detail.Year;
-            labelSentGroupName.Text = detail.WordGroupName;
-            txtSentence.Text = detail.Word;
+            if (isSentence)
+            {
+                label1.Text = "Sentence on " + detail.Day + "." + detail.MonthID + "." + detail.Year;
+                label2.Text = "Sentence Group";
+                labelSentGroupName.Text = detail.WordGroupName;
+                txtSentence.Text = detail.Word;
+            }
+            if (isUsefulPhrase)
+            {
+                label1.Text = "Useful phrase on " + detail.Day + "." + detail.MonthID + "." + detail.Year;
+                label2.Text = "Useful Phrase Group";
+                labelSentGroupName.Text = detail.WordGroupName;
+                txtSentence.Text = detail.Word;
+            }
         }
     }
 }

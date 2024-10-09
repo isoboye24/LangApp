@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -148,8 +148,8 @@
             // 
             // tabControl2
             // 
-            this.tabControl2.Controls.Add(this.AllPartsYearly);
             this.tabControl2.Controls.Add(this.AllPartsMonthly);
+            this.tabControl2.Controls.Add(this.AllPartsYearly);
             this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl2.Location = new System.Drawing.Point(3, 3);
             this.tabControl2.Name = "tabControl2";
@@ -345,17 +345,17 @@
             // 
             // chartAllPartsYearly
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartAllPartsYearly.ChartAreas.Add(chartArea1);
+            chartArea2.Name = "ChartArea1";
+            this.chartAllPartsYearly.ChartAreas.Add(chartArea2);
             this.chartAllPartsYearly.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Name = "Legend1";
-            this.chartAllPartsYearly.Legends.Add(legend1);
+            legend2.Name = "Legend1";
+            this.chartAllPartsYearly.Legends.Add(legend2);
             this.chartAllPartsYearly.Location = new System.Drawing.Point(3, 36);
             this.chartAllPartsYearly.Name = "chartAllPartsYearly";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartAllPartsYearly.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartAllPartsYearly.Series.Add(series2);
             this.chartAllPartsYearly.Size = new System.Drawing.Size(691, 294);
             this.chartAllPartsYearly.TabIndex = 1;
             this.chartAllPartsYearly.Text = "chart1";
@@ -587,17 +587,17 @@
             // 
             // chartAllPartsMonthly
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartAllPartsMonthly.ChartAreas.Add(chartArea2);
+            chartArea1.Name = "ChartArea1";
+            this.chartAllPartsMonthly.ChartAreas.Add(chartArea1);
             this.chartAllPartsMonthly.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend2.Name = "Legend1";
-            this.chartAllPartsMonthly.Legends.Add(legend2);
+            legend1.Name = "Legend1";
+            this.chartAllPartsMonthly.Legends.Add(legend1);
             this.chartAllPartsMonthly.Location = new System.Drawing.Point(3, 36);
             this.chartAllPartsMonthly.Name = "chartAllPartsMonthly";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartAllPartsMonthly.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartAllPartsMonthly.Series.Add(series1);
             this.chartAllPartsMonthly.Size = new System.Drawing.Size(691, 294);
             this.chartAllPartsMonthly.TabIndex = 1;
             this.chartAllPartsMonthly.Text = "chart1";

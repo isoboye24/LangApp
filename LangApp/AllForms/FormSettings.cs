@@ -50,10 +50,15 @@ namespace LangApp.AllForms
         WordCaseDTO caseDTO = new WordCaseDTO();
         WordGroupBLL groupBLL = new WordGroupBLL();
         WordGroupDTO groupDTO = new WordGroupDTO();
+        PartOfSpeechBLL partsOfSpeechBLL = new PartOfSpeechBLL();
+        PartOfSpeechDTO partOfSpeechDTO = new PartOfSpeechDTO();
         private bool isCaseUpdate = false;
         private bool isCaseDelete = false;
         private bool isGroupUpdate = false;
         private bool isGroupDelete = false;
+        private bool isPartOfSpeechUpdate = false;
+        private bool isPartOfSpeechDelete = false;
+
         private void FormSettings_Load(object sender, EventArgs e)
         {
             caseDTO = caseBLL.Select(StaticUser.LanguageID);
@@ -76,6 +81,16 @@ namespace LangApp.AllForms
             dataGridViewGroup.Columns[3].Visible = false;
             dataGridViewGroup.Columns[4].Visible = false;
             foreach (DataGridViewColumn column in dataGridViewGroup.Columns)
+            {
+                column.HeaderCell.Style.Font = new Font("Segoe UI", 14, FontStyle.Bold);
+            }
+
+            partOfSpeechDTO = partsOfSpeechBLL.Select();
+            dataGridViewPartsOfSpeech.DataSource = partOfSpeechDTO.PartsOfSpeech;
+            dataGridViewPartsOfSpeech.Columns[0].Visible = false;
+            dataGridViewPartsOfSpeech.Columns[1].HeaderText = "Parts of Speech";
+            dataGridViewPartsOfSpeech.Columns[2].Visible = false;
+            foreach (DataGridViewColumn column in dataGridViewPartsOfSpeech.Columns)
             {
                 column.HeaderCell.Style.Font = new Font("Segoe UI", 14, FontStyle.Bold);
             }
@@ -120,7 +135,7 @@ namespace LangApp.AllForms
             }
             else if (checkThisWord > 0)
             {
-                MessageBox.Show("This Word case exists");
+                MessageBox.Show("This Word case already exists");
             }
             else
             {
@@ -191,7 +206,7 @@ namespace LangApp.AllForms
             }
             else if (checkThisGroup > 0)
             {
-                MessageBox.Show("This Word group exists");
+                MessageBox.Show("This Word group already exists");
             }
             else
             {
@@ -269,6 +284,100 @@ namespace LangApp.AllForms
                     MessageBox.Show("Word group was deleted!");
                     isGroupDelete = false;
                     FillGroupGrid();
+                }
+            }
+        }
+
+        private void FillPartOfSpeechGrid()
+        {
+            txtWordPartsOfSpeech.Clear();
+            partOfSpeechDTO = partsOfSpeechBLL.Select();
+            dataGridViewPartsOfSpeech.DataSource = partOfSpeechDTO.PartsOfSpeech;
+        }
+        private void btnSavePartsOfSpeech_Click(object sender, EventArgs e)
+        {
+            int checkThisPartOfSpeech = groupBLL.checkGroup(txtWordGroup.Text.Trim(), StaticUser.LanguageID);
+            if (txtWordPartsOfSpeech.Text.Trim() == "")
+            {
+                MessageBox.Show("Enter part of speech");
+            }            
+            else if (checkThisPartOfSpeech > 0)
+            {
+                MessageBox.Show("This part of speech already exists");
+            }
+            else
+            {
+                if (!isPartOfSpeechUpdate && !isPartOfSpeechDelete)
+                {
+                    PartOfSpeechDetailDTO partOfspeech = new PartOfSpeechDetailDTO();
+                    partOfspeech.LanguageID = StaticUser.LanguageID;
+                    partOfspeech.PartOfSpeechName = txtWordPartsOfSpeech.Text.Trim();
+                    if (partsOfSpeechBLL.Insert(partOfspeech))
+                    {
+                        MessageBox.Show("Parts of speech was added successfully!");
+                        FillPartOfSpeechGrid();
+                    }
+                }
+                else if (isPartOfSpeechUpdate)
+                {
+                    if (partOfSpeechDetail.PartOfSpeechName == txtWordPartsOfSpeech.Text.Trim())
+                    {
+                        MessageBox.Show("No change");
+                    }
+                    else
+                    {
+                        partOfSpeechDetail.PartOfSpeechName = txtWordPartsOfSpeech.Text.Trim();
+                        partOfSpeechDetail.LanguageID = StaticUser.LanguageID;
+                        if (partsOfSpeechBLL.Update(partOfSpeechDetail))
+                        {
+                            MessageBox.Show("Part of speech was updated!");
+                            isPartOfSpeechUpdate = false;
+                            FillPartOfSpeechGrid();
+                            label4.Text = "Add Part of speech";
+                        }
+                    }
+                }
+            }
+        }
+        PartOfSpeechDetailDTO partOfSpeechDetail = new PartOfSpeechDetailDTO();
+        private void dataGridViewPartsOfSpeech_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            
+            if (isPartOfSpeechUpdate || isPartOfSpeechDelete)
+            {
+                partOfSpeechDetail = new PartOfSpeechDetailDTO();
+                partOfSpeechDetail.PartOfSpeechID = Convert.ToInt32(dataGridViewPartsOfSpeech.Rows[e.RowIndex].Cells[0].Value);
+                partOfSpeechDetail.PartOfSpeechName = dataGridViewPartsOfSpeech.Rows[e.RowIndex].Cells[1].Value.ToString();
+                if (isPartOfSpeechUpdate)
+                {
+                    txtWordPartsOfSpeech.Text = dataGridViewPartsOfSpeech.Rows[e.RowIndex].Cells[1].Value.ToString();
+                }
+                detail.LanguageID = Convert.ToInt32(dataGridViewPartsOfSpeech.Rows[e.RowIndex].Cells[2].Value);
+            }
+        }
+
+        private void btnEditPartsOfSpeech_Click(object sender, EventArgs e)
+        {
+            isPartOfSpeechUpdate = true;
+            OnLoad(EventArgs.Empty);
+            if (isGroupUpdate)
+            {
+                label4.Text = "Edit Part of Speech";
+            }
+        }
+
+        private void btnDeletePartsOfSpeech_Click(object sender, EventArgs e)
+        {
+            isPartOfSpeechDelete = true;
+            DialogResult result = MessageBox.Show("Delete now?", "Warning", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                if (partsOfSpeechBLL.Delete(partOfSpeechDetail))
+                {
+                    MessageBox.Show("Part of speech was deleted!");
+                    isPartOfSpeechDelete = false;
+                    FillPartOfSpeechGrid();
                 }
             }
         }

@@ -10,5 +10,6 @@ namespace LangApp.DAL.DTO
     {
         public int PartOfSpeechID { get; set; }
         public string PartOfSpeechName { get; set; }
+        public int LanguageID { get; set; }
     }
 }

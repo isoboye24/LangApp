@@ -97,6 +97,10 @@ namespace LangApp
             else if (partsOfSpeechID == 8)
             {
                 return "Sentence";
+            } 
+            else if (partsOfSpeechID == 9)
+            {
+                return "Useful Phrase";
             }            
             else
             {
@@ -208,6 +212,10 @@ namespace LangApp
             else if (partOfSpeech == "Sentence")
             {
                 return "Sätze";
+            }
+            else if (partOfSpeech == "Useful Phrase")
+            {
+                return "Hilfreiche Phrasen";
             }
             else
             {
